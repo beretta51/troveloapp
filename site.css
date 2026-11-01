@@ -1,0 +1,103 @@
+/* Trovelo's site: the menu at the top and the footer, shared by every page.
+   Both carry their own type and colours, so they look the same on the
+   home page (drawn at 1440 px and scaled) and on the plain text pages. */
+
+.tn, .tf {
+  font-family: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 600;
+  color: #1C1C1E;
+  -webkit-font-smoothing: antialiased;
+}
+.tn *, .tf * { box-sizing: border-box; }
+.tn a, .tf a { color: inherit; text-decoration: none; }
+.tn p, .tf p { margin: 0; }
+
+/* SF Symbols, the same sprites the home page uses, as masks. */
+.ti { display: inline-block; flex-shrink: 0; width: 18px; height: 18px; background-color: currentColor; -webkit-mask-image: url(/images/trovelo/sf-sprite.png); mask-image: url(/images/trovelo/sf-sprite.png); -webkit-mask-size: 1000% 900%; mask-size: 1000% 900%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.ti.i-menu, .ti.i-help, .ti.i-talk, .ti.i-press { -webkit-mask-image: url(/images/trovelo/sf-sprite2.png); mask-image: url(/images/trovelo/sf-sprite2.png); -webkit-mask-size: 2200% 100%; mask-size: 2200% 100%; }
+.i-apple { -webkit-mask-position: 100% 12.5%; mask-position: 100% 12.5%; }
+.i-close { -webkit-mask-position: 77.7778% 25%; mask-position: 77.7778% 25%; }
+.i-out { -webkit-mask-position: 33.3333% 87.5%; mask-position: 33.3333% 87.5%; }
+.i-features { -webkit-mask-position: 11.1111% 75%; mask-position: 11.1111% 75%; }
+.i-chev { -webkit-mask-position: 44.4444% 12.5%; mask-position: 44.4444% 12.5%; }
+.i-menu { -webkit-mask-position: 66.6667% 0; mask-position: 66.6667% 0; }
+.i-help { -webkit-mask-position: 38.0952% 0; mask-position: 38.0952% 0; }
+.i-talk { -webkit-mask-position: 33.3333% 0; mask-position: 33.3333% 0; }
+.i-press { -webkit-mask-position: 42.8571% 0; mask-position: 42.8571% 0; }
+
+/* ── The menu: a glass capsule floating over the page ───────────────── */
+.tn {
+  position: fixed; z-index: 100; top: 22px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; height: 60px; padding: 0 8px 0 24px;
+  border-radius: 999px; white-space: nowrap;
+  background: rgba(255, 255, 255, .72);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, .9);
+  box-shadow: 0 10px 30px rgba(60, 40, 120, .12);
+}
+.tn-logo { display: flex; align-items: center; height: 44px; margin-right: 18px; }
+.tn-logo img { display: block; width: auto; height: 22px; }
+.tn-links { display: flex; align-items: center; gap: 6px; }
+.tn-l { display: inline-flex; align-items: center; gap: 14px; height: 44px; padding: 0 16px; border-radius: 999px; font-size: 15px; transition: background-color .2s, color .2s; }
+.tn-l:hover, .tn-l.on, .tn-l[aria-current] { background: rgba(39, 116, 253, .1); color: #1F63DD; }
+.tn-l .ti, .tn-l .i-chev { display: none; }
+.tn-get { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; margin-left: 10px; padding: 0 20px 0 16px; border-radius: 999px; background: #1F63DD; color: #fff !important; font-size: 15px; transition: background-color .2s; }
+.tn-get:hover { background: #1852BD; }
+.tn-get .ti { width: 18px; height: 18px; }
+.tn-menu { display: none; }
+.tn a:focus-visible, .tn button:focus-visible, .tf a:focus-visible { outline: 3px solid #1F63DD; outline-offset: 2px; }
+.tn-dim { position: fixed; inset: 0; z-index: 99; background: rgba(40, 30, 90, .18); }
+.tn-dim[hidden] { display: none; }
+
+/* Phone: the logo and a Menu button; the capsule opens into a card. */
+@media (max-width: 759px) {
+  .tn { top: 12px; left: 12px; right: 12px; transform: none; flex-wrap: wrap; height: auto; min-height: 56px; padding: 0 6px 0 18px; }
+  .tn-logo img { height: 20px; }
+  .tn-menu { display: inline-flex; align-items: center; gap: 8px; height: 44px; margin: 6px 0 6px auto; padding: 0 16px; border: 0; border-radius: 999px; background: rgba(39, 116, 253, .1); color: #1F63DD; font: inherit; font-size: 15px; cursor: pointer; }
+  .tn-menu .i-close { display: none; }
+  .tn-links { display: none; }
+  .tn.open { padding: 6px 6px 18px; border-radius: 30px; background: #fff; box-shadow: 0 20px 50px rgba(40, 30, 90, .25); }
+  .tn.open .tn-logo { margin-left: 12px; }
+  .tn.open .tn-menu { width: 44px; margin: 0 0 0 auto; padding: 0; justify-content: center; background: #F2F0F6; color: #1C1C1E; }
+  .tn.open .tn-menu .i-menu, .tn.open .tn-mt { display: none; }
+  .tn.open .tn-menu .i-close { display: inline-block; width: 16px; height: 16px; }
+  .tn.open .tn-links { display: flex; flex-direction: column; align-items: stretch; gap: 0; flex-basis: 100%; margin-top: 6px; }
+  .tn.open .tn-l { height: 56px; border-radius: 16px; font-size: 17px; }
+  .tn.open .tn-l .ti { display: inline-block; width: 22px; height: 22px; color: #1F63DD; }
+  .tn.open .tn-l .i-chev { display: inline-block; width: 14px; height: 14px; margin-left: auto; color: #B9B4C6; }
+  .tn.open .tn-get { height: 52px; margin: 14px 10px 0; font-size: 17px; }
+}
+
+/* ── The footer: light, the page's sky carried to the end ───────────── */
+.tf { background: linear-gradient(180deg, rgba(250, 247, 241, 0) 0, #FAF7F1 160px); }
+.tf-in { max-width: 1312px; margin: 0 auto; padding: 120px 32px 40px; }
+.tf-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 64px; padding-bottom: 56px; }
+.tf-brand { display: flex; flex-direction: column; gap: 18px; width: 420px; }
+.tf-logo { display: block; width: 230px; height: auto; }
+.tf-tag { font-size: 20px; line-height: 1.3; }
+.tf-plat { font-size: 15px; color: #6B6585; }
+.tf-badges { display: flex; gap: 12px; margin-top: 6px; }
+.tf-badges a { display: inline-flex; }
+.tf-badges img { display: block; width: auto; height: 44px; }
+.tf-cols { display: grid; grid-template-columns: repeat(3, minmax(0, auto)); gap: 72px; padding-top: 8px; }
+.tf-h { margin: 0 0 14px !important; font-size: 13px; letter-spacing: .02em; color: #6B6585; }
+.tf-cols a { display: flex; align-items: center; gap: 4px; padding: 7px 0; font-size: 16px; line-height: 1; transition: color .2s; }
+.tf-cols a:hover { color: #1F63DD; }
+.tf-cols .ti { width: 14px; height: 14px; color: #9B95AC; }
+.tf-bot { display: flex; justify-content: space-between; gap: 16px; padding-top: 22px; border-top: 1px solid rgba(28, 28, 30, .1); font-size: 13px; color: #6B6585; }
+
+@media (max-width: 759px) {
+  .tf-in { padding: 72px 26px 34px; }
+  .tf-top { flex-direction: column; gap: 30px; padding-bottom: 30px; }
+  .tf-brand { width: auto; gap: 12px; }
+  .tf-logo { width: 170px; }
+  .tf-tag { font-size: 17px; }
+  .tf-badges { margin-top: 4px; gap: 10px; }
+  .tf-badges img { height: 38px; }
+  .tf-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-top: 0; width: 100%; }
+  .tf-bot { font-size: 12px; padding-top: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tn-l, .tn-get, .tf-cols a { transition: none; }
+}

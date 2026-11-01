@@ -32,66 +32,9 @@
 
 <!-- Self-hosted fonts (no Google connection) -->
 <link rel="preload" as="font" type="font/woff2" href="/fonts/gasoek-one-normal-400-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-italic-400-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-normal-400-latin.woff2" crossorigin>
 <style>
-/* Bricolage Grotesque · latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 200 800;
-  font-stretch: 75% 100%;
-  font-display: swap;
-  src: url(/fonts/bricolage-grotesque-normal-200-800-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Bricolage Grotesque · latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 200 800;
-  font-stretch: 75% 100%;
-  font-display: swap;
-  src: url(/fonts/bricolage-grotesque-normal-200-800-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Instrument Serif · latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/instrument-serif-italic-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Instrument Serif · latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/instrument-serif-italic-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* Instrument Serif · latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/instrument-serif-normal-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* Instrument Serif · latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/instrument-serif-normal-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono · latin-ext */
+/* JetBrains Mono · latin-ext (the AI chat's tool names, the press kit's colour codes) */
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
@@ -105,80 +48,30 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/jetbrains-mono-normal-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono · latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/jetbrains-mono-normal-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* JetBrains Mono · latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/jetbrains-mono-normal-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* JetBrains Mono · latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/jetbrains-mono-normal-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* JetBrains Mono · latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
   font-display: swap;
   src: url(/fonts/jetbrains-mono-normal-400-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-:root {
-  --yellow: #F1F332;
-  --black: #000;
-  --paper: #F2EFE6;
-  --paper-dark: #E8E4D6;
-  --ink: #0A0A0A;
-  --ink-soft: #6E6E6E;
-  --ink-faint: #B8B8B8;
-  --display: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif;
-  --mono: 'JetBrains Mono', ui-monospace, monospace;
-  --serif: 'Instrument Serif', Georgia, serif;
-  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
-}
 
 html, body {
   width: 100%;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--display);
+  background: #EEE9F2;
+  color: #1C1C1E;
+  font-family: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body.no-paper { background: #fff; }
 body { overflow-x: hidden; }
 
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
 
-::selection { background: var(--yellow); color: var(--black); }
+::selection { background: rgba(39, 116, 253, .22); }
 
-/* The page is its own scroller, as it was inside pinilloslab.com: the sky
-   colour is painted on it and glides from section to section. */
+/* The page is its own scroller: the sky colour is painted on it and
+   glides from section to section. */
 .app-page {
   position: fixed;
   inset: 0;
@@ -1128,23 +1021,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .pr-ah b{font-size:16px;font-weight:700}
 .tvx .pr-copy{display:flex;align-items:center;gap:3px;font-size:14px;font-weight:700;color:#2774FD;background:#EAF1FF;border-radius:14px;padding:5px 12px 5px 6px}
 .tvx .pr-about p{margin:10px 0 0;font-size:15px;line-height:1.5;color:rgba(28,28,30,.72)}
-.tvx .s-foot{height:1000px;background:#0A0A0A;color:#fff}
-.tvx .s-foot{overflow:hidden}
-.tvx .ft-in{padding:120px 56px 40px;box-sizing:border-box;z-index:1}
-.tvx .ft-head{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:200px;letter-spacing:-.05em;line-height:.85}
-.tvx .ft-head em,.tvx .ft-cta em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:-.02em}
-.tvx .ft-cta{display:inline-flex;align-items:center;gap:.18em;color:#F1F332;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:200px;letter-spacing:-.05em;line-height:.85}
-.tvx .ft-cta svg{height:.72em;width:.9em;transform:rotate(-45deg);overflow:visible;display:block}
-.tvx .ft-sub{margin:32px 0 80px;font-family:'Bricolage Grotesque',sans-serif;font-weight:400;font-size:18px;line-height:1.5;color:rgba(242,239,230,.6);max-width:560px}
-.tvx .ft-sub strong{color:#F1F332;font-weight:700}
-.tvx .ft-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;border-top:1px solid #2a2a2a;padding-top:40px;margin-bottom:80px}
-.tvx .ft-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#B8B8B8;margin-bottom:16px}
-.tvx .ft-val{font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:16px;line-height:1.5;display:flex;flex-direction:column;gap:6px}
-.tvx .ft-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px}
-.tvx .ft-bot{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-weight:400;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#B8B8B8;border-top:1px solid #2a2a2a;padding-top:24px}
 .tvx .live{display:inline-block;width:7px;height:7px;background:#F1F332;border-radius:50%;margin-right:8px;vertical-align:middle}
-.tvx .ft-marquee{position:absolute;left:-60px;bottom:-40px;z-index:0;pointer-events:none}
-.tvx .ft-marquee text{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:316px;letter-spacing:-.06em;fill:transparent;stroke:#2a2a2a;stroke-width:1px}
 .tvx .s-phero{height:720px}
 .tvx .pp-copy{position:absolute;left:96px;top:128px;width:640px;z-index:3}
 .tvx .pp-back{display:inline-flex;align-items:center;gap:2px;margin-bottom:26px;font-size:17px;font-weight:600;color:#2774FD}
@@ -1215,14 +1092,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .h-h1{margin:0;line-height:0}
 .tvx .s-stage{position:absolute;left:120px;top:310px;width:1200px;height:476px}
 .tvx .s-stage .s-world{left:0;top:0}
-.tvx .ft-in .ft-time{font:inherit}
 .tvx .duo,.tvx .pair,.tvx .stks,.tvx .hstage{display:contents}
 @media (min-width: 900px){.tvx{zoom:var(--tvz,1)}}
 @media (max-width: 899px){.tvx{min-width:0}
 .tvx .sec{height:auto!important;padding:64px 16px 44px;box-sizing:border-box}
 .tvx .in{width:auto;max-width:600px;height:auto;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:28px}
 .tvx .in>*{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;margin:0}
-.tvx .cloud,.tvx .dev-cap,.tvx .g-lbl,.tvx .e-float,.tvx .pill,.tvx .ft-marquee{display:none!important}
+.tvx .cloud,.tvx .dev-cap,.tvx .g-lbl,.tvx .e-float,.tvx .pill{display:none!important}
 .tvx .ai-mbp,.tvx .ai-chat,.tvx .ip-wrap,.tvx .l-phone,.tvx .w-med,.tvx .s-stage,.tvx .pp-fan,.tvx .k-col{
     --k:calc(min(var(--tvw), var(--dw)) / var(--dw));
     transform:scale(var(--k))!important;transform-origin:top center;
@@ -1308,12 +1184,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .c-cta{flex-direction:column;gap:14px}
 .tvx .c-links{width:100%;grid-template-columns:1fr}
 .tvx .c-link{width:100%}
-.tvx .s-foot .in{display:block}
-.tvx .ft-in{padding:80px 28px 32px!important}
-.tvx .ft-head,.tvx .ft-cta{font-size:clamp(64px,19vw,140px)}
-.tvx .ft-sub{margin:24px 0 48px}
-.tvx .ft-grid{grid-template-columns:1fr;gap:28px;margin-bottom:48px}
-.tvx .ft-bot{flex-direction:column;gap:8px}
 .tvx .pp-back{align-self:center}
 .tvx .pp-actions{flex-direction:column;gap:18px}
 .tvx .pp-facts,.tvx .pp-grid,.tvx .pp-row{width:100%}
@@ -1335,9 +1205,29 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 @media (prefers-reduced-motion: reduce){.tvx .cloud,.tvx .w-med,.tvx .w-small,.tvx .watch,.tvx .m-call,.tvx .s-medal,.tvx .stk,.tvx .s-pulse,.tvx .ex-bars i,.tvx .sa-caret,.tvx .ai-caret,.tvx .c-caret{animation:none!important}
 .tvx .r-track{animation:none!important}
 .tvx .s-rev{overflow-x:auto}}
+/* The site's menu floats over the page; the footer sits on the page's sky. */
+#trovelopress-page{scroll-behavior:smooth}
+@media (min-width: 900px){#trovelopress-page{padding-top:40px}}
+.tvx .sec.s-foot{height:auto!important;padding:0!important;overflow:visible}
+.tvx .s-foot .tf{background:none}
+.tvx .s-foot .tf-in{padding-top:40px}
+@media (prefers-reduced-motion: reduce){#trovelopress-page{scroll-behavior:auto}}
 </style>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
+<nav class="tn" aria-label="Main">
+  <a class="tn-logo" href="/" aria-label="Trovelo home"><img src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="118" height="22"></a>
+  <button class="tn-menu" type="button" aria-expanded="false" aria-controls="tn-links" aria-label="Open menu"><span class="ti i-menu" aria-hidden="true"></span><span class="ti i-close" aria-hidden="true"></span><span class="tn-mt">Menu</span></button>
+  <div class="tn-links" id="tn-links">
+    <a class="tn-l" href="/#features"><span class="ti i-features" aria-hidden="true"></span>Features<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/help/"><span class="ti i-help" aria-hidden="true"></span>Help<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/support/"><span class="ti i-talk" aria-hidden="true"></span>Support<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/press/" aria-current="page"><span class="ti i-press" aria-hidden="true"></span>Press<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-get" href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener"><span class="ti i-apple" aria-hidden="true"></span>Get Trovelo</a>
+  </div>
+</nav>
+<div class="tn-dim" hidden></div>
 
 <div id="trovelopress-page" class="app-page open">
 <div class="tvx page" id="tvp">
@@ -1481,19 +1371,29 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     </div>
   </section>
 
-  <!-- ═════════ FOOTER (the site's own) ═════════ -->
+  <!-- ═════════ FOOTER ═════════ -->
   <section class="sec s-foot">
-    <div class="ft-marquee"><svg width="2000" height="280" viewBox="0 0 2000 280" aria-hidden="true"><text x="0" y="236">EDUARDO · PINILLOS · EDUARDO · PINILLOS ·</text></svg></div>
-    <div class="in ft-in">
-      <h2 class="ft-head">Got an <em>idea</em>?</h2>
-      <a class="ft-cta" href="https://www.reddit.com/user/beretta51/" target="_blank" rel="noopener"><span>Reddit <em>me</em>.</span><svg viewBox="0 0 140 100" aria-hidden="true"><line x1="0" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="12"></line><path d="M52 14 L88 50 L52 86" stroke="currentColor" stroke-width="12" fill="none"></path></svg></a>
-      <p class="ft-sub"><strong>u/beretta51</strong> — where I talk with the people who use my apps every day. No forms, no inbox: Reddit is where I answer fastest, by far.</p>
-      <div class="ft-grid">
-        <div><div class="ft-lbl">— Get in touch</div><div class="ft-val"><a href="https://www.reddit.com/user/beretta51/" target="_blank" rel="noopener">Reddit me ↗︎</a></div></div>
-        <div><div class="ft-lbl">— Sitemap</div><div class="ft-val ft-map"><a href="https://pinilloslab.com/about">About</a><a href="/">Trovelo</a><a href="https://pinilloslab.com/dimmly">Dimmly</a><a href="https://pinilloslab.com/percha">Percha</a><a href="https://pinilloslab.com/solid">Solid</a><a href="https://pinilloslab.com/gridborne">Gridborne</a><a href="https://pinilloslab.com/dummo">Dummo</a><a href="https://pinilloslab.com/takekit">TakeKit</a><a href="https://pinilloslab.com/wealth-square">Wealth Square</a><a href="/privacy/">Privacy</a></div></div>
+    <footer class="tf">
+      <div class="tf-in">
+        <div class="tf-top">
+          <div class="tf-brand">
+            <img class="tf-logo" src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="230" height="43" loading="lazy">
+            <p class="tf-tag">Just type it. Trovelo files it.</p>
+            <p class="tf-plat">For iPhone, iPad and Mac.</p>
+            <div class="tf-badges">
+              <a href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener"><img src="/images/trovelo/app-store-badge.svg" alt="Download on the App Store" width="132" height="44" loading="lazy"></a>
+              <a href="https://apps.apple.com/app/id6760258252?platform=mac" target="_blank" rel="noopener"><img src="/images/trovelo/mac-app-store-badge.svg" alt="Download on the Mac App Store" width="172" height="44" loading="lazy"></a>
+            </div>
+          </div>
+          <nav class="tf-cols" aria-label="Footer">
+            <div><p class="tf-h">Trovelo</p><a href="/#features">Features</a><a href="/help/">Help</a><a href="/support/">Support</a></div>
+            <div><p class="tf-h">Talk to us</p><a href="https://www.reddit.com/r/trovelo/" target="_blank" rel="noopener">r/trovelo <span class="ti i-out" aria-hidden="true"></span></a><a href="/support/#contact">Contact</a></div>
+            <div><p class="tf-h">More</p><a href="/press/">Press kit</a><a href="/privacy/">Privacy policy</a><a href="https://pinilloslab.com/" target="_blank" rel="noopener">Pinillos Lab <span class="ti i-out" aria-hidden="true"></span></a></div>
+          </nav>
+        </div>
+        <div class="tf-bot"><span>© 2026 Pinillos Lab</span><span>Made in Portugal</span></div>
       </div>
-      <div class="ft-bot"><span><i class="live"></i><span class="ft-time">23:46</span> · PORTUGAL</span><span>© 2008 — 2026 · PINILLOS LAB · ALL FAULTS MINE</span><span>V2.0 · MADE WITH CARE</span></div>
-    </div>
+    </footer>
   </section>
 
 </div>
@@ -2395,25 +2295,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       root.style.setProperty('--tvw', Math.min(w - 32, 600));
     }
 
-    function lisbonClock(root) {
-      const el = root.querySelector('.ft-time');
-      if (!el) return;
-      const t = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Lisbon', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
-      if (el.textContent !== t) el.textContent = t;
-    }
 
-    // Links between the two pages open them in place, like the rest of the site.
-    function wireLinks(root) {
-      root.querySelectorAll('a[data-tv-open]').forEach((a) => {
-        a.addEventListener('click', (e) => {
-          if (typeof openApp !== 'function') return;
-          e.preventDefault();
-          const key = a.getAttribute('data-tv-open');
-          if (appPageOpen) closeApp(appPageOpen, true);
-          openApp(key, key === 'trovelo' ? 'Trovelo' : 'Trovelo press');
-        });
-      });
-    }
 
     // "Copy" beside the press blurb puts it on the clipboard.
     function wireCopy(root) {
@@ -2501,7 +2383,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       const root = document.getElementById(rootId);
       if (!page || !root) return;
       const islands = mount(root);
-      wireLinks(root);
       wireCopy(root);
       fit(page, root);
       window.addEventListener('resize', () => fit(page, root));
@@ -2513,7 +2394,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         scenes.forEach((s) => Object.assign(vals, s.frame(t)));
         last = vals;
         islands.forEach((g) => g.update(vals));
-        lisbonClock(root);
       };
 
       let t0 = performance.now();
@@ -2524,7 +2404,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       let wasOpen = false;
       if (reduced) {
         draw(null);
-        setInterval(() => lisbonClock(root), 10000);
         return;
       }
       draw(0);
@@ -2566,5 +2445,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     run('trovelopress-page', 'tvp', []);
   })();
 </script>
+<script src="/site.js" defer></script>
 </body>
 </html>

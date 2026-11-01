@@ -1,17 +1,13 @@
-Fonts bundled with pinilloslab.com
-===================================
+Fonts bundled with troveloapp.com
+=================================
 
-All typefaces on this site are licensed under the SIL Open Font License 1.1
+The typefaces on this site are licensed under the SIL Open Font License 1.1
 (full text below) and are self-hosted from this domain.
 
-- Bricolage Grotesque — Copyright 2023 The Bricolage Grotesque Project Authors
-  (https://github.com/ateliertriay/bricolage)
-- JetBrains Mono — Copyright 2020 The JetBrains Mono Project Authors
-  (https://github.com/JetBrains/JetBrainsMono)
-- Instrument Serif — Copyright 2022 The Instrument Serif Project Authors
-  (https://github.com/Instrument/instrument-serif)
 - Gasoek One — Copyright 2022 The Gasoek Project Authors
   (https://github.com/JAMO-TYPEFACE/Gasoek) — Latin subset
+- JetBrains Mono — Copyright 2020 The JetBrains Mono Project Authors
+  (https://github.com/JetBrains/JetBrainsMono)
 
 -----------------------------------------------------------------------
 

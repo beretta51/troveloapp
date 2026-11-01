@@ -14,6 +14,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" href="/images/trovelo/app-icon.png">
 <link rel="preload" href="/fonts/gasoek-one-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css">
 <link rel="stylesheet" href="/help/help.css">
 <script type="application/ld+json">
 {
@@ -34,18 +35,18 @@
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="wrap top">
-    <a class="brand" href="/help/">
-      <img class="icon" src="/images/trovelo/app-icon.png" alt="" width="40" height="40">
-      <img class="logo" src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="118" height="22">
-      <span class="pill">Help</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a class="hide-s" href="#topics">Topics</a>
-      <a class="hide-s" href="#contact">Contact</a>
-      <a class="get" href="https://apps.apple.com/app/id6760258252">Get Trovelo</a>
-    </nav>
-  </header>
+<nav class="tn" aria-label="Main">
+  <a class="tn-logo" href="/" aria-label="Trovelo home"><img src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="118" height="22"></a>
+  <button class="tn-menu" type="button" aria-expanded="false" aria-controls="tn-links" aria-label="Open menu"><span class="ti i-menu" aria-hidden="true"></span><span class="ti i-close" aria-hidden="true"></span><span class="tn-mt">Menu</span></button>
+  <div class="tn-links" id="tn-links">
+    <a class="tn-l" href="/#features"><span class="ti i-features" aria-hidden="true"></span>Features<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/help/" aria-current="page"><span class="ti i-help" aria-hidden="true"></span>Help<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/support/"><span class="ti i-talk" aria-hidden="true"></span>Support<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-l" href="/press/"><span class="ti i-press" aria-hidden="true"></span>Press<span class="ti i-chev" aria-hidden="true"></span></a>
+    <a class="tn-get" href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener"><span class="ti i-apple" aria-hidden="true"></span>Get Trovelo</a>
+  </div>
+</nav>
+<div class="tn-dim" hidden></div>
 
   <main id="main">
   <section class="wrap hero">
@@ -267,21 +268,29 @@
   </section>
   </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <div class="foot-brand">
-      <img src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="139" height="26">
-      <span>Plan trips day by day, on iPhone, iPad and Mac.</span>
+<footer class="tf">
+  <div class="tf-in">
+    <div class="tf-top">
+      <div class="tf-brand">
+        <img class="tf-logo" src="/images/trovelo/trovelo-logo-color.svg" alt="Trovelo" width="230" height="43" loading="lazy">
+        <p class="tf-tag">Just type it. Trovelo files it.</p>
+        <p class="tf-plat">For iPhone, iPad and Mac.</p>
+        <div class="tf-badges">
+          <a href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener"><img src="/images/trovelo/app-store-badge.svg" alt="Download on the App Store" width="132" height="44" loading="lazy"></a>
+          <a href="https://apps.apple.com/app/id6760258252?platform=mac" target="_blank" rel="noopener"><img src="/images/trovelo/mac-app-store-badge.svg" alt="Download on the Mac App Store" width="172" height="44" loading="lazy"></a>
+        </div>
+      </div>
+      <nav class="tf-cols" aria-label="Footer">
+        <div><p class="tf-h">Trovelo</p><a href="/#features">Features</a><a href="/help/">Help</a><a href="/support/">Support</a></div>
+        <div><p class="tf-h">Talk to us</p><a href="https://www.reddit.com/r/trovelo/" target="_blank" rel="noopener">r/trovelo <span class="ti i-out" aria-hidden="true"></span></a><a href="/support/#contact">Contact</a></div>
+        <div><p class="tf-h">More</p><a href="/press/">Press kit</a><a href="/privacy/">Privacy policy</a><a href="https://pinilloslab.com/" target="_blank" rel="noopener">Pinillos Lab <span class="ti i-out" aria-hidden="true"></span></a></div>
+      </nav>
     </div>
-    <div class="foot-cols">
-      <div class="foot-col"><span>HELP</span><a href="#topics">All topics</a><a href="/help/add-places-to-your-days/">Add places to your days</a></div>
-      <div class="foot-col"><span>TROVELO</span><a href="/">The app</a><a href="/press/">Press</a><a href="/privacy/">Privacy</a></div>
-      <div class="foot-col"><span>CONTACT</span><a href="https://www.reddit.com/r/trovelo/">r/trovelo</a><a href="mailto:nocion.exento_8u@icloud.com">Email</a></div>
-    </div>
+    <div class="tf-bot"><span>© 2026 Pinillos Lab</span><span>Made in Portugal</span></div>
   </div>
-  <div class="wrap foot-copy">© 2026 <a href="https://pinilloslab.com/">Pinillos Lab</a></div>
 </footer>
 
+<script src="/site.js" defer></script>
 <script src="/help/help.js" defer></script>
 </body>
 </html>

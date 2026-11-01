@@ -33,9 +33,9 @@ if len(parts) < 3:
 if MARKER not in template:
     sys.exit("Marker missing in policies/template.html: " + MARKER)
 
-out = '<div class="privacy-updated">Last updated: %s</div>' % updated
+out = '<p class="pg-updated">Last updated: %s</p>\n' % updated
 for k in range(1, len(parts), 2):
-    out += "<section><h3>— %s</h3>%s</section>" % (parts[k].strip(), parts[k + 1].strip())
+    out += '<section class="pg-card"><h2>%s</h2>%s</section>\n' % (parts[k].strip(), parts[k + 1].strip())
 
 (ROOT / "privacy").mkdir(exist_ok=True)
 (ROOT / "privacy" / "index.html").write_text(template.replace(MARKER, out), encoding="utf-8")

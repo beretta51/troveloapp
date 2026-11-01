@@ -1,0 +1,66 @@
+/* Trovelo's text pages (Support, Privacy policy, Not found): a headline word
+   in Gasoek One on the page's lavender sky, then white cards to read. */
+
+@font-face {
+  font-family: 'Gasoek One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/gasoek-one-normal-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  min-height: 100vh;
+  background: #FAF7F1 linear-gradient(180deg, #EBDFFD 0, #F2EAFB 380px, #FAF7F1 860px) no-repeat;
+  color: #1C1C1E;
+  font-family: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection { background: rgba(39, 116, 253, .22); }
+a { color: #1F63DD; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+a:hover { color: #1852BD; }
+a:focus-visible { outline: 3px solid #1F63DD; outline-offset: 2px; border-radius: 6px; }
+
+.pg-hero { max-width: 816px; margin: 0 auto; padding: 168px 28px 40px; }
+.pg-word { font-family: 'Gasoek One', sans-serif; font-weight: 400; font-size: clamp(60px, 11vw, 104px); line-height: .92; letter-spacing: .005em; text-transform: uppercase; color: #2774FD; }
+.pg-tag { margin-top: 16px; font-size: clamp(22px, 3.2vw, 30px); font-weight: 600; line-height: 1.2; letter-spacing: -.01em; }
+
+.pg-body { max-width: 816px; margin: 0 auto; padding: 0 28px; display: flex; flex-direction: column; gap: 16px; }
+.pg-updated { padding: 0 4px 4px; font-size: 14px; font-weight: 600; color: #6B6585; }
+.pg-card { display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; border-radius: 24px; background: #fff; box-shadow: 0 1px 0 rgba(28, 28, 30, .04), 0 12px 32px rgba(60, 40, 120, .06); scroll-margin-top: 100px; }
+.pg-card h2 { font-size: 20px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.pg-card h3 { margin-top: 6px; font-size: 17px; font-weight: 700; }
+.pg-card p, .pg-card li, .pg-card td { font-size: 17px; line-height: 1.55; color: #3A3A3C; }
+.pg-card strong { font-weight: 700; color: #1C1C1E; }
+.pg-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.pg-card li { position: relative; padding-left: 20px; }
+.pg-card li::before { content: ''; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: #2774FD; }
+
+.pg-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.pg-btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: 999px; background: #1F63DD; color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; transition: background-color .2s; }
+.pg-btn:hover { background: #1852BD; color: #fff; }
+.pg-btn.alt { background: rgba(39, 116, 253, .1); color: #1F63DD; }
+.pg-btn.alt:hover { background: rgba(39, 116, 253, .16); color: #1852BD; }
+
+.tablewrap { overflow-x: auto; margin: 4px -4px 0; padding: 0 4px; }
+.pg-card table { width: 100%; min-width: 560px; border-collapse: collapse; }
+.pg-card th, .pg-card td { padding: 12px 14px 12px 0; text-align: left; vertical-align: top; border-bottom: 1px solid rgba(28, 28, 30, .08); }
+.pg-card th { font-size: 13px; font-weight: 700; color: #6B6585; }
+.pg-card td { font-size: 15px; }
+.pg-card tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 759px) {
+  .pg-hero { padding: 116px 20px 28px; }
+  .pg-body { padding: 0 12px; gap: 12px; }
+  .pg-card { padding: 22px 20px; border-radius: 20px; }
+  .pg-card p, .pg-card li { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .pg-btn { transition: none; }
+}
