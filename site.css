@@ -15,7 +15,6 @@
 /* SF Symbols, the same sprites the home page uses, as masks. */
 .ti { display: inline-block; flex-shrink: 0; width: 18px; height: 18px; background-color: currentColor; -webkit-mask-image: url(/images/trovelo/sf-sprite.png); mask-image: url(/images/trovelo/sf-sprite.png); -webkit-mask-size: 1000% 900%; mask-size: 1000% 900%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 .ti.i-menu, .ti.i-help, .ti.i-talk, .ti.i-press { -webkit-mask-image: url(/images/trovelo/sf-sprite2.png); mask-image: url(/images/trovelo/sf-sprite2.png); -webkit-mask-size: 2200% 100%; mask-size: 2200% 100%; }
-.i-apple { -webkit-mask-position: 100% 12.5%; mask-position: 100% 12.5%; }
 .i-close { -webkit-mask-position: 77.7778% 25%; mask-position: 77.7778% 25%; }
 .i-out { -webkit-mask-position: 33.3333% 87.5%; mask-position: 33.3333% 87.5%; }
 .i-features { -webkit-mask-position: 11.1111% 75%; mask-position: 11.1111% 75%; }
@@ -41,9 +40,8 @@
 .tn-l { display: inline-flex; align-items: center; gap: 14px; height: 44px; padding: 0 16px; border-radius: 999px; font-size: 15px; transition: background-color .2s, color .2s; }
 .tn-l:hover, .tn-l.on, .tn-l[aria-current] { background: rgba(39, 116, 253, .1); color: #1F63DD; }
 .tn-l .ti, .tn-l .i-chev { display: none; }
-.tn-get { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; margin-left: 10px; padding: 0 20px 0 16px; border-radius: 999px; background: #1F63DD; color: #fff !important; font-size: 15px; transition: background-color .2s; }
+.tn-get { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; margin-left: 10px; padding: 0 20px; border-radius: 999px; background: #1F63DD; color: #fff !important; font-size: 15px; transition: background-color .2s; }
 .tn-get:hover { background: #1852BD; }
-.tn-get .ti { width: 18px; height: 18px; }
 .tn-menu { display: none; }
 .tn a:focus-visible, .tn button:focus-visible, .tf a:focus-visible { outline: 3px solid #1F63DD; outline-offset: 2px; }
 .tn-dim { position: fixed; inset: 0; z-index: 99; background: rgba(40, 30, 90, .18); }
