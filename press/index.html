@@ -1031,8 +1031,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .pp-fan{position:absolute;left:820px;top:112px;width:540px;height:470px}
 .tvx .pp-fan img{position:absolute;width:236px;height:auto;border-radius:22px;box-shadow:0 30px 60px rgba(46,37,102,.22),0 0 0 1px rgba(0,0,0,.04);display:block}
 .tvx .pp-fan img.mid{z-index:2;width:250px}
-.tvx .pp-facts{position:absolute;left:96px;right:96px;top:590px}
-.tvx .pp-facts .pr-facts{grid-template-columns:repeat(6,minmax(0,1fr));margin-top:0}
+/* the facts stay under the copy, clear of the phones on the right */
+.tvx .pp-facts{position:absolute;left:96px;width:640px;top:590px}
+.tvx .pp-facts .pr-facts{margin-top:0}
 .tvx .s-passets{height:760px}
 .tvx .pp-lbl{position:absolute;left:96px;top:40px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8E8E93}
 .tvx .pp-grid{position:absolute;left:96px;right:96px;top:74px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}

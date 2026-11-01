@@ -323,6 +323,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .h1 em{font-family:'Instrument Serif',serif;font-weight:400;font-style:italic;letter-spacing:-.02em;font-size:86px;color:#2774FD}
 .tvx .h-sub{margin:16px 0 0;width:720px;font-size:20px;line-height:1.4;color:#4A4468}
 .tvx .h-cta{margin-top:22px;display:flex;align-items:center;gap:20px}
+.tvx .h-badges{display:flex;gap:12px}
 .tvx .mbp{position:absolute;width:1196.6px;height:787.4px;isolation:isolate}
 .tvx .mbp::before,.tvx .mbp::after{content:'';position:absolute;inset:0;background:url(/images/trovelo/macbook-pro-14.webp) 0 0/100% 100% no-repeat;pointer-events:none}
 .tvx .mbp::before{filter:drop-shadow(0 40px 50px rgba(46,37,102,.3))}
@@ -592,7 +593,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ai-pills span.mac{padding:0 14px 0 9px;background:#1C1C1E;color:#fff;box-shadow:none}
 .tvx .ai-pills span.pro{background:#2774FD;margin-right:10px}
 .tvx .ai-pills em{font-style:normal;font-size:14px;font-weight:600;color:rgba(28,28,30,.5);margin-right:4px}
-.tvx .ai-foot{position:absolute;right:131px;top:1268px;margin:0;font-size:13px;font-weight:600;color:rgba(28,28,30,.45)}
+.tvx .ai-foot{position:absolute;left:0;right:0;top:1268px;text-align:center;margin:0;font-size:13px;font-weight:600;color:rgba(28,28,30,.45)}
 .tvx .ai-chat{position:absolute;left:220px;top:518px;width:360px;height:748px;transform:scale(.74261);transform-origin:0 0;border-radius:12px;overflow:hidden;background:#FBFBFD;color:#1C1C1E;box-shadow:0 17px 52px rgba(0,0,0,.4),0 0 0 .5px rgba(0,0,0,.3);font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;z-index:2}
 .tvx .ai-bar{position:absolute;left:0;right:0;top:0;height:40px;display:flex;align-items:center;justify-content:center;background:#F4F4F7;border-bottom:.5px solid rgba(0,0,0,.1);font-size:12.5px;font-weight:600;color:#6E6E73}
 .tvx .ai-lights{position:absolute;left:14px;top:14px;display:flex;gap:7px}
@@ -764,7 +765,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .e-f2{left:1348px;top:120px;animation:tv-bob2 8s ease-in-out infinite}
 .tvx .e-f3{left:1352px;top:560px;animation:tv-bob1 9s ease-in-out infinite}
 .tvx .e-f4{left:1000px;top:60px;animation:tv-bob2 6s ease-in-out infinite}
-.tvx .e-export{position:absolute;left:96px;top:610px;display:flex;align-items:center;gap:8px;background:#339F89;color:#fff;border-radius:16px;padding:12px 16px 12px 12px;font-size:14px;font-weight:700;box-shadow:0 20px 40px rgba(22,19,43,.3);z-index:6;animation:tv-bob2 8s ease-in-out infinite}
+.tvx .e-out{margin:26px 0 0;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;color:#339F89}
 /* Expenses on the iPhone (TripWrappedView, ExpensesMint.swift, GroupPotView.swift): a mint block at the top, white cards below */
 .tvx .xm{position:absolute;left:0;right:0;top:72px;bottom:0;background:#F5F9F8;border-radius:38px 38px 0 0;overflow:hidden;font-family:ui-rounded,'SF Pro Rounded',-apple-system,system-ui,sans-serif;color:#1C1C1E}
 .tvx .xm-mint{position:absolute;left:0;right:0;top:0;background:#B8E9DF;border-radius:0 0 36px 36px}
@@ -1145,12 +1146,12 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .sam-ro .sf{width:24px;height:24px}
 .tvx .sam-ro .sf:last-child{width:20px;height:20px}
 .tvx .sam-ro.on{opacity:1;transform:none}
-.tvx .s-more{height:880px}
+.tvx .s-more{height:912px}
 .tvx .x-big{position:absolute;top:280px;height:250px;border-radius:28px;overflow:hidden;box-sizing:border-box}
 .tvx .x-guides{left:96px;width:608px;background:#2947A0;color:#fff}
 .tvx .x-someday{left:736px;width:608px;background:#fff}
 .tvx .x-bt{position:absolute;left:30px;top:28px;width:270px}
-.tvx .x-bt b{display:block;font-size:28px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
+.tvx .x-bt b{display:block;font-size:28px;font-weight:700;letter-spacing:-.01em;line-height:1.1;text-wrap:balance}
 .tvx .x-bt p{margin:12px 0 0;font-size:15px;line-height:1.45;color:rgba(255,255,255,.78)}
 .tvx .x-someday .x-bt p{color:rgba(28,28,30,.62)}
 .tvx .post{position:absolute;width:140px;height:178px;border-radius:14px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.35);border:4px solid #fff;box-sizing:border-box}
@@ -1166,8 +1167,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .sd b{display:block;font-size:15px;font-weight:700}
 .tvx .sd small{display:block;font-size:12px;color:#8E8E93}
 .tvx .x-grid{position:absolute;left:96px;right:96px;top:552px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-.tvx .x-tile{height:140px;border-radius:22px;background:#fff;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px}
-.tvx .xi{display:flex;width:40px;height:40px;border-radius:12px;align-items:center;justify-content:center}
+.tvx .x-tile{height:156px;border-radius:22px;background:#fff;padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px}
+.tvx .xi{display:flex;flex-shrink:0;width:40px;height:40px;border-radius:12px;align-items:center;justify-content:center}
 .tvx .x-tile b{font-size:16px;font-weight:700}
 .tvx .x-tile span{font-size:13px;line-height:1.35;color:rgba(28,28,30,.6)}
 .tvx .s-rev{height:600px}
@@ -1339,6 +1340,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .s-hero{padding-top:96px}
 .tvx .h-logo{width:100%;max-width:400px}
 .tvx .h-cta{flex-direction:column;gap:14px}
+.tvx .h-badges{gap:10px}
+.tvx .h-badges .badge img{height:44px}
 .tvx .hstage{display:block!important;position:relative;width:100%;--hk:calc(var(--tvw) / 1287);height:calc(724px * var(--hk))}
 .tvx .hstage>.mbp,.tvx .hstage>.ip-wrap{position:absolute!important;transform:scale(var(--hk))!important;transform-origin:top left!important;margin:0!important}
 .tvx .hstage>.mbp{left:calc(-8px * var(--hk))!important;top:calc(-72px * var(--hk))!important}
@@ -1401,6 +1404,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .x-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .tvx .x-tile{height:auto;min-height:140px}
 .tvx .s-rev .r-track{position:relative;top:auto;margin-top:34px}
+.tvx .r-score{flex-direction:column;gap:8px;text-align:center}
 .tvx .rv{width:300px;height:auto;min-height:180px}
 .tvx .p-cols{width:100%;grid-template-columns:1fr;gap:18px}
 .tvx .c-bar{width:100%;box-sizing:border-box}
@@ -1475,7 +1479,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         <p class="tag" style="color: #1C1C1E">Just type it. Trovelo files it.</p>
         <p class="body" style="width: 640px">Write a plan the way you’d text a friend. It lands on the right day, at the right time, with the cost in two currencies, on your Mac and your iPhone.</p>
         <div class="h-cta">
-          <a class="badge" href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener" aria-label="Download Trovelo on the App Store"><img loading="lazy" decoding="async" src="/images/trovelo/app-store-badge.svg" alt="Download on the App Store"></a>
+          <span class="h-badges">
+            <a class="badge" href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener" aria-label="Download Trovelo on the App Store"><img decoding="async" src="/images/trovelo/app-store-badge.svg" alt="Download on the App Store"></a>
+            <a class="badge" href="https://apps.apple.com/app/id6760258252?platform=mac" target="_blank" rel="noopener" aria-label="Download Trovelo on the Mac App Store"><img decoding="async" src="/images/trovelo/mac-app-store-badge.svg" alt="Download on the Mac App Store"></a>
+          </span>
           <span class="rating"><span class="stars"><i class="sf sf-star-fill s16"></i><i class="sf sf-star-fill s16"></i><i class="sf sf-star-fill s16"></i><i class="sf sf-star-fill s16"></i><i class="sf sf-star-fill s16"></i></span>4.9 · 75 ratings</span>
         </div>
       </div>
@@ -2127,6 +2134,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         <p class="body">Enter it in yen, see it in dollars or whatever you use at home, added up by category. With friends, log who paid and Trovelo works out who owes whom.</p>
         <div class="e-big"><b>¥69,870</b><span>≈ $438.74</span></div>
         <div class="e-rate"><span>$1 = ¥159.25</span><span>TOKYO · 6 DAYS</span></div>
+        <p class="e-out"><i class="sf sf-tablecells s22"></i>Export to a spreadsheet</p>
       </div>
 
       <div class="e-float e-f1" style="color: #16132B">¥</div>
@@ -2191,7 +2199,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         </div>
       </div></div></div>
 
-      <div class="e-export"><i class="sf sf-tablecells s26"></i>Export to a spreadsheet</div>
     </div>
   </section>
 
@@ -2203,7 +2210,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       <div class="g-head">
         <h2 class="word" style="color: #2774FD; font-size: 104px">WIDGETS</h2>
         <p class="tag" style="color: #1C1C1E">Never miss a thing.</p>
-        <p class="body" style="width: 640px">What’s happening now, what comes next, and a tap to get there. On a flight day, your boarding pass. On your Lock Screen, your Home Screen and your Apple Watch.</p>
+        <p class="body" style="width: 720px; text-wrap: balance">What’s happening now, what comes next, and a tap to get there. On a flight day, your boarding pass. On your Lock Screen, your Home Screen and your Apple Watch.</p>
       </div>
 
       <div class="g-lbl" style="left: 150px; top: 410px">HOME SCREEN</div>
@@ -2313,7 +2320,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         <h2 class="word" style="color: #2774FD; font-size: 104px">SPOTS</h2>
         <p class="tag" style="color: #1C1C1E">Every place you’ve been. Year by year.</p>
         <p class="body" style="width: 640px">Pin the cities you’ve visited, or let Trovelo find them in your photos.</p>
-        <div class="s-pills"><span><b>128</b> PLACES</span><span><b>34</b> COUNTRIES</span><span><b>5</b> CONTINENTS</span><span>SINCE <b>2016</b></span></div>
+        <div class="s-pills"><span><b>128</b> PLACES</span><span><b>34</b> COUNTRIES</span><span><b>5</b> CONTINENTS</span><span>SINCE <b>2019</b></span></div>
       </div>
       <div class="s-stage"><img loading="lazy" decoding="async" class="s-world" src="/images/trovelo/world-muted.jpg" alt="World map with the places you have been">
       <template class="tv-i"><sc-for list="{{spots}}" as="p" hint-placeholder-count="18">
@@ -2391,6 +2398,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     <div class="in"><i class="cloud" style="left: 70px; top: 90px; transform: scale(1.4)"></i><i class="cloud" style="left: 1230px; top: 150px; transform: scale(1.1); animation-duration: 13s"></i><i class="cloud" style="left: 1150px; top: 700px; transform: scale(1.5); animation-duration: 9s"></i><div class="c-head">
         <h2 class="word" style="color: #2774FD; font-size: 104px">WEATHER</h2>
         <p class="tag" style="color: #1C1C1E">Typical weather before. Live forecast during.</p>
+        <p class="body" style="width: 640px">Before you go, the usual temperatures and rain for each stop on your trip. Ten days out, the live forecast takes over, day by day.</p>
       </div><div class="duo"><div class="pair"><span class="ph-lbl" style="left: 545px; top: 316px">Before the trip</span><div class="ip-wrap" style="left: 380px; top: 356px; z-index: 2">
         <div class="ip">
           <img loading="lazy" decoding="async" class="ip-map" src="/images/trovelo/shinjuku-muted.jpg" alt="">
@@ -2608,7 +2616,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       </div>
       <div class="p-cols">
         <div class="p-col"><i class="pi"><i class="sf sf-icloud-fill s36"></i></i><b>No account</b><span>Your trips sync through your own iCloud. There’s nothing to sign up for.</span></div>
-        <div class="p-col"><i class="pi"><i class="sf sf-hand-raised-fill s36"></i></i><b>No ads</b><span>Trovelo has no servers of its own, so your trips are not stored with us.</span></div>
+        <div class="p-col"><i class="pi"><i class="sf sf-hand-raised-fill s36"></i></i><b>No ads, no servers</b><span>Trovelo shows no ads and has no servers of its own, so your trips aren’t stored with us.</span></div>
         <div class="p-col"><i class="pi"><i class="sf sf-lock-shield-fill s36"></i></i><b>Only what’s needed</b><span>Maps, weather and exchange rates get only what each feature needs to work.</span></div>
       </div>
     </div>
