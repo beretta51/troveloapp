@@ -162,6 +162,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 @keyframes tv-bob2{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-8px) rotate(.3deg)}}
 @keyframes tv-grow{0%{transform:scaleY(.05)}14%,86%{transform:scaleY(1)}100%{transform:scaleY(.05)}}
 @keyframes tv-march{to{stroke-dashoffset:-22}}
+.tvx .s13{width:13px;height:13px}
 .tvx .s14{width:14px;height:14px}
 .tvx .s15{width:15px;height:15px}
 .tvx .s16{width:16px;height:16px}
@@ -332,9 +333,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .mw-lights{position:absolute;left:19px;top:21px;display:flex;gap:8.5px;z-index:2}
 .tvx .mw-lights i{display:block;width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.18)}
 .tvx .mw-cbtn{position:absolute;top:10px;width:36px;height:36px;border-radius:50%;background:#FBFBFB;box-shadow:0 0 0 .5px rgba(0,0,0,.14),0 1px 2px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;color:#2C2C2E}
-.tvx .mw-title{position:absolute;left:202px;top:9px;display:flex;align-items:baseline;gap:10px;white-space:nowrap}
-.tvx .mw-title b{font-size:28px;font-weight:700;letter-spacing:-.01em}
+.tvx .mw-title{position:absolute;left:202px;top:12px;display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.tvx .mw-title b{font-size:20px;font-weight:700}
 .tvx .mw-title span{font-size:14px;color:#8E8E93;font-weight:500}
+.tvx .mw-title .live{display:flex;align-items:baseline;gap:5px;color:#1C1C1E}
+.tvx .mw-title .live i{font-style:normal;font-weight:400;color:rgba(0,0,0,.26)}
+.tvx .mw-title .live u{flex:none;display:inline-block;width:6px;height:6px;border-radius:50%;background:#007AFF;align-self:center}
+.tvx .mw-title .live em{font-style:normal;font-weight:600}
 .tvx .mw-switch{position:absolute;left:470px;top:10px;height:36px;border-radius:18px;background:rgba(255,255,255,.6);box-shadow:0 0 0 .5px rgba(0,0,0,.12);display:flex;align-items:center;gap:2px;padding:0 3px;box-sizing:border-box}
 .tvx .mw-switch span{display:flex;align-items:center;gap:6px;height:30px;padding:0 13px 0 10px;border-radius:15px;font-size:14px;font-weight:600;color:#6E6E73}
 .tvx .mw-switch span.on{background:#fff;color:#1C1C1E;box-shadow:0 1px 3px rgba(0,0,0,.14),0 0 0 .5px rgba(0,0,0,.04)}
@@ -358,10 +363,11 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .wxp{position:absolute;left:49%;width:22%;top:0;height:20px;border-radius:10px;background:linear-gradient(90deg,#9DAF57,#D6A63E);color:#fff;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .tvx .wx3{position:absolute;left:11px;top:64px;display:flex;align-items:center;gap:3px;font-size:11.5px;font-weight:600;color:#2F6DB5;white-space:nowrap}
 .tvx .ms{position:absolute;width:310px;transition:top .65s cubic-bezier(.3,1.15,.4,1),opacity .4s ease;z-index:2}
-.tvx .ms-sep{position:absolute;left:0;right:0;top:-24px;height:16px;display:flex;align-items:center;gap:8px}
-.tvx .ms-n{font-size:12px;font-weight:700;width:10px;margin-left:2px}
-.tvx .ms-l{flex:1;height:0;border-top:1.5px dashed #CDCDD2}
-.tvx .ms-t{display:flex;align-items:center;gap:2px;font-size:12px;font-weight:500;color:#8E8E93;white-space:nowrap}
+.tvx .ms-sep{position:absolute;left:2px;right:2px;top:-24px;height:16px;display:flex;align-items:center;gap:6px}
+.tvx .ms-n{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums}
+.tvx .ms-l{flex:1;height:1px;background:repeating-linear-gradient(90deg,rgba(0,0,0,.225) 0 3px,transparent 3px 6px)}
+.tvx .ms-t{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:500;color:#8E8E93;white-space:nowrap}
+.tvx .ms-t .sf{margin:0 -2px}
 .tvx .mk{position:relative;width:310px;border-radius:12px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.09),0 3px 6px rgba(0,0,0,.12);transition:transform .5s cubic-bezier(.3,1.5,.5,1),box-shadow .5s ease}
 .tvx .mk.fresh{box-shadow:0 0 0 2px #3478F6,0 6px 16px rgba(52,120,246,.28)}
 .tvx .mk-ph,.tvx .mk-tile,.tvx .mk-night{position:absolute;left:10px;top:10px;width:80px;height:90px;border-radius:10px}
@@ -507,6 +513,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ic{position:absolute;left:16px;width:354px;transition:top .65s cubic-bezier(.3,1.15,.4,1),opacity .45s ease}
 .tvx .ic-sep{position:absolute;left:0;right:0;top:-23px;height:18px;display:flex;align-items:center;gap:8px}
 .tvx .ic-sep2{display:flex;align-items:center;gap:8px;height:34px}
+.tvx .ic-back{display:flex;align-items:center;gap:10px;width:354px;height:46px;padding:0 14px 0 12px;box-sizing:border-box;border-radius:16px;background:#fff;box-shadow:0 0 0 1px #EEEEF1,0 2px 8px rgba(0,0,0,.04);font-size:15px;font-weight:600;color:#1C1C1E;white-space:nowrap}
+.tvx .ic-back u{flex:none;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
 .tvx .ic-n{font-size:13px;font-weight:800;margin-left:.3px}
 .tvx .ic-l{flex:1;height:1px;background:repeating-linear-gradient(90deg,#C5C5C7 0 3px,transparent 3px 6px)}
 .tvx .ic-t{display:flex;align-items:center;gap:3px;font-size:11px;font-weight:500;color:#8A8A8E;white-space:nowrap}
@@ -556,7 +564,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .k-pills span{display:flex;align-items:center;gap:3px;height:32px;padding:0 13px 0 8px;border-radius:16px;background:#fff;box-shadow:0 4px 12px rgba(226,49,54,.12);font-family:ui-rounded,'SF Pro Rounded',-apple-system,system-ui,sans-serif;font-size:14px;font-weight:500;color:#1C1C1E}
 .tvx .k-pills span.more{background:#E23136;color:#fff;box-shadow:none;padding:0 14px}
 .tvx .k-col{position:absolute;width:354px;display:flex;flex-direction:column}
-.tvx .k-col .ic-card{box-shadow:0 0 0 1px #EEEEF1,0 14px 34px rgba(46,37,102,.1)}
+.tvx .k-col .ic-card,.tvx .k-col .ic-back{box-shadow:0 0 0 1px #EEEEF1,0 14px 34px rgba(46,37,102,.1)}
 .tvx .fc{position:relative;width:354px;box-sizing:border-box;padding:18px 20px;border-radius:14px;background:#fff;box-shadow:0 0 0 .5px rgba(60,60,67,.22),0 14px 34px rgba(46,37,102,.1);display:flex;align-items:flex-start;gap:12px}
 .tvx .fc-end{width:80px;display:flex;flex-direction:column;gap:2px}
 .tvx .fc-end.r{align-items:flex-end;text-align:right}
@@ -1208,7 +1216,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .w-med{--dw:340;--dh:164}
 .tvx .s-stage{--dw:1200;--dh:476}
 .tvx .pp-fan{--dw:540;--dh:470;--xb:36px}
-.tvx .k-col{--dw:354;--dh:455}
+.tvx .k-col{--dw:354;--dh:534}
 .tvx .k-col~.k-col{display:none!important}
 .tvx .ai-mbp .mbp-scr{width:1250px;height:812px;transform:scale(.74995)}
 .tvx .ai-mbp .mbp-bar{height:27px}
@@ -1349,13 +1357,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       <!-- Trovelo for Mac on a MacBook Pro: the window in the app's own points -->
       <div class="hstage"><div class="mbp h-mbp">
         <div class="mbp-scr">
-          <div class="mbp-bar"><span><i class="sf sf-apple-logo s24"></i><b>Trovelo</b><em>File</em><em>Edit</em><em>View</em><em>Window</em><em>Help</em></span><span><i class="sf sf-battery-100percent s32"></i><i class="sf sf-wifi s24"></i><i class="sf sf-magnifyingglass s22"></i>Tue 21 May&nbsp;&nbsp;9:41</span></div>
+          <div class="mbp-bar"><span><i class="sf sf-apple-logo s24"></i><b>Trovelo</b><em>File</em><em>Edit</em><em>View</em><em>Window</em><em>Help</em></span><span><i class="sf sf-battery-100percent s32"></i><i class="sf sf-wifi s24"></i><i class="sf sf-magnifyingglass s22"></i>Mon 20 May&nbsp;&nbsp;9:41</span></div>
       <div class="mw-wrap">
         <template class="tv-i"><div class="mw hero {{sheetCls}}">
           <div class="mw-lights"><i style="background: #FF5F57"></i><i style="background: #FEBC2E"></i><i style="background: #28C840"></i></div>
           <span class="mw-cbtn" style="left: 92px"><i class="sf sf-plus s28"></i></span>
           <span class="mw-cbtn" style="left: 136px"><i class="sf sf-sidebar-left s28"></i></span>
-          <div class="mw-title"><b>Tokyo</b><span>19 May – 24 May</span></div>
+          <div class="mw-title"><b>Tokyo</b><span class="live"><span>19 May – 24 May</span><i>·</i><u></u><em>Day 2 of 6</em></span></div>
           <div class="mw-switch">
             <span class="on"><i class="sf sf-rectangle-split-3x1 s26"></i>Board</span>
             <span><i class="sf sf-map s26"></i>Map</span>
@@ -1393,7 +1401,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
                 <span class="ms-n" style="color: {{c.accent}}">{{c.num}}</span>
                 <span class="ms-l"></span>
                 <sc-if value="{{c.hasTransit}}" hint-placeholder-val="{{false}}">
-                  <span class="ms-t"><i class="sf {{c.trSym}} s22"></i>{{c.trText}}<i class="sf sf-chevron-down s14" style="color: #AEAEB2"></i></span>
+                  <span class="ms-t"><i class="sf {{c.trSym}} s18"></i>{{c.trText}}<i class="sf sf-chevron-down s13" style="color: rgba(0,0,0,.26)"></i></span>
                   <span class="ms-l"></span>
                 </sc-if>
               </div>
@@ -1656,6 +1664,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           </div>
           <div class="ic-bot"><span class="ic-price">¥2,800<span> ≈ $17.58</span></span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
         </div>
+        <div class="ic-sep2"><span class="ic-n" style="color: #C2195B">4</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s18"></i>9 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
+        <div class="ic-back"><u style="background: #C2195B"><i class="sf sf-bed-double-fill s20"></i></u>Back to Keio Plaza Hotel</div>
       </div>
 
       <div class="appf k-col" style="left: 966px; top: 176px">
@@ -1744,7 +1754,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       <!-- Trovelo for Mac on the MacBook, in the app's own points -->
       <div class="mbp ai-mbp">
         <div class="mbp-scr">
-          <div class="mbp-bar"><span><i class="sf sf-apple-logo s24"></i><b>Trovelo</b><em>File</em><em>Edit</em><em>View</em><em>Window</em><em>Help</em></span><span><i class="sf sf-battery-100percent s32"></i><i class="sf sf-wifi s24"></i><i class="sf sf-magnifyingglass s22"></i>Tue 21 May&nbsp;&nbsp;9:41</span></div>
+          <div class="mbp-bar"><span><i class="sf sf-apple-logo s24"></i><b>Trovelo</b><em>File</em><em>Edit</em><em>View</em><em>Window</em><em>Help</em></span><span><i class="sf sf-battery-100percent s32"></i><i class="sf sf-wifi s24"></i><i class="sf sf-magnifyingglass s22"></i>Mon 20 May&nbsp;&nbsp;9:41</span></div>
       <div class="ai-mw-wrap">
         <div class="mw ai-mw">
           <div class="mw-lights"><i style="background: #FF5F57"></i><i style="background: #FEBC2E"></i><i style="background: #28C840"></i></div>
@@ -1788,7 +1798,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
                 <span class="ms-n" style="color: {{c.accent}}">{{c.num}}</span>
                 <span class="ms-l"></span>
                 <sc-if value="{{c.hasTransit}}" hint-placeholder-val="{{false}}">
-                  <span class="ms-t"><i class="sf {{c.trSym}} s22"></i>{{c.trText}}<i class="sf sf-chevron-down s14" style="color: #AEAEB2"></i></span>
+                  <span class="ms-t"><i class="sf {{c.trSym}} s18"></i>{{c.trText}}<i class="sf sf-chevron-down s13" style="color: rgba(0,0,0,.26)"></i></span>
                   <span class="ms-l"></span>
                 </sc-if>
               </div>
@@ -2948,7 +2958,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
             cls: fresh(c) ? 'fresh' : '',
             accent: this.A[c.kind], pale: this.PALE[c.kind], sym: this.SYM[c.kind],
             num: p.i + 1,
-            hasTransit: p.i > 0 && !!c.tr, trSym: c.tr && c.tr[0] === 'walk' ? 'sf-figure-walk' : 'sf-bus', trText: c.tr ? c.tr[1] + ' min' : '',
+            hasTransit: p.i > 0 && !!c.tr, trSym: c.tr && c.tr[0] === 'walk' ? 'sf-figure-walk' : 'sf-bus-fill', trText: c.tr ? c.tr[1] + ' min' : '',
             hasNight: !!c.night,
             hasPhoto: !!c.photo, hasTile: !c.photo && !c.night, photo: c.photo || '',
             time: c.time, hasLabel: !!c.label, label: c.label || '', hasDur: !c.label, dur: this.dur(c.dur),
@@ -3119,7 +3129,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
               cls: c.id === fresh ? 'fresh' : '',
               accent: this.A[c.kind], pale: this.PALE[c.kind], sym: this.SYM[c.kind],
               num: p.i + 1,
-              hasTransit: p.i > 0 && !!tr, trSym: tr && tr[0] === 'walk' ? 'sf-figure-walk' : 'sf-bus', trText: tr ? tr[1] + ' min' : '',
+              hasTransit: p.i > 0 && !!tr, trSym: tr && tr[0] === 'walk' ? 'sf-figure-walk' : 'sf-bus-fill', trText: tr ? tr[1] + ' min' : '',
               hasNight: !!c.night,
               hasPhoto: !!c.photo, hasTile: !c.photo && !c.night, photo: c.photo || '',
               time: c.time, hasLabel: !!c.label, label: c.label || '', hasDur: !c.label, dur: this.dur(c.dur),
