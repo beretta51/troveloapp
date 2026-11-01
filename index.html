@@ -495,20 +495,21 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ip-pl::before{content:'';position:absolute;left:-1.5px;top:-1.5px;width:8px;height:8px;border-radius:50%;background:#000;animation:tv-pulse 1.2s ease-out infinite}
 @keyframes tv-pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.5);opacity:0}}
 .tvx .ip-d.today .ip-pl{opacity:1}
-.tvx .ip-hd{position:absolute;left:16px;top:112px;display:flex;align-items:baseline;gap:6px;white-space:nowrap}
-.tvx .ip-hd b{font-size:26px;font-weight:700}
-.tvx .ip-hd span{font-family:-apple-system,system-ui,sans-serif;font-size:16px;color:#8E8E93}
-.tvx .ip-left{position:absolute;right:16px;top:115px;height:26px;border-radius:13px;background:#E3F0FD;color:#1C7CF4;font-size:14px;font-weight:600;display:flex;align-items:center;gap:1px;padding:0 5px 0 11px}
-.tvx .ip-bar{position:absolute;left:16px;right:16px;top:152px;height:9px;display:flex;gap:4px}
-.tvx .ip-bar i{display:block;flex:1;border-radius:4.5px}
-.tvx .ip-pace{position:absolute;left:16px;right:16px;top:168px;display:flex;justify-content:space-between;font-family:-apple-system,system-ui,sans-serif;font-size:13px;color:#8E8E93}
+.tvx .ip-hd{position:absolute;left:16px;top:117px;height:26px;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.tvx .ip-hd b{font-size:22px;line-height:26px;letter-spacing:-.45px;font-weight:700}
+.tvx .ip-hd span{font-size:15px;font-weight:500;color:#8A8A8E}
+.tvx .ip-left{position:absolute;right:16px;top:118.5px;height:22px;border-radius:11px;background:#E0F1FF;color:#0088FF;font-size:12px;font-weight:600;display:flex;align-items:center;gap:3px;padding:0 9px}
+.tvx .ip-left i{opacity:.6}
+.tvx .ip-bar{position:absolute;left:16px;right:16px;top:145.7px;height:10px;display:flex;gap:4px}
+.tvx .ip-bar i{display:block;flex:1;border-radius:3px}
+.tvx .ip-pace{position:absolute;left:16px;right:16px;top:160px;line-height:13px;display:flex;justify-content:space-between;font-size:11px;color:#8A8A8E}
 .tvx .ic{position:absolute;left:16px;width:354px;transition:top .65s cubic-bezier(.3,1.15,.4,1),opacity .45s ease}
-.tvx .ic-sep{position:absolute;left:0;right:0;top:-22px;height:18px;display:flex;align-items:center;gap:10px}
-.tvx .ic-sep2{display:flex;align-items:center;gap:10px;height:34px}
-.tvx .ic-n{font-size:13px;font-weight:700;width:10px;margin-left:2px}
-.tvx .ic-l{flex:1;height:0;border-top:1.5px dashed #C7C7CC}
-.tvx .ic-t{display:flex;align-items:center;gap:1px;font-size:13px;font-weight:500;color:#8E8E93;white-space:nowrap}
-.tvx .ic-t em{font-style:normal;margin:0 6px;color:#AEAEB2}
+.tvx .ic-sep{position:absolute;left:0;right:0;top:-23px;height:18px;display:flex;align-items:center;gap:8px}
+.tvx .ic-sep2{display:flex;align-items:center;gap:8px;height:34px}
+.tvx .ic-n{font-size:13px;font-weight:800;margin-left:.3px}
+.tvx .ic-l{flex:1;height:1px;background:repeating-linear-gradient(90deg,#C5C5C7 0 3px,transparent 3px 6px)}
+.tvx .ic-t{display:flex;align-items:center;gap:3px;font-size:11px;font-weight:500;color:#8A8A8E;white-space:nowrap}
+.tvx .ic-cv{margin-left:5px;color:#C5C5C7}
 .tvx .ic-card{position:relative;width:354px;border-radius:16px;background:#fff;box-shadow:0 0 0 1px #EEEEF1,0 2px 8px rgba(0,0,0,.04);transition:transform .5s cubic-bezier(.3,1.5,.5,1),box-shadow .5s ease;color:#1C1C1E;box-sizing:border-box}
 .tvx .ic-card.fresh{box-shadow:0 0 0 2.5px #3478F6,0 8px 20px rgba(52,120,246,.28)}
 .tvx .ic-ph,.tvx .ic-tile,.tvx .ic-night{position:absolute;left:8px;top:8px;width:76px;height:86px;border-radius:10px}
@@ -523,7 +524,12 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ic-meta b{font-weight:600}
 .tvx .ic-meta i{font-style:normal;color:#C7C7CC}
 .tvx .ic-meta span{font-weight:500;color:#AEAEB2}
-.tvx .ic-meta em{font-style:normal;font-weight:600;font-size:14px}
+.tvx .ic-meta em{font-style:normal;font-weight:600;font-size:13px}
+.tvx .ic-ret{font-family:-apple-system,system-ui,sans-serif;font-size:13px;line-height:16px;color:#8A8A8E;margin-top:4px}
+.tvx .ic-code{display:flex;align-items:center;gap:5px;height:30px;padding:0 11px;border-radius:15px;font-size:13px;font-weight:700}
+.tvx .ic-rent{flex-direction:column;gap:4px}
+.tvx .ic-rent .sf{width:55px;height:55px;margin:-12px 0 -11px}
+.tvx .ic-rent small{font-size:11px;font-weight:600;opacity:.9}
 .tvx .ic-title{font-size:17px;font-weight:600;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tvx .ic-notes{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:15px;line-height:18px;color:#8E8E93;margin-top:3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .tvx .ic-nb{position:absolute;left:98px;right:12px;top:74px;display:flex;gap:4px}
@@ -533,10 +539,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ic-price span{color:#8E8E93;font-weight:400}
 .tvx .ic-maps{display:flex;align-items:center;gap:2px;height:30px;padding:0 12px 0 8px;border-radius:15px;background:#F2F2F4;font-size:14px;font-weight:600;color:#1C1C1E}
 .tvx .ip-fade{position:absolute;left:0;right:0;bottom:0;height:150px;background:linear-gradient(rgba(255,255,255,0),#fff 70%);z-index:3}
-.tvx .ip-add{position:absolute;left:24px;top:781px;width:207px;height:61px;border-radius:31px;background:rgba(255,255,255,.88);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:space-around;padding:0 10px;box-sizing:border-box;z-index:7;color:#1C1C1E}
-.tvx .ip-add .a1{display:flex;align-items:center;gap:3px;font-size:19px;font-weight:500}
-.tvx .ip-add .sep{display:block;width:1px;height:26px;background:#E5E5EA}
-.tvx .ip-mapbtn{position:absolute;left:316px;top:781px;width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.88);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;z-index:7;color:#1C1C1E}
+.tvx .ip-add{position:absolute;left:22.7px;top:780.7px;width:209px;height:62.6px;border-radius:31.3px;background:rgba(255,255,255,.88);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.12);display:flex;align-items:center;padding:0;box-sizing:border-box;z-index:7;color:#1C1C1E}
+.tvx .ip-add .a1{flex:none;width:85.8px;margin-left:8.2px;display:flex;align-items:center;gap:1.4px;font-size:17px;font-weight:500}
+.tvx .ip-add .sep{display:block;flex:none;width:1px;height:24px;background:#E5E5EA}
+.tvx .ip-add>:nth-child(3){margin-left:8.2px}
+.tvx .ip-add>:nth-child(4){margin-left:9.8px}
+.tvx .ip-add>:nth-child(5){margin-left:8.1px}
+.tvx .ip-mapbtn{position:absolute;left:316px;top:780.7px;width:62.6px;height:62.6px;border-radius:50%;background:rgba(255,255,255,.88);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center;z-index:7;color:#1C1C1E}
 .tvx .dev-cap{position:absolute;font-size:12px;font-weight:700;letter-spacing:.12em;color:#7440C0;display:flex;align-items:center;gap:8px;white-space:nowrap}
 .tvx .dev-cap i{display:block;width:7px;height:7px;border-radius:50%;background:#9D7FD8;transition:background .3s ease,box-shadow .3s ease}
 .tvx .dev-cap.sync i{background:#2774FD;box-shadow:0 0 0 5px rgba(39,116,253,.2)}
@@ -1525,9 +1534,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
               </sc-for>
               <span class="bs" style="--bs: #1F7A68"><i class="sf sf-wallet-bifold-fill s40"></i></span><span class="bs" style="--bs: #0369A8"><i class="sf sf-slider-horizontal-3 s40"></i></span>
             </div></template>
-            <div class="ip-hd"><template class="tv-i"><b>{{phoneHead}}</b></template><template class="tv-i"><span>· Tokyo · {{phoneCount}}</span></template></div>
-            <template class="tv-i"><span class="ip-left">{{pLeft}}<i class="sf sf-chevron-right s18"></i></span></template>
-            <div class="ip-bar"><template class="tv-i"><sc-for list="{{pSegs}}" as="g" hint-placeholder-count="9"><i style="background: linear-gradient(90deg, #1C7CF4 {{g.p}}%, #EDEDF0 {{g.p}}%)"></i></sc-for></template></div>
+            <div class="ip-hd"><template class="tv-i"><b>{{phoneHead}}</b></template><template class="tv-i"><span>{{phoneMeta}}</span></template></div>
+            <template class="tv-i"><span class="ip-left">{{pLeft}}<i class="sf sf-chevron-right s16"></i></span></template>
+            <div class="ip-bar"><template class="tv-i"><sc-for list="{{pSegs}}" as="g" hint-placeholder-count="9"><i style="background: linear-gradient(90deg, #0088FF {{g.p}}%, #EFEFF0 {{g.p}}%)"></i></sc-for></template></div>
             <div class="ip-pace"><template class="tv-i"><span>{{pPace}}</span></template><template class="tv-i"><span>{{pLoad}}</span></template></div>
 
             <template class="tv-i"><sc-for list="{{pcards}}" as="c" hint-placeholder-count="9">
@@ -1536,7 +1545,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
                   <span class="ic-n" style="color: {{c.accent}}">{{c.num}}</span>
                   <span class="ic-l"></span>
                   <sc-if value="{{c.hasTransit}}" hint-placeholder-val="{{false}}">
-                    <span class="ic-t"><i class="sf sf-figure-walk s24"></i>{{c.walk}}<em>·</em><i class="sf sf-car-fill s24"></i>{{c.car}}<i class="sf sf-chevron-down s16" style="color: #AEAEB2"></i></span>
+                    <span class="ic-t"><i class="sf {{c.trSym}} s18"></i>{{c.trText}}<i class="sf sf-chevron-down s14 ic-cv"></i></span>
                     <span class="ic-l"></span>
                   </sc-if>
                 </div>
@@ -1564,13 +1573,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           </div>
 
           <div class="ip-add">
-            <span class="a1"><i class="sf sf-plus s34"></i>Add</span>
+            <span class="a1"><i class="sf sf-plus s36"></i>Add</span>
             <i class="sep"></i>
-            <i class="sf sf-creditcard s40"></i>
+            <i class="sf sf-creditcard s36"></i>
             <i class="sep"></i>
-            <i class="sf sf-note-text s40"></i>
+            <i class="sf sf-note-text s36"></i>
           </div>
-          <span class="ip-mapbtn"><i class="sf sf-map-fill s44"></i></span>
+          <span class="ip-mapbtn"><i class="sf sf-map-fill s36"></i></span>
         </div>
       </div></div><!-- iPhone, in the app's own points -->
       
@@ -1624,18 +1633,18 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
             <b>HND</b><span>7:20 AM <u>+1d</u></span>
           </div>
         </div>
-        <div class="ic-sep2"><span class="ic-n" style="color: #C2195B">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>—<em>·</em><i class="sf sf-car-fill s24"></i>35 min<i class="sf sf-chevron-down s16" style="color: #AEAEB2"></i></span><span class="ic-l"></span></div>
+        <div class="ic-sep2"><span class="ic-n" style="color: #C2195B">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-bus-fill s18"></i>35 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
         <div class="ic-card" style="height: 118px">
           <div class="ic-night"><small>NIGHT</small><b>1</b><small>of 3</small></div>
           <div class="ic-tx">
-            <div class="ic-meta"><em style="color: #C2195B">3:00 PM · Check-in</em></div>
+            <div class="ic-meta"><b>3:00 PM</b><i>·</i><em style="color: #C2195B">Check-in</em></div>
             <div class="ic-title">Keio Plaza Hotel</div>
             <div class="ic-notes" style="-webkit-line-clamp: 1">West Shinjuku. Ask for a high floor.</div>
           </div>
           <div class="ic-nb"><i style="background: #C2195B"></i><i style="background: #F6CFDD"></i><i style="background: #F6CFDD"></i></div>
           <div class="ic-bot" style="justify-content: flex-end"><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
         </div>
-        <div class="ic-sep2"><span class="ic-n" style="color: #E65200">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>9 min<em>·</em><i class="sf sf-car-fill s24"></i>4 min<i class="sf sf-chevron-down s16" style="color: #AEAEB2"></i></span><span class="ic-l"></span></div>
+        <div class="ic-sep2"><span class="ic-n" style="color: #E65200">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s18"></i>9 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
         <div class="ic-card" style="height: 134px">
           <img loading="lazy" decoding="async" class="ic-ph" src="/images/trovelo/t-grill.jpg" alt="">
           <span class="ic-bd" style="background: #E65200"><i class="sf sf-fork-knife s20"></i></span>
@@ -1660,25 +1669,25 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           </div>
           <div class="ic-bot"><span class="ic-price">Free</span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
         </div>
-        <div class="ic-sep2"><span class="ic-n" style="color: #7D3EB4">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>47 min<em>·</em><i class="sf sf-car-fill s24"></i>14 min<i class="sf sf-chevron-down s16" style="color: #AEAEB2"></i></span><span class="ic-l"></span></div>
+        <div class="ic-sep2"><span class="ic-n" style="color: #7D3EB4">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-bus-fill s18"></i>28 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
         <div class="ic-card" style="height: 134px">
           <div class="ic-tile" style="background: #EFE6F7; color: #7D3EB4"><i class="sf sf-map-fill s46"></i></div>
           <div class="ic-tx">
             <div class="ic-meta"><b>11:00 AM</b><i>·</i><span>3hr</span></div>
-            <div class="ic-title">teamLab Planets — Toyosu</div>
+            <div class="ic-title">teamLab Planets Toyosu</div>
             <div class="ic-notes">Immersive digital art. Book tickets two weeks in advance.</div>
           </div>
           <div class="ic-bot"><span class="ic-price">¥3,200<span> ≈ $20.09</span></span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
         </div>
-        <div class="ic-sep2"><span class="ic-n" style="color: #0277BD">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>53 min<em>·</em><i class="sf sf-car-fill s24"></i>10 min<i class="sf sf-chevron-down s16" style="color: #AEAEB2"></i></span><span class="ic-l"></span></div>
+        <div class="ic-sep2"><span class="ic-n" style="color: #0277BD">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-bus-fill s18"></i>16 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
         <div class="ic-card" style="height: 134px">
-          <div class="ic-tile solid" style="background: #0277BD; color: #fff"><i class="sf sf-car-fill s50"></i></div>
+          <div class="ic-tile solid ic-rent" style="background: #0277BD; color: #fff"><i class="sf sf-car-fill"></i><small>1 day</small></div>
           <div class="ic-tx">
-            <div class="ic-meta"><em style="color: #0277BD">Pick-up</em></div>
-            <div class="ic-title">Rental e-bike — Odaiba loop</div>
-            <div class="ic-notes">Docomo Cycle station at Daiba Park. Loop the seaside promenade.</div>
+            <div class="ic-meta"><b>1:30 PM</b><i>·</i><em style="color: #0277BD">Pick-up</em></div>
+            <div class="ic-title">Rental e-bike, Odaiba loop</div>
+            <div class="ic-ret">Drop-off Tue 21 May, 5:00 PM</div>
           </div>
-          <div class="ic-bot" style="justify-content: flex-end"><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
+          <div class="ic-bot"><span class="ic-code" style="color: #0277BD; background: #D9EBF5"><i class="sf sf-doc-text-fill s22"></i>DB4K7Q</span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
         </div>
       </div>
     </div>
@@ -2277,14 +2286,14 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
                   <div class="ic-tx"><div class="ic-meta"><b>8:00 AM</b><i>·</i><span>1hr 15min</span></div><div class="ic-title">Tsukiji Outer Market</div><div class="ic-notes">7am opening. Must-try: maguro don and tamagoyaki.</div></div>
                   <div class="ic-bot"><span class="ic-price">¥2,400<span> ≈ $15.07</span></span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
                 </div>
-                <div class="ic-sep2"><span class="ic-n" style="color: #F4BA12">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>1hr 36min<em>·</em><i class="sf sf-car-fill s24"></i>32 min</span><span class="ic-l"></span></div>
+                <div class="ic-sep2"><span class="ic-n" style="color: #F4BA12">2</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-bus-fill s18"></i>32 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
                 <div class="ic-card" style="height: 102px">
                   <img loading="lazy" decoding="async" class="ic-ph" src="/images/trovelo/t-skyline.jpg" alt="">
                   <span class="ic-bd" style="background: #F4BA12"><i class="sf sf-mappin s20"></i></span>
                   <div class="ic-tx"><div class="ic-meta"><b>4:30 PM</b><i>·</i><span>1hr 30min</span></div><div class="ic-title">Shibuya Sky</div></div>
                   <div class="ic-bot"><span class="ic-price">¥2,500<span> ≈ $15.70</span></span><span class="ic-maps"><i class="sf sf-map s24"></i>Maps</span></div>
                 </div>
-                <div class="ic-sep2"><span class="ic-n" style="color: #7D3EB4">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-figure-walk s24"></i>47 min<em>·</em><i class="sf sf-car-fill s24"></i>14 min</span><span class="ic-l"></span></div>
+                <div class="ic-sep2"><span class="ic-n" style="color: #7D3EB4">3</span><span class="ic-l"></span><span class="ic-t"><i class="sf sf-bus-fill s18"></i>28 min<i class="sf sf-chevron-down s14 ic-cv"></i></span><span class="ic-l"></span></div>
                 <div class="ic-card" style="height: 134px">
                   <div class="ic-tile" style="background: #EFE6F7; color: #7D3EB4"><i class="sf sf-map-fill s46"></i></div>
                   <div class="ic-tx"><div class="ic-meta"><b>7:00 PM</b><i>·</i><span>2hr</span></div><div class="ic-title">teamLab Planets</div><div class="ic-notes">Immersive digital art. Book the evening slot online.</div></div>
@@ -2295,15 +2304,15 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
             </div>
           </div></template>
           <template class="tv-i"><div class="ip-add sam-add {{sam.add}}">
-            <span class="a1"><i class="sf sf-plus s34"></i>Add</span>
+            <span class="a1"><i class="sf sf-plus s36"></i>Add</span>
             <i class="sep"></i>
-            <i class="sf sf-creditcard s40"></i>
+            <i class="sf sf-creditcard s36"></i>
             <i class="sep"></i>
-            <i class="sf sf-note-text s40"></i>
+            <i class="sf sf-note-text s36"></i>
           </div></template>
           <!-- Can view: the quick-add bar gives way to this -->
           <template class="tv-i"><div class="sam-ro {{sam.ro}}"><i class="sf sf-person-2-fill"></i>Shared with you · Read-only<i class="sf sf-chevron-right"></i></div></template>
-          <span class="ip-mapbtn"><i class="sf sf-map-fill s44"></i></span>
+          <span class="ip-mapbtn"><i class="sf sf-map-fill s36"></i></span>
         </div>
       </div></div></div><template class="tv-i"><div class="sh-link {{sh.link}}"><i class="sh-line"></i><i class="sh-dot"></i><span><i class="sf sf-icloud-fill"></i>iCloud</span></div></template></div>
   </section>
@@ -2591,12 +2600,12 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         ];
         // tr: the leg from the stop before — the Mac shows one mode, the iPhone walking and driving.
         this.cards = [
-          { id: 'keio', d: 0, m: 900, kind: 'stay', time: '3:00 PM', label: 'Check-in', title: 'Check in — Keio Plaza Hotel', notes: 'West Shinjuku. Early check-in at 15:00 confirmed. Ask for a high floor.', night: true },
+          { id: 'keio', d: 0, m: 900, kind: 'stay', time: '3:00 PM', label: 'Check-in', title: 'Keio Plaza Hotel', notes: 'West Shinjuku. Early check-in at 15:00 confirmed. Ask for a high floor.', night: true },
           { id: 'crossing', d: 0, m: 1140, kind: 'neighborhood', time: '7:00 PM', dur: 45, title: 'Shibuya Crossing at night', notes: 'The famous scramble at its busiest. Watch it from above.', photo: P.crossing, jpy: 0, tr: ['bus', 14], w: 45 },
           { id: 'yaki', d: 0, m: 1200, kind: 'food', time: '8:00 PM', dur: 75, title: 'Yakitori at Omoide Yokocho', notes: 'Memory Lane, Shinjuku. Tiny stalls, smoky atmosphere. Cash only.', photo: P.grill, jpy: 2800, tr: ['bus', 13], w: 38 },
           { id: 'gai', d: 0, m: 1320, kind: 'bar', time: '10:00 PM', dur: 60, title: 'Golden Gai', notes: 'Six alleys of tiny bars. Some charge a small cover.', photo: P.night, jpy: 3000, tr: ['walk', 6], w: 6 },
           { id: 'tsukiji', d: 1, m: 480, kind: 'food', time: '8:00 AM', dur: 75, title: 'Tsukiji Outer Market', notes: '7am opening. Must-try: maguro don and tamagoyaki. Bring cash.', photo: P.sushi, jpy: 2400 },
-          { id: 'sky', d: 1, m: 990, kind: 'place', time: '4:30 PM', dur: 90, title: 'Shibuya Sky', notes: 'An open-air rooftop deck 230 m over Shibuya — the best sunset-into-neon panorama of Tokyo, the crossing far below.', photo: P.skyline, jpy: 2500, tr: ['bus', 32], w: 96, step: 1 },
+          { id: 'sky', d: 1, m: 990, kind: 'place', time: '4:30 PM', dur: 90, title: 'Shibuya Sky', notes: 'An open-air rooftop deck 230 m over Shibuya: the best sunset-into-neon panorama of Tokyo, the crossing far below.', photo: P.skyline, jpy: 2500, tr: ['bus', 32], w: 96, step: 1 },
           { id: 'teamlab', d: 1, m: 1140, kind: 'plans', time: '7:00 PM', dur: 120, title: 'teamLab Planets', notes: 'Immersive digital art. Book the evening slot online.', jpy: 3800, tr: ['bus', 28], w: 110 },
           { id: 'meiji', d: 2, m: 540, kind: 'sacred', time: '9:00 AM', dur: 90, title: 'Meiji Shrine', notes: 'Forested shrine in the heart of the city. Free entry.', photo: P.torii, jpy: 0 },
           { id: 'ramen', d: 2, m: 780, kind: 'food', time: '1:00 PM', dur: 45, title: 'Ichiran Asakusa Store', notes: '', jpy: 1200, tr: ['bus', 34], w: 140, step: 2 },
@@ -2692,7 +2701,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           { label: 'DAY 3', date: 'Sun, 28 Jun' }
         ];
         this.aiCards = [
-          { id: 'keio', d: 0, m: 900, kind: 'stay', time: '3:00 PM', label: 'Check-in', title: 'Check in — Keio Plaza Hotel', notes: 'West Shinjuku. 3 nights. Ask for a high floor.', night: true, step: 2 },
+          { id: 'keio', d: 0, m: 900, kind: 'stay', time: '3:00 PM', label: 'Check-in', title: 'Keio Plaza Hotel', notes: 'West Shinjuku. 3 nights. Ask for a high floor.', night: true, step: 2 },
           { id: 'crossing', d: 0, m: 1140, kind: 'neighborhood', time: '7:00 PM', dur: 45, title: 'Shibuya Crossing at night', notes: 'The famous scramble at its busiest. Watch it from above.', photo: P.crossing, jpy: 0, tr: ['bus', 14] },
           { id: 'yaki', d: 0, m: 1200, kind: 'food', time: '8:00 PM', dur: 75, title: 'Yakitori at Omoide Yokocho', notes: 'Memory Lane, Shinjuku. Tiny stalls, smoky atmosphere. Cash only.', photo: P.grill, jpy: 2800, tr: ['bus', 13] },
           { id: 'meiji', d: 1, m: 540, kind: 'sacred', time: '9:00 AM', dur: 90, title: 'Meiji Jingu Shrine', notes: 'A forest walk to the shrine gates. Free entry.', photo: P.torii, jpy: 0 },
@@ -3139,7 +3148,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
               cls: c.id === pfresh ? 'fresh' : '',
               accent: this.A[c.kind], pale: this.PALE[c.kind], sym: this.SYM[c.kind],
               num: p.i + 1,
-              hasTransit: p.i > 0 && !!o.tr, walk: (o.w || 0) + ' min', car: o.car + ' min',
+              // One mode a leg, as automatic picks it: on foot when it's short.
+              hasTransit: p.i > 0 && !!o.tr, trSym: o.tr && o.tr[0] === 'walk' ? 'sf-figure-walk' : 'sf-bus-fill', trText: o.tr ? o.tr[1] + ' min' : '',
               hasPhoto: !!c.photo, hasTile: !c.photo, photo: c.photo || '',
               time: c.time, dur: this.dur(c.dur) || c.label || '',
               title: c.title, hasNotes: !!c.notes, notes: c.notes,
@@ -3168,8 +3178,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           pcards,
           pdays,
           pStripX: (193 - 0.955 * (213 + 62 * phoneDay)).toFixed(1),
-          phoneHead: phoneDay === 1 ? 'Today' : 'Tue, 21 May',
-          phoneCount: phoneCount + (phoneCount === 1 ? ' card' : ' cards'),
+          // The app titles a day with its city, and only today with "Today".
+          phoneHead: phoneDay === 1 ? 'Today' : 'Tokyo',
+          phoneMeta: (phoneDay === 1 ? '· Tokyo · ' : '· ') + phoneCount + (phoneCount === 1 ? ' card' : ' cards'),
           pLeft: this.hm(540 - pLoad) + ' left',
           pSegs: this.segs(pLoad),
           pPace: pLoad < 270 ? 'Easy day' : 'Busy day',
