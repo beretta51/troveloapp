@@ -126,6 +126,9 @@ a.tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 
 
 .news { border-radius: 30px; padding: 28px; background: #FFF8E1; margin-top: 26px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .new { display: flex; gap: 16px; align-items: center; }
+a.new { color: var(--ink); border-radius: 22px; }
+a.new:hover { text-decoration: none; }
+a.new:hover b { color: var(--link); }
 .new img { width: 92px; height: 120px; border-radius: 18px; object-fit: cover; flex-shrink: 0; }
 .new div { display: flex; flex-direction: column; gap: 6px; }
 .new .tag { align-self: flex-start; padding: 3px 9px; border-radius: 999px; background: var(--yellow); color: var(--ink); font-size: 12px; font-weight: 800; letter-spacing: 0.06em; }
@@ -202,6 +205,9 @@ a.tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 
 .stage .ph { --w: 290px; }
 .stage .ph.crop { --w: 300px; --c: 606; }
 .stage.two .ph { --w: 250px; }
+/* A "bottom" crop: the phone comes down from the top edge and shows its lower part. */
+.stage.low { padding-top: 0; padding-bottom: 36px; align-items: flex-end; }
+.ph.low .scr, .ph.low .frame, .ph.low .mk { translate: 0 calc((var(--c) - 920) * var(--u)); }
 .legend { display: flex; gap: 8px; flex-wrap: wrap; }
 .legend span { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 5px; border-radius: 999px; background: var(--soft); font-size: 14px; font-weight: 700; }
 .legend b { width: 22px; height: 22px; border-radius: 50%; background: var(--mark); color: #FFFFFF; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
@@ -213,6 +219,9 @@ a.tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 
 .keys { border-radius: 30px; background: var(--stage); padding: 28px; display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; }
 .keys span { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: var(--ink-2); }
 .keys kbd { min-width: 34px; height: 34px; padding: 0 9px; border-radius: 9px; background: #FFFFFF; border: 1px solid #F0D3D4; box-shadow: 0 2px 0 #F0D3D4; display: inline-flex; align-items: center; justify-content: center; font-family: var(--round); font-size: 16px; font-weight: 800; color: var(--ink); }
+.ranks { border-radius: 30px; background: var(--stage); padding: 22px; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 0; list-style: none; }
+.ranks li { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: #FFFFFF; border: 1px solid #F0D3D4; border-radius: 14px; padding: 10px 14px; font-size: 15px; font-weight: 700; color: var(--ink-2); }
+.ranks li b { font-family: var(--round); font-weight: 800; color: var(--ink); }
 .tips { border-radius: 28px; background: var(--soft); padding: 28px 30px; display: flex; flex-direction: column; gap: 16px; margin-top: 64px; }
 .tips h2 { margin: 0; font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 10px; }
 .tips h2 .sf { width: 22px; height: 22px; color: #8A6100; }
@@ -233,6 +242,8 @@ a.tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 
 .more h2 { margin: 0 0 16px; font-size: 24px; font-weight: 800; }
 .more-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .more-card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; color: var(--ink); }
+a.more-card { transition: transform .2s ease, box-shadow .2s ease; }
+a.more-card:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 14px 32px rgba(20,20,60,0.10); }
 .more-card img { width: 100%; height: 130px; object-fit: cover; }
 .more-card div { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; }
 .more-card b { font-size: 16.5px; font-weight: 800; line-height: 1.25; }
@@ -307,7 +318,10 @@ img.mascot { height: auto; }
   .mac { padding: 22px 0 0 16px; border-radius: 26px; }
   .mac-shot { width: 340px; }
   .stage.full { padding-bottom: 22px; }
+  .stage.low { padding-top: 0; padding-bottom: 22px; }
   .keys { padding: 22px; border-radius: 26px; }
+  .ranks { padding: 16px; border-radius: 26px; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ranks li { padding: 9px 11px; font-size: 14px; }
   .tips { padding: 22px 20px; margin-top: 48px; }
   .vote { padding: 18px 20px; gap: 14px; }
   .vote .mascot { flex-basis: 84px; }
