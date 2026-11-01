@@ -998,6 +998,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .po1{left:306px;top:44px;transform:rotate(-8deg)}
 .tvx .po2{left:386px;top:30px;transform:rotate(3deg);z-index:2}
 .tvx .po3{left:452px;top:60px;transform:rotate(10deg)}
+.tvx .po3 span{left:auto;right:8px}
 .tvx .sd-list{position:absolute;left:326px;top:34px;width:252px;display:flex;flex-direction:column;gap:8px}
 .tvx .sd{display:flex;align-items:center;gap:10px;background:#F4F6FF;border-radius:16px;padding:8px}
 .tvx .sd img{width:44px;height:44px;border-radius:10px;object-fit:cover;display:block}
@@ -1025,14 +1026,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .pi{display:flex;width:52px;height:52px;border-radius:16px;background:#fff;color:#2774FD;box-shadow:0 8px 20px rgba(39,116,253,.12);align-items:center;justify-content:center}
 .tvx .p-col b{display:block;font-size:20px;font-weight:700;margin-top:16px}
 .tvx .p-col span{display:block;font-size:15px;line-height:1.45;color:rgba(28,28,30,.62);margin-top:8px}
-.tvx .s-cta{height:640px}
-.tvx .c-links{margin-top:34px;display:grid;grid-template-columns:repeat(3,250px);gap:12px}
-.tvx .c-link{display:flex;align-items:center;gap:12px;height:66px;padding:0 16px 0 12px;border-radius:20px;background:rgba(255,255,255,.82);box-shadow:0 0 0 1px rgba(28,28,30,.05),0 10px 26px rgba(120,90,0,.08);text-align:left;box-sizing:border-box}
-.tvx .c-li{flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(39,116,253,.12);color:#2774FD;display:flex;align-items:center;justify-content:center}
-.tvx .c-lt{flex:1;min-width:0;display:flex;flex-direction:column}
-.tvx .c-lt b{font-size:16px;font-weight:600;line-height:20px;color:#1C1C1E;white-space:nowrap}
-.tvx .c-lt small{font-size:13px;font-weight:600;line-height:17px;color:#8E8E93;white-space:nowrap}
-.tvx .c-link>.sf{color:#AEAEB2;margin-right:-4px}
+.tvx .s-cta{height:540px}
 .tvx .c-bar{margin-top:28px;width:620px;height:60px;border-radius:30px;background:#fff;display:flex;align-items:center;gap:10px;padding:0 10px;box-sizing:border-box;box-shadow:0 20px 50px rgba(120,90,0,.18)}
 .tvx .c-plus{width:40px;height:40px;border-radius:50%;background:#2774FD;color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .tvx .c-typed{font-size:19px;font-weight:600;white-space:pre}
@@ -1167,7 +1161,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .ai-mbp .mw.ai-mw{height:760px}
 .tvx .ai-mbp .mw.ai-mw .mc{height:700px}
 .tvx .word{font-size:clamp(52px,15vw,84px)!important}
-.tvx .tag{font-size:22px}
+.tvx .tag{font-size:22px;text-wrap:balance}
 .tvx .body{font-size:16px;width:auto!important}
 .tvx .h-head,.tvx .k-copy,.tvx .ai-copy,.tvx .m-copy,.tvx .e-copy,.tvx .g-head,.tvx .s-copy,.tvx .c-head,.tvx .p-left,.tvx .pp-copy{order:-1;width:100%!important;display:flex;flex-direction:column;align-items:center;text-align:center}
 .tvx .s-hero{padding-top:96px}
@@ -1230,8 +1224,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .c-bar{width:100%;box-sizing:border-box}
 .tvx .c-typed{font-size:16px;overflow:hidden}
 .tvx .c-cta{flex-direction:column;gap:14px}
-.tvx .c-links{width:100%;grid-template-columns:1fr}
-.tvx .c-link{width:100%}
 .tvx .pp-back{align-self:center}
 .tvx .pp-actions{flex-direction:column;gap:18px}
 .tvx .pp-facts,.tvx .pp-grid,.tvx .pp-row{width:100%}
@@ -2343,11 +2335,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
         <div class="c-cta">
           <a class="badge" href="https://apps.apple.com/app/id6760258252" target="_blank" rel="noopener" aria-label="Download Trovelo on the App Store"><img loading="lazy" decoding="async" src="/images/trovelo/app-store-badge.svg" alt="Download on the App Store"></a>
           <a class="badge" href="https://apps.apple.com/app/id6760258252?platform=mac" target="_blank" rel="noopener" aria-label="Download Trovelo on the Mac App Store"><img loading="lazy" decoding="async" src="/images/trovelo/mac-app-store-badge.svg" alt="Download on the Mac App Store"></a>
-        </div>
-        <div class="c-links">
-          <a class="c-link" href="https://www.reddit.com/r/trovelo/" target="_blank" rel="noopener"><span class="c-li"><i class="sf sf-bubble-left-and-bubble-right-fill s30"></i></span><span class="c-lt"><b>Send feedback</b><small>r/trovelo</small></span><i class="sf sf-arrow-up-right s20"></i></a>
-          <a class="c-link" href="/support/"><span class="c-li"><i class="sf sf-questionmark-circle-fill s30"></i></span><span class="c-lt"><b>Support</b><small>Help and answers</small></span><i class="sf sf-chevron-right s20"></i></a>
-          <a class="c-link" href="/press/"><span class="c-li"><i class="sf sf-newspaper-fill s30"></i></span><span class="c-lt"><b>Press</b><small>Press kit and assets</small></span><i class="sf sf-chevron-right s20"></i></a>
         </div>
       </div>
     </div>
