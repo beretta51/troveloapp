@@ -1413,7 +1413,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .tvx .pf-q p{margin:-6px 18px 18px;font-size:15px}
 .tvx .pf-q ul{margin:-6px 18px 12px}
 .tvx .pf-q li{font-size:15px}}
-@media (prefers-reduced-motion: reduce){.tvx .cloud,.tvx .w-med,.tvx .w-small,.tvx .watch,.tvx .m-call,.tvx .s-medal,.tvx .stk,.tvx .s-pulse,.tvx .ex-bars i,.tvx .sa-caret,.tvx .ai-caret,.tvx .c-caret{animation:none!important}
+@media (prefers-reduced-motion: reduce){.tvx .cloud,.tvx .w-med,.tvx .w-small,.tvx .watch,.tvx .m-call,.tvx .s-medal,.tvx .stk,.tvx .s-pulse,.tvx .ex-bars i,.tvx .xm-bars i,.tvx .sa-caret,.tvx .ai-caret,.tvx .c-caret{animation:none!important}
 .tvx .r-track{animation:none!important}
 .tvx .s-sd *{animation:none!important}
 .tvx .s-sd .sd-B,.tvx .s-sd .sd-pA,.tvx .s-sd .sd-tch{opacity:0}
@@ -3236,7 +3236,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
         const fr = { opt: '', near: '', pin: '', optP: 0, nearP: 0, pinP: 0 };
         if (mode !== 'rest') { fr[mode] = 'on'; fr[mode + 'P'] = Math.min(100, t / (DUR[mode] - 700) * 100).toFixed(1); }
-        const go = (m) => () => this.setState({ mapPick: { mode: m, at: (this.state && this.state.t) || 0 } });
+        const go = (m) => () => this.setState({ mapPick: { mode: m, at: total } });
         return {
           mLeg: {
             L1: mapSorted ? 0 : 1, L2: mapSorted ? 0 : 1, L3: mapSorted ? 0 : 1,
@@ -3283,6 +3283,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       renderVals() {
         if (!this.cards) this.setup();
         const total = (this.state && this.state.t) || 0;
+        // On the page each section keeps its own clock (clocks() below); on the canvas they share one.
+        const own = (this.state && this.state.at) || {};
+        const glance = own.glance ?? total;
         const t = total % this.cycle;
         let step = 0;
         let pstep = 0;
@@ -3396,21 +3399,21 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
           // The Live Activity's countdown, as Text(timerInterval:) ticks it: 1:18:00 left at 11:42.
           // The lock screen and the watch, ten seconds on the day's card, then
           // eight on a flight day's boarding pass: 5:28:00 to landing at 5:52.
-          lsDay: total % 18000 < 10000 ? 1 : 0,
-          lsFly: total % 18000 < 10000 ? 0 : 1,
+          lsDay: glance % 18000 < 10000 ? 1 : 0,
+          lsFly: glance % 18000 < 10000 ? 0 : 1,
           bpLeft: (() => {
-            const left = 19680 - Math.max(0, Math.floor((total % 18000 - 10000) / 1000));
+            const left = 19680 - Math.max(0, Math.floor((glance % 18000 - 10000) / 1000));
             return Math.floor(left / 3600) + ':' + String(Math.floor((left % 3600) / 60)).padStart(2, '0') + ':' + String(left % 60).padStart(2, '0');
           })(),
           laLeft: (() => {
-            const left = 4680 - (Math.floor(total / 1000) % 3600);
+            const left = 4680 - (Math.floor(glance / 1000) % 3600);
             const h = Math.floor(left / 3600);
             const m = Math.floor((left % 3600) / 60);
             const sec = left % 60;
             return h + ':' + String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
           })(),
-          ...this.aiVals(total),
-          ...this.mapVals(total)
+          ...this.aiVals(own.ai ?? total),
+          ...this.mapVals(own.map ?? total)
         };
       }
     }
@@ -3543,7 +3546,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       renderVals() {
         if (!this.reviews) this.setup();
         const total = (this.state && this.state.t) || 0;
-        return { reviews: this.reviews, ctaTyped: this.ctaText(total), ...this.wxVals(total), ...this.shareVals(total) };
+        const own = (this.state && this.state.at) || {};
+        return { reviews: this.reviews, ctaTyped: this.ctaText(own.cta ?? total), ...this.wxVals(own.wx ?? total), ...this.shareVals(own.share ?? total) };
       }
     }
 
@@ -3651,40 +3655,85 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
       const repaint = sky(page, root);
 
       let last = {};
-      const draw = (t) => {
+      // `at` gives a section's time, or is null for the still frame.
+      const draw = (at) => {
         const vals = {};
-        scenes.forEach((s) => Object.assign(vals, s.frame(t)));
+        scenes.forEach((s) => Object.assign(vals, s.frame(at)));
         last = vals;
         islands.forEach((g) => g.update(vals));
       };
 
-      let t0 = performance.now();
+      const at = reduced ? null : clocks(page, root, (k) => scenes.forEach((s) => s.restart && s.restart(k)));
       wireClicks(root, (path) => {
         const f = look(last, path);
-        if (typeof f === 'function') { f(); draw(reduced ? null : performance.now() - t0); }
+        if (typeof f === 'function') { f(); draw(at); }
       });
       let wasOpen = false;
-      if (reduced) {
-        draw(null);
-        return;
-      }
-      draw(0);
+      draw(at);
+      if (reduced) return;
       setInterval(() => {
         const open = page.classList.contains('open');
-        if (open && !wasOpen) { t0 = performance.now(); fit(page, root); repaint(); }
+        if (open && !wasOpen) { at.restart(); fit(page, root); repaint(); }
         wasOpen = open;
         if (!open || document.hidden) return;
-        draw(performance.now() - t0);
+        draw(at);
       }, 60);
+    }
+
+    // Each section tells its story from the start when you reach it, not
+    // from when the page opened: its clock starts once its device is in the
+    // top 70% of the window, and goes back to the first frame when it has
+    // left the window. SOMEDAY's and EXPENSES' loops are CSS animations, so
+    // they are held at their first frame and played at the same moments.
+    const ANCHORS = {
+      's-ai': '.ai-chat', 's-map': '.ip-wrap', 's-exp': '.xm-bars', 's-glance': '.l-phone',
+      's-sd': '.sd-ip', 's-wx': '.ip-wrap', 's-share': '.ip-wrap', 's-cta': '.c-bar'
+    };
+    const STORY = /^tv-(sd|grow)/;
+    function clocks(page, root, onStart) {
+      const start = {};
+      const armed = {};
+      const near = {};
+      const owner = new Map();
+      root.querySelectorAll('section.sec').forEach((s) => {
+        const k = Array.from(s.classList).find((c) => c.startsWith('s-'));
+        if (k) owner.set(s.querySelector(ANCHORS[k]) || s, [k, s]);
+      });
+      const story = (s) => s.getAnimations({ subtree: true }).filter((a) => STORY.test(a.animationName || ''));
+      const go = (k, s) => {
+        start[k] = performance.now();
+        armed[k] = false;
+        story(s).forEach((a) => { a.currentTime = 0; a.play(); });
+        onStart(k);
+      };
+      const rewind = (k, s) => {
+        delete start[k];
+        armed[k] = true;
+        story(s).forEach((a) => { a.pause(); a.currentTime = 0; });
+      };
+      owner.forEach(([k, s]) => rewind(k, s));
+      const arrive = new IntersectionObserver((es) => es.forEach((e) => {
+        const [k, s] = owner.get(e.target);
+        near[k] = e.isIntersecting;
+        if (e.isIntersecting && armed[k]) go(k, s);
+      }), { root: page, rootMargin: '0px 0px -30% 0px' });
+      const leave = new IntersectionObserver((es) => es.forEach((e) => {
+        if (!e.isIntersecting) rewind(...owner.get(e.target));
+      }), { root: page });
+      owner.forEach((_, el) => { arrive.observe(el); leave.observe(el); });
+      const at = (k) => (start[k] == null ? 0 : performance.now() - start[k]);
+      // The page opened again: the stories in view start over, the rest wait.
+      at.restart = () => owner.forEach(([k, s]) => (near[k] ? go(k, s) : rewind(k, s)));
+      return at;
     }
 
     const s1 = new Scene1();
     const s2 = new Scene2();
     run('trovelo-page', 'tv', [
       {
-        frame(t) {
+        frame(at) {
           if (!s1.cards) s1.setup();
-          if (t == null) {
+          if (at == null) {
             // Still frame: the Add panel mid-search, the AI chat finished,
             // MAP showing the end of whichever feature was picked.
             s1.state.still = true;
@@ -3692,14 +3741,22 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
             s1.state.t = sc.te + 400;
             return Object.assign(s1.renderVals(), s1.aiVals(s1.aiSched[2].reply + 400));
           }
-          s1.state.t = t;
+          s1.state.t = at('s-hero');
+          s1.state.at = { ai: at('s-ai'), map: at('s-map'), glance: at('s-glance') };
           return s1.renderVals();
-        }
+        },
+        // MAP starts over without the feature that was picked.
+        restart(k) { if (k === 's-map') s1.setState({ mapPick: null }); }
       },
       {
-        frame(t) {
+        frame(at) {
           if (!s2.reviews) s2.setup();
-          s2.state.t = t == null ? s2.phrases[0].length * 65 + 200 : t;
+          if (at == null) {
+            s2.state.t = s2.phrases[0].length * 65 + 200;
+          } else {
+            s2.state.t = 0;
+            s2.state.at = { cta: at('s-cta'), wx: at('s-wx'), share: at('s-share') };
+          }
           return s2.renderVals();
         }
       }
