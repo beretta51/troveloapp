@@ -1,0 +1,66 @@
+# Trovelo
+
+> Trovelo is a private travel planner for iPhone, iPad and Mac. It keeps a whole trip in one place, organised day by day: flights, hotels, trains, tickets, places to see, notes and expenses. It's free to use for up to 2 upcoming trips with 50 cards each, and Trovelo Pro is a one-time purchase, not a subscription.
+
+Trovelo is made by Eduardo Pinillos, an independent developer based in Portugal (Pinillos Lab), with no investors. It's available in 13 languages: English, Spanish, French, German, Italian, Portuguese (Brazil), Dutch, Danish, Swedish, Japanese, Korean, and Chinese (Simplified and Traditional).
+
+Key facts:
+
+- Platforms: iPhone, iPad and Mac, native on each. While you travel, what's now and what's next also show on Apple Watch (watchOS 11 or later), with nothing to install on the watch.
+- Price: free for up to 2 upcoming trips at a time, with 50 cards in each. Past trips don't count. Trovelo Pro is a single payment through the App Store that unlocks unlimited trips and cards, the Pro guides, connecting an AI assistant on the Mac, and every future Pro feature.
+- Privacy: there's no account to create and no ads. Trovelo has no servers of its own: trips live on your devices and sync through your own iCloud.
+- App Store: https://apps.apple.com/app/id6760258252 (one listing for iPhone, iPad and Mac). Trovelo Pro goes with your Apple Account, on all three.
+
+What it does:
+
+- Board: one column per day, with cards for flights (including layovers), hotels, trains, buses, ferries, rental cars, tickets, food, sights and notes. A daily pace shows when a day is already too full.
+- Map: every day on a map, with routes between stops, a button to put a day in the best order, places nearby, and pins you drop yourself.
+- Plan with AI on the Mac (Pro): connect Trovelo to Claude, or another AI assistant that supports MCP, ask for a trip in plain words, and it appears on your board and then on your iPhone. The connection is off until you turn it on.
+- Plan together: invite the people travelling with you by name, as "Can view" or "Can edit". Your home address, packing list, documents and your own spending are never shared.
+- Expenses: in two currencies with live exchange rates, plus splitting costs with your group.
+- Booking emails: import flights, hotels and rental cars from booking confirmation emails.
+- Someday: save places you want to visit before any trip exists, and add them to a trip later.
+- Guides: 56 ready-made trips to start from.
+- My Spots: a map of every country and city you've been to, built from your own photos, with medals and a year-by-year timeline.
+- Packing list that checks the forecast and the plug type where you're going, typical weather and a live forecast, Lock Screen Live Activities, widgets, Calendar, and a full backup of all your trips.
+
+## Main pages
+
+- [Trovelo home](https://troveloapp.com/): what the app does, on iPhone, iPad and Mac
+- [Help center](https://troveloapp.com/help/): 40 step-by-step articles with real screenshots of the app
+- [Help center in Spanish](https://troveloapp.com/es/help/): the same articles in Spanish
+- [Support](https://troveloapp.com/support/): how to get help and send feedback
+- [Press kit](https://troveloapp.com/press/): facts, logos, app icon and screenshots
+- [Privacy policy](https://troveloapp.com/privacy/): what the app does with your data
+
+## Help articles
+
+- [Create your first trip](https://troveloapp.com/help/create-your-first-trip/)
+- [Trips with more than one city](https://troveloapp.com/help/trips-with-more-than-one-city/)
+- [Add places to your days](https://troveloapp.com/help/add-places-to-your-days/)
+- [Every kind of card](https://troveloapp.com/help/every-kind-of-card/)
+- [How full is my day?](https://troveloapp.com/help/how-full-is-my-day/)
+- [Optimize a day's route](https://troveloapp.com/help/optimize-a-days-route/)
+- [Add a flight with layovers](https://troveloapp.com/help/add-a-flight-with-layovers/)
+- [Trains, buses and ferries](https://troveloapp.com/help/trains-buses-and-ferries/)
+- [Import a booking from an email](https://troveloapp.com/help/import-a-booking-from-an-email/)
+- [Log an expense](https://troveloapp.com/help/log-an-expense/)
+- [Split costs with your group](https://troveloapp.com/help/split-costs-with-your-group/)
+- [Invite someone to your trip](https://troveloapp.com/help/invite-someone-to-your-trip/)
+- [What stays private](https://troveloapp.com/help/what-stays-private/)
+- [Save places for someday](https://troveloapp.com/help/save-places-for-someday/)
+- [Start a trip from a guide](https://troveloapp.com/help/start-a-trip-from-a-guide/)
+- [Find past trips in your photos](https://troveloapp.com/help/find-past-trips-in-your-photos/)
+- [Your trip on the Lock Screen](https://troveloapp.com/help/your-flight-on-the-lock-screen/)
+- [Trovelo on Apple Watch](https://troveloapp.com/help/trovelo-on-apple-watch/)
+- [Trovelo on Mac](https://troveloapp.com/help/trovelo-on-mac/)
+- [Plan with your AI assistant](https://troveloapp.com/help/plan-with-your-ai-assistant/)
+- [How iCloud sync works](https://troveloapp.com/help/how-icloud-sync-works/)
+- [Back up all your trips](https://troveloapp.com/help/back-up-all-your-trips/)
+- [What Trovelo Pro includes](https://troveloapp.com/help/what-trovelo-pro-includes/)
+
+## Optional
+
+- [Community on Reddit](https://www.reddit.com/r/trovelo/): r/trovelo, where many features started as suggestions
+- [Pinillos Lab](https://pinilloslab.com/): the developer's studio and other apps
+- Contact: nocion.exento_8u@icloud.com
