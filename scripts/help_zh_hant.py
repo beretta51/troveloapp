@@ -717,7 +717,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="用你自己的貨幣看花費",
     description="Trovelo 如何同時用當地貨幣和你自己的貨幣顯示價格、如何設定主要貨幣，以及如何依每天的匯率換算。",
     og="日圓、披索或歐元的價格，換算成你的貨幣是多少。",

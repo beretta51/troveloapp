@@ -717,7 +717,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="Os preços na sua moeda",
     description="Como o Trovelo mostra os preços na moeda local e na sua, como definir sua moeda de origem e como ele converte com a cotação de cada dia.",
     og="Preços em ienes, pesos ou euros, e quanto dá na sua moeda.",

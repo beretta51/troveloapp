@@ -157,6 +157,52 @@
         ["Alle deine Reisen sichern", "icloud-privacy-pro", "/de/help/back-up-all-your-trips/", "backup sicherung datensicherung wiederherstellen exportieren herunterladen datei zip neues iphone übertragen daten umziehen sichern"],
         ["Was Trovelo Pro enthält", "icloud-privacy-pro", "/de/help/what-trovelo-pro-includes/", "pro preis upgrade premium abo abonnement einmalzahlung einmaliger kauf kostenlos gratis limit grenze unbegrenzt käufe wiederherstellen code einlösen"]
       ]
+    },
+    "fr": {
+      topics: {"getting-started": "Premiers pas", "board-cards": "Tableau et cartes", "map-routes": "Plan et itinéraires", "flights-transport": "Vols et transports", "expenses": "Dépenses", "plan-together": "Planifier à plusieurs", "weather-packing": "Météo et valise", "guides-someday": "Guides et « Un jour »", "my-spots": "Mes lieux et médailles", "widgets-watch-calendar": "Widgets, Watch et Calendrier", "mac-ai-plan": "Mac et planification avec l’IA", "icloud-privacy-pro": "iCloud, confidentialité et Pro"},
+      words: {"Nothing yet for “{q}”.": "Rien pour l’instant sur « {q} ».", "Ask me on {link} and I’ll answer.": "Pose-moi la question sur {link} et je te réponds.", "Soon": "Bientôt"},
+      articles: [
+        ["Crée ton premier voyage", "getting-started", "/fr/help/create-your-first-trip/", "créer nouveau voyage commencer planifier organiser premier voyage dates ville destination voyage de démo exemple itinéraire"],
+        ["Voyages dans plusieurs villes", "getting-started", "/fr/help/trips-with-more-than-one-city/", "plusieurs villes multi-destinations deux destinations ajouter une ville road trip circuit itinéraire étapes plus d’une ville"],
+        ["Ajoute des lieux à tes journées", "board-cards", "/fr/help/add-places-to-your-days/", "ajouter lieu endroit monument restaurant chercher rechercher apple maps plans carte jour plus nouveau"],
+        ["Déplace une carte vers un autre jour", "board-cards", "/fr/help/move-a-card-to-another-day/", "déplacer carte jour changer de date changer de jour reporter décaler autre jour non planifié glisser choisir une date"],
+        ["Ma journée est-elle bien remplie ?", "board-cards", "/fr/help/how-full-is-my-day/", "journée chargée journée tranquille tout ne rentre pas temps libre temps restant rythme heures barre durée combien de temps remplie emploi du temps"],
+        ["Tous les types de cartes", "board-cards", "/fr/help/every-kind-of-card/", "catégorie type genre carte hébergement hôtel restaurant nourriture lieu vol train billet musée plage changer de catégorie"],
+        ["Notes, fichiers et photos", "board-cards", "/fr/help/notes-files-and-photos/", "note notes fichier pdf photo billet ticket joindre pièce jointe document appareil photo photothèque note du jour"],
+        ["Des idées sans jour", "board-cards", "/fr/help/unplanned-ideas-without-a-day/", "non planifié idées sans jour plus tard bac peut-être en attente liste d’envies pas encore décidé"],
+        ["Codes de réservation", "board-cards", "/fr/help/confirmation-numbers/", "code de réservation numéro de confirmation référence pnr dossier réservation copier hôtel vol code de la porte"],
+        ["Change l’ordre de ta journée", "board-cards", "/fr/help/change-the-order-of-your-day/", "ordre réorganiser trier réordonner journée glisser déplacer monter descendre séquence premier dernier changer l’ordre"],
+        ["Optimise l’itinéraire d’une journée", "map-routes", "/fr/help/optimize-a-days-route/", "optimiser itinéraire trajet ordre plus court distance gagner du temps cadenas verrouiller bloquer journée plan parcours"],
+        ["Ce qu’il y a autour", "map-routes", "/fr/help/whats-nearby/", "autour à proximité près d’ici plan carte manger café restaurant bar sites distributeur pharmacie supermarché trouver un lieu"],
+        ["Place une épingle sur le plan", "map-routes", "/fr/help/drop-a-pin-on-the-map/", "épingle punaise repère marqueur plan carte appui long maintenir adresse endroit ajouter position point personnalisé"],
+        ["Ajoute un vol avec escales", "flights-transport", "/fr/help/add-a-flight-with-layovers/", "vol ajouter avion escale correspondance compagnie aérienne numéro de vol terminal porte aéroport fuseau horaire"],
+        ["Trains, bus et ferrys", "flights-transport", "/fr/help/trains-buses-and-ferries/", "train bus car autocar ferry bateau voiture siège place voie quai gare correspondance billet tgv shinkansen"],
+        ["Importe une réservation depuis un e-mail", "flights-transport", "/fr/help/import-a-booking-from-an-email/", "importer réservation e-mail mail courriel confirmation pdf capture d’écran scanner vol hôtel voiture de location billet lire"],
+        ["Note une dépense", "expenses", "/fr/help/log-an-expense/", "dépense noter enregistrer dépenser coût argent payé budget total catégorie frais csv tableur excel exporter"],
+        ["Les prix dans ta devise", "expenses", "/fr/help/see-costs-in-your-own-money/", "devise monnaie taux de change convertir convertisseur devise principale argent local dollars euros yens total"],
+        ["Partage les dépenses avec ton groupe", "expenses", "/fr/help/split-costs-with-your-group/", "partager diviser dépenses groupe partage frais addition devoir dette rembourser payé régler les comptes amis famille qui a payé solde tricount splitwise"],
+        ["Invite quelqu’un à ton voyage", "plan-together", "/fr/help/invite-someone-to-your-trip/", "inviter partager voyage ensemble à plusieurs amis famille couple collaborer planifier ensemble voyage partagé icloud"],
+        ["Peut voir ou peut modifier ?", "plan-together", "/fr/help/can-view-or-can-edit/", "permission droits accès voir modifier lecture seule retirer une personne quitter le voyage arrêter le partage propriétaire"],
+        ["Ce qui reste privé", "plan-together", "/fr/help/what-stays-private/", "confidentialité vie privée privé partagé non partagé domicile adresse valise documents dépenses données icloud serveurs"],
+        ["Ta liste de valise", "weather-packing", "/fr/help/your-packing-list/", "liste de valise valise bagages faire sa valise checklist liste à cocher affaires sac vêtements documents quoi emporter"],
+        ["Prises et tension", "weather-packing", "/fr/help/plugs-and-voltage/", "prise électrique fiche adaptateur tension voltage courant type a type c type e type g chargeur adaptateur de voyage"],
+        ["Météo habituelle et prévisions", "weather-packing", "/fr/help/typical-weather-and-live-forecast/", "météo temps prévisions température pluie climat habituel moyenne apple weather parapluie jours du voyage"],
+        ["Colle une liste trouvée sur un blog", "guides-someday", "/fr/help/paste-a-list-from-a-blog/", "coller liste blog chatgpt gemini claude notes importer plusieurs lieux d’un coup en masse en une fois"],
+        ["Commence un voyage à partir d’un guide", "guides-someday", "/fr/help/start-a-trip-from-a-guide/", "guides guide itinéraire tout prêt modèle idée de voyage road trip circuit copier date de début parcours"],
+        ["Garde des lieux pour plus tard", "guides-someday", "/fr/help/save-places-for-someday/", "un jour garder pour plus tard liste d’envies bucket list lieux où je veux aller rêves favoris signet enregistrés idées"],
+        ["Ajoute les lieux que tu as visités", "my-spots", "/fr/help/add-places-youve-been/", "mes lieux pays visités villes carte carte du monde carte de voyage épingles punaises déjà visité monde carte à gratter"],
+        ["Retrouve tes anciens voyages dans tes photos", "my-spots", "/fr/help/find-past-trips-in-your-photos/", "photos photothèque analyser scanner localisation gps anciens voyages pays visités automatiquement année importer"],
+        ["Médailles, de First Stepper jusqu’au sommet", "my-spots", "/fr/help/medals-from-first-stepper-up/", "médailles rangs badges niveaux first stepper apex traveler pays compteur succès trophées vie de voyageur partager"],
+        ["Ton voyage sur l’écran verrouillé", "widgets-watch-calendar", "/fr/help/your-flight-on-the-lock-screen/", "écran verrouillé écran de verrouillage activité en direct dynamic island carte d’embarquement vol porte compte à rebours maintenant ensuite widget"],
+        ["Trovelo sur l’Apple Watch", "widgets-watch-calendar", "/fr/help/trovelo-on-apple-watch/", "apple watch montre pile intelligente smart stack poignet watchos activité en direct digital crown maintenant ensuite"],
+        ["Ton voyage dans Calendrier", "widgets-watch-calendar", "/fr/help/your-trip-in-calendar/", "calendrier apple calendar ical agenda événements emploi du temps synchroniser vols hôtels journée entière"],
+        ["Trovelo sur Mac", "mac-ai-plan", "/fr/help/trovelo-on-mac/", "mac macbook ordinateur bureau app synchroniser tableau colonnes raccourcis clavier barre latérale"],
+        ["Planifie avec ton assistant IA", "mac-ai-plan", "/fr/help/plan-with-your-ai-assistant/", "assistant ia intelligence artificielle claude chatgpt codex cursor mcp planifier en demandant connecter"],
+        ["Fais glisser les cartes d’un jour à l’autre", "mac-ai-plan", "/fr/help/drag-cards-between-days/", "mac glisser déposer glisser-déposer carte colonne jour tableau clavier compact taille des cartes météo"],
+        ["Comment fonctionne la synchronisation iCloud", "icloud-privacy-pro", "/fr/help/how-icloud-sync-works/", "icloud synchroniser synchronisation appareils iphone ipad mac ne se synchronise pas compte apple identifiant apple stockage plein sauvegarde"],
+        ["Sauvegarde tous tes voyages", "icloud-privacy-pro", "/fr/help/back-up-all-your-trips/", "sauvegarde sauvegarder backup restaurer exporter télécharger fichier zip nouvel iphone transférer données copie"],
+        ["Ce que comprend Trovelo Pro", "icloud-privacy-pro", "/fr/help/what-trovelo-pro-includes/", "pro prix passer à pro premium abonnement paiement unique achat unique formule gratuite gratuit limite illimité restaurer les achats utiliser un code"]
+      ]
     }
   };
   // </index>

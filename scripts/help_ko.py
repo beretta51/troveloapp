@@ -717,7 +717,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="내 통화로 비용 보기",
     description="Trovelo가 가격을 현지 통화와 내 통화로 함께 보여 주는 방식, 기준 통화를 정하는 방법, 그날의 환율로 바꾸는 방식.",
     og="엔, 페소, 유로 가격과 그게 내 돈으로 얼마인지.",

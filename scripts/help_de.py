@@ -717,7 +717,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="Preise in deiner Währung",
     description="Wie Trovelo Preise in der Landeswährung und in deiner eigenen zeigt, wie du deine Heimatwährung festlegst und wie es mit dem Kurs des Tages umrechnet.",
     og="Preise in Yen, Pesos oder Dollar, und was sie in deiner Währung sind.",
@@ -738,7 +738,7 @@ article(
              legend=["Summe"]),
         dict(title="In einer anderen Währung bezahlt?",
              text="Tippe beim Erfassen einer Ausgabe auf eine andere Währung, oder auf <b>Sonstiges</b>, um eine beliebige zu wählen.",
-             alt=["Yen, Euro und Sonstiges über dem Betrag"],
+             alt=["Yen, Euro und Sonstiges unter dem Betrag"],
              legend=["Wähl die Währung"]),
     ],
     tips=[

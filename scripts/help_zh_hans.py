@@ -717,7 +717,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="用你自己的货币看花费",
     description="Trovelo 如何同时用当地货币和你自己的货币显示价格、如何设置本国货币，以及如何按每天的汇率换算。",
     og="日元、比索或欧元的价格，换算成你的货币是多少。",

@@ -716,7 +716,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="Se kostnader i din egen valuta",
     description="Så visar Trovelo priser i den lokala valutan och i din egen, hur du ställer in din hemvaluta och hur den räknar om med dagens växelkurs.",
     og="Priser i yen, pesos eller euro, och vad de blir i din valuta.",

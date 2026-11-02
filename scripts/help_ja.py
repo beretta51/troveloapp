@@ -718,7 +718,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="料金を自国通貨で見る",
     description="Trovelo が料金を現地通貨と自国通貨の両方で表示するしくみ、自国通貨の設定方法、毎日の為替レートでの換算について。",
     og="円、ペソ、ドルの料金が、自国通貨でいくらになるか。",

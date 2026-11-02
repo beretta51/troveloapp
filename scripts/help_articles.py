@@ -784,7 +784,7 @@ article(
              legend=["Total"]),
         dict(title="Paid in another currency?",
              text="When you log an expense, tap another currency, or <b>Other</b> for any of them.",
-             phones=[dict(img="i-expense-new.jpg", alt="Yen, US dollar and Other above the amount", crop="top",
+             phones=[dict(img="i-expense-new.jpg", alt="Yen, US dollar and Other under the amount", crop="top",
                           marks=[(92, 250, 220, 28)])],
              legend=["Pick the currency"]),
     ],

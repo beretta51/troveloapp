@@ -714,7 +714,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="Los precios, en tu moneda",
     description="Cómo Trovelo muestra los precios en la moneda local y en la tuya, cómo poner tu moneda de origen y cómo convierte con el cambio de cada día.",
     og="Precios en yenes, pesos o dólares, y lo que son en tu moneda.",
@@ -735,7 +735,7 @@ article(
              legend=["Total"]),
         dict(title="¿Has pagado en otra moneda?",
              text="Al registrar un gasto, toca otra moneda, u <b>Otros</b> para elegir cualquiera.",
-             alt=["Yen, euro y Otros encima del importe"],
+             alt=["Yen, euro y Otros debajo del importe"],
              legend=["Elige la moneda"]),
     ],
     tips=[

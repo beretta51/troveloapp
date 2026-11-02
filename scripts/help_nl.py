@@ -715,7 +715,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="Kosten in je eigen valuta",
     description="Hoe Trovelo prijzen toont in de lokale valuta en in die van jou, hoe je je eigen valuta instelt en hoe het omrekent met de koers van elke dag.",
     og="Prijzen in yen, pesos of dollars, en wat dat is in jouw geld.",

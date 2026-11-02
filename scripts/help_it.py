@@ -719,7 +719,7 @@ article(
 
 article(
     "see-costs-in-your-own-money",
-    source="4e96fcea",
+    source="741b26b3",
     title="I prezzi, nella tua valuta",
     description="Come Trovelo mostra i prezzi nella valuta locale e nella tua, come impostare la tua valuta di casa e come converte con il cambio di ogni giorno.",
     og="Prezzi in yen, pesos o dollari, e quanto fanno nella tua valuta.",
