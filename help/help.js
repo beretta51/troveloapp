@@ -249,6 +249,52 @@
         ["Fai il backup di tutti i tuoi viaggi", "icloud-privacy-pro", "/it/help/back-up-all-your-trips/", "backup copia di sicurezza ripristinare esportare scaricare file zip nuovo iphone trasferire passare dati salvare"],
         ["Cosa include Trovelo Pro", "icloud-privacy-pro", "/it/help/what-trovelo-pro-includes/", "pro prezzo upgrade premium abbonamento pagamento unico acquisto unico una tantum piano gratuito gratis limite illimitato ripristinare acquisti riscattare codice"]
       ]
+    },
+    "nl": {
+      topics: {"getting-started": "Aan de slag", "board-cards": "Bord en kaarten", "map-routes": "Kaart en routes", "flights-transport": "Vluchten en vervoer", "expenses": "Uitgaven", "plan-together": "Samen plannen", "weather-packing": "Weer en inpakken", "guides-someday": "Gidsen en Ooit", "my-spots": "Mijn plekken en medailles", "widgets-watch-calendar": "Widgets, Watch en Agenda", "mac-ai-plan": "Mac en plannen met AI", "icloud-privacy-pro": "iCloud, privacy en Pro"},
+      words: {"Nothing yet for “{q}”.": "Nog niets over “{q}”.", "Ask me on {link} and I’ll answer.": "Vraag het me op {link}, dan geef ik antwoord.", "Soon": "Binnenkort"},
+      articles: [
+        ["Maak je eerste reis", "getting-started", "/nl/help/create-your-first-trip/", "reis maken nieuwe reis beginnen plannen eerste reis data datums stad bestemming demoreis voorbeeldreis reisplanning"],
+        ["Reizen met meer dan één stad", "getting-started", "/nl/help/trips-with-more-than-one-city/", "meerdere steden meer steden twee bestemmingen stad toevoegen rondreis road trip reisroute route stedentrip"],
+        ["Voeg plekken toe aan je dagen", "board-cards", "/nl/help/add-places-to-your-days/", "toevoegen plek plaats bezienswaardigheid restaurant zoeken apple kaarten maps kaart dag plus nieuw"],
+        ["Verplaats een kaart naar een andere dag", "board-cards", "/nl/help/move-a-card-to-another-day/", "kaart verplaatsen dag datum wijzigen verzetten omzetten andere dag niet gepland slepen kies een datum"],
+        ["Hoe vol is mijn dag?", "board-cards", "/nl/help/how-full-is-my-day/", "drukke dag rustige dag past niet tijd over resterende tijd dagritme tempo uren balk duur hoe lang vol"],
+        ["Alle soorten kaarten", "board-cards", "/nl/help/every-kind-of-card/", "categorie soort type kaart verblijf hotel eten plek vlucht trein ticket museum strand categorie wijzigen"],
+        ["Notities, bestanden en foto’s", "board-cards", "/nl/help/notes-files-and-photos/", "notitie notities bestand pdf foto ticket kaartje bijlage document camera fotobibliotheek dagnotitie toevoegen"],
+        ["Ideeën zonder dag", "board-cards", "/nl/help/unplanned-ideas-without-a-day/", "niet gepland ideeën zonder dag later bakje misschien wensenlijst verlanglijst nog niet besloten"],
+        ["Boekingsnummers", "board-cards", "/nl/help/confirmation-numbers/", "boekingsnummer bevestigingsnummer reserveringsnummer boekingscode referentie pnr reservering kopiëren hotel vlucht deurcode"],
+        ["Verander de volgorde van je dag", "board-cards", "/nl/help/change-the-order-of-your-day/", "volgorde herschikken sorteren dag slepen verplaatsen omhoog omlaag eerste laatste volgorde veranderen"],
+        ["Optimaliseer de route van een dag", "map-routes", "/nl/help/optimize-a-days-route/", "optimaliseren route kortste volgorde afstand tijd besparen slotje vergrendelen vastzetten dag kaart wandelroute"],
+        ["Wat is er in de buurt", "map-routes", "/nl/help/whats-nearby/", "in de buurt omgeving kaart eten koffie café restaurant bar bezienswaardigheden geldautomaat pinautomaat apotheek supermarkt plek zoeken"],
+        ["Zet een pin op de kaart", "map-routes", "/nl/help/drop-a-pin-on-the-map/", "pin speld markering kaart ingedrukt houden lang drukken adres plek toevoegen locatie eigen punt"],
+        ["Voeg een vlucht met tussenstops toe", "flights-transport", "/nl/help/add-a-flight-with-layovers/", "vlucht toevoegen vliegtuig tussenstop overstap aansluiting luchtvaartmaatschappij vluchtnummer terminal gate luchthaven vliegveld tijdzone"],
+        ["Treinen, bussen en veerboten", "flights-transport", "/nl/help/trains-buses-and-ferries/", "trein bus veerboot ferry boot rijtuig wagon stoel zitplaats spoor perron station overstap kaartje ticket shinkansen treinreis"],
+        ["Importeer een boeking uit een mail", "flights-transport", "/nl/help/import-a-booking-from-an-email/", "importeren boeking mail e-mail bevestiging pdf screenshot schermafbeelding scannen vlucht hotel huurauto ticket uitlezen"],
+        ["Leg een uitgave vast", "expenses", "/nl/help/log-an-expense/", "uitgave uitgaven vastleggen noteren kosten geld betaald budget totaal categorie csv spreadsheet excel exporteren"],
+        ["Kosten in je eigen valuta", "expenses", "/nl/help/see-costs-in-your-own-money/", "valuta munteenheid wisselkoers koers omrekenen eigen valuta lokaal geld dollar euro yen totaal"],
+        ["Deel de kosten met je groep", "expenses", "/nl/help/split-costs-with-your-group/", "kosten delen verdelen groep rekening schuld schuldig betalen betaald verrekenen vereffenen vrienden familie wie betaalde saldo tikkie splitwise tricount"],
+        ["Nodig iemand uit voor je reis", "plan-together", "/nl/help/invite-someone-to-your-trip/", "uitnodigen delen reis samen vrienden familie partner samenwerken samen plannen gedeelde reis icloud"],
+        ["Kan bekijken of kan bewerken?", "plan-together", "/nl/help/can-view-or-can-edit/", "rechten toegang bekijken bewerken alleen lezen persoon verwijderen reis verlaten stoppen met delen eigenaar"],
+        ["Wat privé blijft", "plan-together", "/nl/help/what-stays-private/", "privacy privé gedeeld niet gedeeld huis thuisadres adres paklijst documenten uitgaven gegevens data icloud servers"],
+        ["Je paklijst", "weather-packing", "/nl/help/your-packing-list/", "paklijst inpaklijst inpakken koffer bagage checklist spullen tas kleding documenten wat moet ik meenemen"],
+        ["Stekkers en voltage", "weather-packing", "/nl/help/plugs-and-voltage/", "stekker stopcontact adapter verloopstekker wereldstekker voltage spanning stroom type a type c type f type g oplader reisadapter"],
+        ["Gebruikelijk weer en actuele verwachting", "weather-packing", "/nl/help/typical-weather-and-live-forecast/", "weer weersverwachting weerbericht voorspelling temperatuur regen klimaat gemiddeld apple weather paraplu reisdagen"],
+        ["Plak een lijst uit een blog", "guides-someday", "/nl/help/paste-a-list-from-a-blog/", "plakken lijst blog chatgpt gemini claude notities importeren veel plekken tegelijk in één keer meerdere"],
+        ["Begin een reis vanuit een gids", "guides-someday", "/nl/help/start-a-trip-from-a-guide/", "gidsen gids reisroute kant-en-klaar sjabloon template reisidee road trip rondreis route kopiëren begindatum"],
+        ["Bewaar plekken voor ooit", "guides-someday", "/nl/help/save-places-for-someday/", "ooit bewaren voor later wensenlijst bucketlist verlanglijst plekken waar ik heen wil favorieten bladwijzer bewaard ideeën"],
+        ["Voeg plekken toe waar je bent geweest", "my-spots", "/nl/help/add-places-youve-been/", "mijn plekken bezochte landen steden kaart wereldkaart reiskaart pins geweest wereld kraskaart scratch map"],
+        ["Vind eerdere reizen in je foto’s", "my-spots", "/nl/help/find-past-trips-in-your-photos/", "foto’s fotos fotobibliotheek scannen locatie gps eerdere reizen bezochte landen automatisch jaar jaartal importeren"],
+        ["Medailles, vanaf First Stepper", "my-spots", "/nl/help/medals-from-first-stepper-up/", "medailles rangen badges niveaus first stepper apex traveler landen teller prestaties reisleven delen"],
+        ["Je reis op het toegangsscherm", "widgets-watch-calendar", "/nl/help/your-flight-on-the-lock-screen/", "toegangsscherm vergrendelscherm live activity live activities dynamic island instapkaart boardingpass vlucht gate aftellen nu volgende widget"],
+        ["Trovelo op de Apple Watch", "widgets-watch-calendar", "/nl/help/trovelo-on-apple-watch/", "apple watch horloge slimme stapel smart stack pols watchos live activity digital crown nu volgende"],
+        ["Je reis in Agenda", "widgets-watch-calendar", "/nl/help/your-trip-in-calendar/", "agenda kalender apple agenda ical afspraken activiteiten planning synchroniseren vluchten hotels hele dag"],
+        ["Trovelo op de Mac", "mac-ai-plan", "/nl/help/trovelo-on-mac/", "mac macbook computer desktop app synchroniseren bord kolommen toetscombinaties sneltoetsen navigatiekolom"],
+        ["Plan met je AI-assistent", "mac-ai-plan", "/nl/help/plan-with-your-ai-assistant/", "ai-assistent ai assistent kunstmatige intelligentie claude chatgpt codex cursor mcp plannen door te vragen verbinden koppelen"],
+        ["Sleep kaarten tussen dagen", "mac-ai-plan", "/nl/help/drag-cards-between-days/", "mac slepen neerzetten kaart kolom dag bord toetsenbord compact kaartgrootte weer"],
+        ["Hoe synchronisatie met iCloud werkt", "icloud-privacy-pro", "/nl/help/how-icloud-sync-works/", "icloud synchroniseren synchronisatie sync apparaten iphone ipad mac synchroniseert niet apple account apple id opslag vol back-up"],
+        ["Maak een reservekopie van al je reizen", "icloud-privacy-pro", "/nl/help/back-up-all-your-trips/", "reservekopie back-up backup herstellen terugzetten exporteren downloaden bestand zip nieuwe iphone overzetten gegevens bewaren"],
+        ["Wat Trovelo Pro je geeft", "icloud-privacy-pro", "/nl/help/what-trovelo-pro-includes/", "pro prijs upgrade premium abonnement eenmalige betaling eenmalige aankoop gratis versie gratis plan limiet onbeperkt aankopen herstellen code inwisselen"]
+      ]
     }
   };
   // </index>
