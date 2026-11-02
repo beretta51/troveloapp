@@ -619,7 +619,7 @@ article(
     keywords="tren autobús bus ferri ferry barco coche asiento vía andén estación transbordo billete ave shinkansen",
     ios=[
         dict(title="Escribe de dónde a dónde",
-             text="Toca <b>+ Añadir</b> y escribe el trayecto, como <b>Tokio a Kioto</b>, o toca <b>Tren</b>, debajo de la búsqueda. Para un autobús o un ferri, toca <b>Más</b>.",
+             text="Toca <b>+ Añadir</b> y escribe el trayecto, como <b>Tokyo - Kyoto</b>, o toca <b>Tren</b>, debajo de la búsqueda. Para un autobús o un ferri, toca <b>Más</b>.",
              alt=["Tren debajo de la búsqueda en Añadir"],
              legend=["El trayecto", "O toca Tren"]),
         dict(title="Rellena el billete",
