@@ -3,7 +3,12 @@
 make_seed.py and make_porto.py build the trips in English and swap these in:
 card titles and notes by their English text, plus the trip's own fields.
 Places keep their real names; only the words around them change.
+
+English and Spanish are below; every other language is words/<code>.json,
+with the same four keys.
 """
+import json
+from pathlib import Path
 
 WORDS = {
     "en": dict(titles={}, notes={}, tokyo={}, porto={}),
@@ -99,3 +104,6 @@ WORDS = {
         },
     ),
 }
+
+for f in sorted(Path(__file__).with_name("words").glob("*.json")):
+    WORDS[f.stem] = json.loads(f.read_text(encoding="utf-8"))

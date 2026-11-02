@@ -20,7 +20,7 @@
     "icloud-privacy-pro": ["i-lock", "#FFF3CC", "#8A6100"]
   };
   var LANGS = {
-    en: {
+    "en": {
       topics: {"getting-started": "Getting started", "board-cards": "Board & cards", "map-routes": "Map & routes", "flights-transport": "Flights & transport", "expenses": "Expenses", "plan-together": "Plan together", "weather-packing": "Weather & packing", "guides-someday": "Guides & Someday", "my-spots": "My Spots & medals", "widgets-watch-calendar": "Widgets, Watch & Calendar", "mac-ai-plan": "Mac & AI Plan", "icloud-privacy-pro": "iCloud, privacy & Pro"},
       words: {"Nothing yet for “{q}”.": "Nothing yet for “{q}”.", "Ask me on {link} and I’ll answer.": "Ask me on {link} and I’ll answer.", "Soon": "Soon"},
       articles: [
@@ -66,7 +66,7 @@
         ["What Trovelo Pro includes", "icloud-privacy-pro", "/help/what-trovelo-pro-includes/", "pro price upgrade premium subscription one-time purchase free plan limit unlimited restore purchases redeem code"]
       ]
     },
-    es: {
+    "es": {
       topics: {"getting-started": "Primeros pasos", "board-cards": "Tablero y tarjetas", "map-routes": "Mapa y rutas", "flights-transport": "Vuelos y transporte", "expenses": "Gastos", "plan-together": "Planear juntos", "weather-packing": "Clima y equipaje", "guides-someday": "Guías y Algún día", "my-spots": "Mis lugares y medallas", "widgets-watch-calendar": "Widgets, Watch y Calendario", "mac-ai-plan": "Mac y plan con IA", "icloud-privacy-pro": "iCloud, privacidad y Pro"},
       words: {"Nothing yet for “{q}”.": "Todavía no hay nada sobre «{q}».", "Ask me on {link} and I’ll answer.": "Pregúntame en {link} y te respondo.", "Soon": "Pronto"},
       articles: [

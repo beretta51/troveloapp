@@ -37,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from help_articles import ARTICLES, NEWS, START_HERE, TOPICS  # noqa: E402
 
 LANGS = ["en", "es"]  # English first: every other language is made from it
+TEXT_ONLY = False  # --check: a translation's words alone, before its screens exist
 
 SITE = "https://troveloapp.com"
 HOME = ROOT / "help" / "index.html"
@@ -81,14 +82,17 @@ def fingerprint(a):
 
 class Lang:
     def __init__(self, code):
-        self.code = code
-        self.mod = None if code == "en" else importlib.import_module(f"help_{code}")
-        self.base = "/help/" if code == "en" else f"/{code}/help/"
+        self.code = code  # as in hreflang and <html lang>: "de", "pt-BR", "zh-Hans"
+        self.slug = code.lower()  # in addresses and folders: "pt-br"
+        self.file = f"help_{self.slug.replace('-', '_')}.py"  # help_pt_br.py
+        self.mod = None if code == "en" else importlib.import_module(self.file[:-3])
+        self.base = "/help/" if code == "en" else f"/{self.slug}/help/"
         self.locale = "en_US" if code == "en" else self.mod.LOCALE
         self.name = "English" if code == "en" else self.mod.NAME
         self.flag = "us" if code == "en" else self.mod.FLAG  # images/trovelo/flag-<flag>.png
-        self.home = HOME if code == "en" else ROOT / code / "help" / "index.html"
-        self.shots = SHOTS if code == "en" else f"{SHOTS}{code}/"
+        self.home = HOME if code == "en" else ROOT / self.slug / "help" / "index.html"
+        self.shots = SHOTS if code == "en" else f"{SHOTS}{self.slug}/"
+        self.short = getattr(self.mod, "SHORT", code.split("-")[0].upper())  # on the globe button
         self.missing = set()
 
     def t(self, s, **kw):
@@ -157,7 +161,7 @@ def menu_langs(lang, path_of, where):
                      f'<span class="sf i-check" aria-hidden="true"></span></a>')
     return (f'<span class="tn-lw tn-lw-{where}">'
             f'<button class="tn-lang" type="button" aria-expanded="false" aria-controls="{pid}" aria-label="{lang.t("Language")}: {lang.name}">'
-            f'<span class="sf i-globe" aria-hidden="true"></span>{lang.code.upper()}<span class="sf i-chevdown" aria-hidden="true"></span></button>'
+            f'<span class="sf i-globe" aria-hidden="true"></span>{lang.short}<span class="sf i-chevdown" aria-hidden="true"></span></button>'
             f'<span class="tn-langs" id="{pid}" hidden><b>{lang.t("Language")}</b>{"".join(links)}</span></span>')
 
 
@@ -182,8 +186,8 @@ def localized(lang):
 
     def shot(img, where):
         if (ROOT / lang.shots.strip("/") / img).exists():
-            return f"{lang.code}/{img}"
-        if img not in english_screens:
+            return f"{lang.slug}/{img}"
+        if img not in english_screens and not TEXT_ONLY:
             errors.append(f"{where}: no {lang.shots}{img}")
         return img
 
@@ -227,9 +231,9 @@ def localized(lang):
                     if p.get("marks"):
                         if key in marks:
                             p["marks"] = [tuple(m) for m in marks[key]]
-                        elif not p["img"].startswith(f"{lang.code}/"):
+                        elif not p["img"].startswith(f"{lang.slug}/"):
                             pass  # an English screen keeps its own marks
-                        else:
+                        elif not TEXT_ONLY:
                             errors.append(f"{key}: no marks measured on the {lang.name} screen")
                 if "mac" in s:
                     s["mac"]["alt"] = alts[0]
@@ -625,7 +629,7 @@ def home_html(lang, english_home, articles, topics, start, news):
     if lang.mod:
         for en, xx in lang.mod.HOME:
             if en not in src:
-                sys.exit(f"help_{lang.code}.py: the Help home no longer has “{en}”; update HOME")
+                sys.exit(f"{lang.file}: the Help home no longer has “{en}”; update HOME")
             src = src.replace(en, xx)
         src = src.replace('<html lang="en">', f'<html lang="{lang.code}">')
         src = src.replace('content="en_US"', f'content="{lang.locale}"')
@@ -675,7 +679,7 @@ def search_index(lang, articles, topics):
                       for a in articles)
     words = {k: lang.t(k) for k in ("Nothing yet for “{q}”.", "Ask me on {link} and I’ll answer.", "Soon")}
     return "\n".join([
-        f"    {lang.code}: {{",
+        f"    {json.dumps(lang.code)}: {{",
         f"      topics: {json.dumps(names, ensure_ascii=False)},",
         f"      words: {json.dumps(words, ensure_ascii=False)},",
         "      articles: [",
@@ -715,7 +719,7 @@ def main():
             out.write_text(article_html(a, lang, articles, topics, nav, footer), encoding="utf-8")
 
         if lang.missing:
-            sys.exit(f"help_{code}.py has no UI words for: " + " | ".join(sorted(lang.missing)))
+            sys.exit(f"{lang.file} has no UI words for: " + " | ".join(sorted(lang.missing)))
         index.append(search_index(lang, articles, topics))
         newest = max(a["updated"] for a in articles)
         sitemap.append(f"  <url><loc>{SITE}{lang.base}</loc><lastmod>{newest}</lastmod></url>")
@@ -737,5 +741,30 @@ def main():
     SITEMAP.write_text(sm, encoding="utf-8")
 
 
+def check_text(code):
+    """python3 build_help.py --check de: everything a new translation needs
+    except its screens and marks, without writing a page."""
+    global TEXT_ONLY
+    TEXT_ONLY = True
+    lang = Lang(code)
+    LANG[code] = lang
+    if code not in LANGS:
+        LANGS.append(code)
+    articles, topics, start, news = localized(lang)
+    no_long_dashes(lang, articles, topics, start, news)
+    src = home_html(lang, home_html(LANG["en"], HOME.read_text(encoding="utf-8"), *localized(LANG["en"])), articles, topics, start, news)
+    nav = re.search(r'<nav class="tn".*?<div class="tn-dim" hidden></div>', src, re.S).group(0)
+    footer = re.search(r'<footer class="tf">.*?</footer>', src, re.S).group(0)
+    for a in articles:
+        article_html(a, lang, articles, topics, nav, footer)
+    search_index(lang, articles, topics)
+    if lang.missing:
+        sys.exit(f"{lang.file} has no UI words for: " + " | ".join(sorted(lang.missing)))
+    print(f"{lang.name}: the words of {len(articles)} articles are ready (screens and marks not checked)")
+
+
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:2] == ["--check"]:
+        check_text(sys.argv[2])
+    else:
+        main()

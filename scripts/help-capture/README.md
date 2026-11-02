@@ -32,6 +32,10 @@ xcrun simctl launch --terminate-running-process $A com.eduardopinillos.trovelo \
   -seedTripFile /path/help-tokio-es.trovelo -isProUser YES
 ```
 
+`./setlang.sh $A <lang>` does all of the above but the launch, for any of the
+help's languages (keyboard, 12 or 24-hour clock and home currency as in that
+country); `./setlang.sh $A en` puts it back in English.
+
 `-seedTripFile` imports a trip once (a debug-build flag, see TripFileSeed.swift
 in the app). English used `en-US`, `en_US` and 12-hour time. Put the
 simulator back to English when done.
