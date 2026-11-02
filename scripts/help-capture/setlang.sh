@@ -21,7 +21,7 @@ case $LANG_ in
   ja)      L=(ja-JP); LOC=ja_JP; KB=(ja_JP-Romaji ja_JP-Kana); H=24; CUR=EUR ;;
   ko)      L=(ko-KR); LOC=ko_KR; KB=(ko_KR); H=12; CUR=KRW ;;
   zh-hans) L=(zh-Hans-CN); LOC=zh_CN; KB=("zh_Hans-Pinyin@sw=Pinyin-Simplified"); H=24; CUR=CNY ;;
-  zh-hant) L=(zh-Hant-HK); LOC=zh_HK; KB=("zh_Hant-Pinyin@sw=Pinyin-Traditional" zh_Hant-HWR); H=12; CUR=HKD ;;
+  zh-hant) L=(zh-Hant-HK); LOC=zh_HK; KB=("zh_Hant-Pinyin@sw=Pinyin-Traditional;hw=Automatic" "zh_Hant-Zhuyin@sw=Zhuyin;hw=Automatic"); H=12; CUR=HKD ;;
   nl)      L=(nl-NL); LOC=nl_NL; KB=(nl_NL); H=24; CUR=EUR ;;
   sv)      L=(sv-SE); LOC=sv_SE; KB=(sv_SE); H=24; CUR=SEK ;;
   da)      L=(da-DK); LOC=da_DK; KB=(da_DK); H=24; CUR=DKK ;;
@@ -45,6 +45,8 @@ d delete -g AppleICUForce24HourTime 2>/dev/null || true
 d write -g AppleICUForce12HourTime -bool true
 
 # Trovelo's home currency lives in its own defaults: written while it's off.
+# A cloned simulator keeps using its source's app folder (only the trips are
+# its own), so clones share these settings: run one currency at a time.
 plist=$(xcrun simctl get_app_container $SIM $APP data)/Library/Preferences/$APP.plist
 xcrun simctl terminate $SIM $APP 2>/dev/null || true
 xcrun simctl shutdown $SIM
