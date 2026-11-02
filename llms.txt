@@ -32,6 +32,7 @@ What it does:
 - [Support](https://troveloapp.com/support/): how to get help and send feedback
 - [Press kit](https://troveloapp.com/press/): facts, logos, app icon and screenshots
 - [Privacy policy](https://troveloapp.com/privacy/): what the app does with your data
+- [Website privacy](https://troveloapp.com/privacy/website/): what this website does when you visit (no cookies, hosted on GitHub Pages)
 
 ## Help articles
 

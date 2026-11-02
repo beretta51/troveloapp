@@ -115,6 +115,7 @@ HOME = [
     ('<p class="tf-h">More</p>', '<p class="tf-h">Más</p>'),
     (">Press kit</a>", ">Kit de prensa</a>"),
     (">Privacy policy</a>", ">Política de privacidad</a>"),
+    (">Website privacy</a>", ">Privacidad de la web</a>"),
     ("<span>Made in Portugal</span>", "<span>Hecho en Portugal</span>"),
 ]
 
