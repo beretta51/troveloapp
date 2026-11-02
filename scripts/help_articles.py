@@ -1541,8 +1541,8 @@ article(
     keywords="icloud sync devices iphone ipad mac not syncing apple id storage full account backup",
     thumb=("i-your-data.jpg", "50% 65%"),
     ios=[
-        dict(title="Use the same Apple ID",
-             text="Sign in to iCloud with the same Apple ID on each device and install Trovelo. Your trips appear on their own."),
+        dict(title="Use the same Apple Account",
+             text="Sign in to iCloud with the same Apple Account on each device and install Trovelo. Your trips appear on their own."),
         dict(title="Check it’s working",
              text="Tap the round profile button at the top right. Under <b>Your Data</b>, <b>iCloud Sync</b> says <b>Active</b> when Trovelo is syncing with iCloud.",
              phones=[dict(img="i-your-data.jpg", alt="iCloud Sync: Active", crop="bottom",
@@ -1588,7 +1588,7 @@ article(
              legend=["Restore"]),
     ],
     tips=[
-        ("i-star", "Trovelo Pro isn’t in the file: it goes with your Apple ID."),
+        ("i-star", "Trovelo Pro isn’t in the file: it goes with your Apple Account."),
         ("i-people", "Shared trips come back unticked, because restoring one would change the plan for everyone in it."),
         ("i-check", "Backups are free, with or without Pro."),
     ],
@@ -1621,7 +1621,7 @@ article(
              legend=["Plan"]),
     ],
     tips=[
-        ("i-iphone", "Pro goes with your Apple ID, on your iPhone, iPad and Mac. If it doesn’t show on one, tap <b>Restore purchases</b> on the Pro screen."),
+        ("i-iphone", "Pro goes with your Apple Account, on your iPhone, iPad and Mac. If it doesn’t show on one, tap <b>Restore purchases</b> on the Pro screen."),
         ("i-info", "It isn’t a subscription: nothing renews and nothing is charged again."),
     ],
     related=["plan-with-your-ai-assistant", "start-a-trip-from-a-guide", "back-up-all-your-trips"],

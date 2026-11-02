@@ -10,7 +10,7 @@
   function setOpen(open) {
     nav.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    btn.setAttribute('aria-label', open ? (btn.dataset.close || 'Close menu') : (btn.dataset.open || 'Open menu'));
     if (dim) dim.hidden = !open;
   }
   btn.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
