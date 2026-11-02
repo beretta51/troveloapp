@@ -191,6 +191,22 @@
     }
   }
 
+  // ── The globe in the menu at the top opens this page in other languages.
+  Array.prototype.forEach.call(document.querySelectorAll('.tn-lang'), function (btn) {
+    var list = document.getElementById(btn.getAttribute('aria-controls'));
+    var show = function (on) {
+      btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+      list.hidden = !on;
+    };
+    btn.addEventListener('click', function () { show(list.hidden); });
+    document.addEventListener('click', function (e) {
+      if (!list.hidden && !btn.parentNode.contains(e.target)) show(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !list.hidden) { show(false); btn.focus(); }
+    });
+  });
+
   // ── Article: iPhone & iPad / Mac tabs. Without the script both show.
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
   var tocs = document.querySelectorAll('[data-toc]');

@@ -18,6 +18,7 @@ says tú, so this does too. Never a long dash.
 """
 
 NAME = "Español"
+FLAG = "es"
 LOCALE = "es_ES"
 
 MONTHS = "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split()

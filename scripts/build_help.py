@@ -86,6 +86,7 @@ class Lang:
         self.base = "/help/" if code == "en" else f"/{code}/help/"
         self.locale = "en_US" if code == "en" else self.mod.LOCALE
         self.name = "English" if code == "en" else self.mod.NAME
+        self.flag = "us" if code == "en" else self.mod.FLAG  # images/trovelo/flag-<flag>.png
         self.home = HOME if code == "en" else ROOT / code / "help" / "index.html"
         self.shots = SHOTS if code == "en" else f"{SHOTS}{code}/"
         self.missing = set()
@@ -139,6 +140,33 @@ def put_langs(src, lang, path_of):
     src, n = re.subn(r"<!-- langs -->.*?<!-- /langs -->", lambda m: f"<!-- langs -->{switcher(lang, path_of)}<!-- /langs -->", src, flags=re.S)
     if n != 1:
         sys.exit(f"{lang.home.relative_to(ROOT)} has no <!-- langs --> … <!-- /langs --> in its footer")
+    return src
+
+
+def menu_langs(lang, path_of, where):
+    """The globe in the menu at the top and the languages it opens, with
+    their flags. The menu has it twice: in the bar on a wide screen and next
+    to Menu on a phone, where the bar's links are folded away."""
+    pid = "tn-langs" if where == "bar" else "tn-langs-m"
+    links = []
+    for c in LANGS:
+        other = LANG[c]
+        cur = ' aria-current="page"' if c == lang.code else ""
+        links.append(f'<a href="{path_of(other)}" hreflang="{c}" lang="{c}"{cur}>'
+                     f'<img src="/images/trovelo/flag-{other.flag}.png" alt="" width="24" height="18">{other.name}'
+                     f'<span class="sf i-check" aria-hidden="true"></span></a>')
+    return (f'<span class="tn-lw tn-lw-{where}">'
+            f'<button class="tn-lang" type="button" aria-expanded="false" aria-controls="{pid}" aria-label="{lang.t("Language")}: {lang.name}">'
+            f'<span class="sf i-globe" aria-hidden="true"></span>{lang.code.upper()}<span class="sf i-chevdown" aria-hidden="true"></span></button>'
+            f'<span class="tn-langs" id="{pid}" hidden><b>{lang.t("Language")}</b>{"".join(links)}</span></span>')
+
+
+def put_menu_langs(src, lang, path_of):
+    for where in ("bar", "phone"):
+        src, n = re.subn(rf"<!-- langs-{where} -->.*?<!-- /langs-{where} -->",
+                         lambda m: f"<!-- langs-{where} -->{menu_langs(lang, path_of, where)}<!-- /langs-{where} -->", src, flags=re.S)
+        if n != 1:
+            sys.exit(f"{lang.home.relative_to(ROOT)} has no <!-- langs-{where} --> … <!-- /langs-{where} --> in its menu")
     return src
 
 
@@ -394,7 +422,7 @@ def article_html(a, lang, articles, topics, nav, footer):
         '<link rel="stylesheet" href="/help/help.css">',
         '<script type="application/ld+json">', ld_text, "</script>",
         "</head>", "<body>",
-        f'<a class="skip" href="#main">{lang.t("Skip to content")}</a>', "", nav, "",
+        f'<a class="skip" href="#main">{lang.t("Skip to content")}</a>', "", put_menu_langs(nav, lang, path_of), "",
         '<div class="wrap doc" style="max-width: 1320px">',
         f'  <nav class="side" aria-label="{lang.t("Topics")}">',
         f'    <p class="side-h">{lang.t("TOPICS")}</p>',
@@ -608,6 +636,7 @@ def home_html(lang, english_home, articles, topics, start, news):
     src = put_block(src, "topics", topics_html(lang, articles, topics), where)
     src = put_block(src, "news", news_html(lang, articles, news), where)
     src = put_block(src, "hreflang", "\n".join(alternates(lambda other: other.base)), where)
+    src = put_menu_langs(src, lang, lambda other: other.base)
     return put_langs(src, lang, lambda other: other.base)
 
 
