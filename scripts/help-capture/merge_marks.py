@@ -1,7 +1,7 @@
 # merge_marks.py --lang xx [--missing] [--write]
 # Checks the marks measured during a capture ($CAP/marks-xx.json) against the
 # English ones (same count, same "dot"/"left" classes) and, with --write,
-# puts them in scripts/help_xx.py as MARKS, one key per line.
+# puts them in scripts/help_xx.py (help_pt_br.py for pt-br) as MARKS, one key per line.
 # --missing lists the English uses that have no marks in that language yet.
 import json, os, re, sys
 from pathlib import Path
@@ -47,7 +47,7 @@ if '--write' in args:
     if problems:
         sys.exit('not written: fix the marks above first')
     body = ''.join(f'    {json.dumps(k)}: {json.dumps(v)},\n' for k, v in sorted(new.items()))
-    path = SCRIPTS / f'help_{lang}.py'
+    path = SCRIPTS / f"help_{lang.replace('-', '_')}.py"  # pt-br → help_pt_br.py
     src, n = re.subn(r'^MARKS = \{(?:\}|\n.*?^\})\n', 'MARKS = {\n' + body + '}\n',
                      path.read_text(), flags=re.S | re.M)
     assert n == 1, 'no MARKS = {…} in ' + path.name
