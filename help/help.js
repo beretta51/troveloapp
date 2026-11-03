@@ -295,6 +295,52 @@
         ["Maak een reservekopie van al je reizen", "icloud-privacy-pro", "/nl/help/back-up-all-your-trips/", "reservekopie back-up backup herstellen terugzetten exporteren downloaden bestand zip nieuwe iphone overzetten gegevens bewaren"],
         ["Wat Trovelo Pro je geeft", "icloud-privacy-pro", "/nl/help/what-trovelo-pro-includes/", "pro prijs upgrade premium abonnement eenmalige betaling eenmalige aankoop gratis versie gratis plan limiet onbeperkt aankopen herstellen code inwisselen"]
       ]
+    },
+    "ja": {
+      topics: {"getting-started": "はじめに", "board-cards": "ボードとカード", "map-routes": "マップとルート", "flights-transport": "フライトと交通", "expenses": "支出", "plan-together": "一緒に計画", "weather-packing": "天気と荷造り", "guides-someday": "ガイドと「いつか」", "my-spots": "マイスポットとメダル", "widgets-watch-calendar": "ウィジェット、Watch、カレンダー", "mac-ai-plan": "Mac と AI での計画", "icloud-privacy-pro": "iCloud、プライバシー、Pro"},
+      words: {"Nothing yet for “{q}”.": "「{q}」についての記事はまだありません。", "Ask me on {link} and I’ll answer.": "{link}で聞いてください。お答えします。", "Soon": "近日公開"},
+      articles: [
+        ["最初の旅行を作る", "getting-started", "/ja/help/create-your-first-trip/", "旅行 作成 作る 新規 はじめる 計画 最初の旅行 日付 日程 都市 行き先 目的地 デモ旅行 サンプル 旅程"],
+        ["複数の都市をめぐる旅行", "getting-started", "/ja/help/trips-with-more-than-one-city/", "複数都市 周遊 2都市 都市を追加 ルート 旅程 ロードトリップ ドライブ旅行 はしご 複数の行き先"],
+        ["日程に場所を追加する", "board-cards", "/ja/help/add-places-to-your-days/", "追加 場所 スポット 観光地 名所 レストラン 検索 Apple Maps マップ 地図 カード 日 プラス 新規"],
+        ["カードを別の日に移動する", "board-cards", "/ja/help/move-a-card-to-another-day/", "移動 カード 日 日付変更 日程変更 別の日 未定 ドラッグ 日付を選択 予定変更 入れ替え"],
+        ["その日はどれくらい埋まっている？", "board-cards", "/ja/help/how-full-is-my-day/", "忙しい ゆったり 入りきらない 詰め込みすぎ 残り時間 ペース 時間 バー 所要時間 滞在時間 どれくらい"],
+        ["カードの種類", "board-cards", "/ja/help/every-kind-of-card/", "カテゴリ 種類 タイプ カード 宿泊 ホテル 食事 場所 フライト 電車 チケット 美術館 ビーチ カテゴリ変更"],
+        ["メモ、ファイル、写真", "board-cards", "/ja/help/notes-files-and-photos/", "メモ ノート ファイル PDF 写真 チケット 添付 書類 カメラ 写真ライブラリ 日のメモ"],
+        ["日付のないアイデア", "board-cards", "/ja/help/unplanned-ideas-without-a-day/", "未定 アイデア 日付なし あとで トレイ 候補 行きたい ウィッシュリスト 保留 決めていない"],
+        ["予約番号", "board-cards", "/ja/help/confirmation-numbers/", "予約番号 確認番号 予約コード 予約 PNR 照会番号 コピー ホテル フライト ドアコード 暗証番号"],
+        ["1日の順番を変える", "board-cards", "/ja/help/change-the-order-of-your-day/", "順番 並べ替え 並び替え 順序 ドラッグ 移動 上 下 最初 最後 入れ替え"],
+        ["1日のルートを最適化する", "map-routes", "/ja/help/optimize-a-days-route/", "最適化 ルート 最短 順番 距離 時間短縮 鍵 ロック 固定 1日 マップ 道順 効率よく回る"],
+        ["近くにあるもの", "map-routes", "/ja/help/whats-nearby/", "近く 周辺 マップ 地図 食事 カフェ コーヒー レストラン バー 観光 ATM 薬局 スーパー 場所を探す"],
+        ["マップにピンを立てる", "map-routes", "/ja/help/drop-a-pin-on-the-map/", "ピン マップ 地図 長押し 住所 場所 追加 位置 地点 カスタム 待ち合わせ場所"],
+        ["乗り継ぎのあるフライトを追加する", "flights-transport", "/ja/help/add-a-flight-with-layovers/", "フライト 飛行機 追加 航空便 乗り継ぎ 経由 トランジット 航空会社 便名 ターミナル ゲート 空港 時差 タイムゾーン"],
+        ["電車、バス、フェリー", "flights-transport", "/ja/help/trains-buses-and-ferries/", "電車 列車 新幹線 バス 高速バス フェリー 船 号車 座席 番線 ホーム 駅 乗り換え 切符 きっぷ"],
+        ["メールから予約を読み込む", "flights-transport", "/ja/help/import-a-booking-from-an-email/", "読み込み インポート 予約 メール 確認メール PDF スクリーンショット スクショ スキャン フライト ホテル レンタカー 航空券 読み取り"],
+        ["支出を記録する", "expenses", "/ja/help/log-an-expense/", "支出 出費 記録 家計簿 費用 お金 支払い 予算 合計 カテゴリ CSV スプレッドシート Excel 書き出し エクスポート"],
+        ["料金を自国通貨で見る", "expenses", "/ja/help/see-costs-in-your-own-money/", "通貨 為替 為替レート 換算 両替 自国通貨 現地通貨 外貨 ドル ユーロ 円 合計"],
+        ["グループで費用を割り勘する", "expenses", "/ja/help/split-costs-with-your-group/", "割り勘 費用 分担 グループ 共有 精算 立て替え 貸し借り 支払い 友だち 家族 誰が払った 残高 Splitwise Walica"],
+        ["旅行に人を招待する", "plan-together", "/ja/help/invite-someone-to-your-trip/", "招待 共有 旅行 一緒に 友だち 家族 パートナー 恋人 共同編集 共同で計画 シェア iCloud"],
+        ["閲覧のみ？編集可能？", "plan-together", "/ja/help/can-view-or-can-edit/", "権限 閲覧 編集 閲覧のみ 読み取り専用 削除 メンバーを外す 抜ける 退出 共有を停止 オーナー"],
+        ["共有されないもの", "plan-together", "/ja/help/what-stays-private/", "プライバシー 非公開 共有 共有されない 自宅 住所 荷造り 書類 支出 データ iCloud サーバー 個人情報"],
+        ["荷造りリスト", "weather-packing", "/ja/help/your-packing-list/", "荷造り 持ち物 持ち物リスト パッキング スーツケース 荷物 チェックリスト バッグ 服 書類 何を持っていく 忘れ物"],
+        ["プラグと電圧", "weather-packing", "/ja/help/plugs-and-voltage/", "プラグ コンセント 変換プラグ 変換アダプタ 電圧 電源 Aタイプ Cタイプ BFタイプ 充電器 変圧器 海外旅行"],
+        ["例年の天気と最新の予報", "weather-packing", "/ja/help/typical-weather-and-live-forecast/", "天気 天気予報 予報 気温 雨 降水確率 気候 例年 平年 Apple Weather 傘 旅行中の天気"],
+        ["ブログのリストを貼り付ける", "guides-someday", "/ja/help/paste-a-list-from-a-blog/", "貼り付け ペースト リスト ブログ ChatGPT Gemini Claude メモ 読み込み まとめて 一括 複数の場所"],
+        ["ガイドから旅行を始める", "guides-someday", "/ja/help/start-a-trip-from-a-guide/", "ガイド モデルコース 旅程 テンプレート 旅行プラン おすすめ ロードトリップ ドライブ ルート コピー 開始日"],
+        ["「いつか」のために場所を保存する", "guides-someday", "/ja/help/save-places-for-someday/", "いつか 保存 あとで 行きたい ウィッシュリスト バケットリスト 行きたい場所 お気に入り ブックマーク 保存済み アイデア"],
+        ["行ったことのある場所を追加する", "my-spots", "/ja/help/add-places-youve-been/", "マイスポット スポット 訪問 行った国 行った都市 マップ 世界地図 ピン 旅の記録 制覇 白地図 塗りつぶし"],
+        ["写真から過去の旅行を見つける", "my-spots", "/ja/help/find-past-trips-in-your-photos/", "写真 写真ライブラリ スキャン 位置情報 GPS 撮影場所 過去の旅行 行った国 自動 年 読み込み"],
+        ["メダル：First Stepper から", "my-spots", "/ja/help/medals-from-first-stepper-up/", "メダル ランク バッジ レベル 称号 First Stepper Apex Traveler 国 国数 実績 旅の歩み シェア"],
+        ["ロック画面に旅行を表示", "widgets-watch-calendar", "/ja/help/your-flight-on-the-lock-screen/", "ロック画面 ライブアクティビティ Dynamic Island ダイナミックアイランド 搭乗券 フライト ゲート カウントダウン 今 次 ウィジェット"],
+        ["Apple Watch で Trovelo", "widgets-watch-calendar", "/ja/help/trovelo-on-apple-watch/", "Apple Watch アップルウォッチ スマートスタック 手首 watchOS ライブアクティビティ Digital Crown デジタルクラウン 今 次"],
+        ["カレンダーに旅行を表示", "widgets-watch-calendar", "/ja/help/your-trip-in-calendar/", "カレンダー Apple カレンダー iCal 予定 イベント スケジュール 同期 フライト ホテル 終日"],
+        ["Mac で Trovelo", "mac-ai-plan", "/ja/help/trovelo-on-mac/", "Mac MacBook パソコン デスクトップ アプリ 同期 ボード 列 キーボードショートカット サイドバー"],
+        ["AIアシスタントと計画する", "mac-ai-plan", "/ja/help/plan-with-your-ai-assistant/", "AIアシスタント AI 人工知能 生成AI Claude ChatGPT Codex Cursor MCP 頼むだけ 計画 接続 つなぐ"],
+        ["カードを日から日へドラッグする", "mac-ai-plan", "/ja/help/drag-cards-between-days/", "Mac ドラッグ ドロップ ドラッグ&ドロップ カード 列 日 ボード キーボード コンパクト カードの大きさ 天気"],
+        ["iCloud 同期のしくみ", "icloud-privacy-pro", "/ja/help/how-icloud-sync-works/", "iCloud 同期 デバイス iPhone iPad Mac 同期されない 同期できない Apple アカウント Apple ID ストレージ 容量 いっぱい バックアップ"],
+        ["すべての旅行をバックアップする", "icloud-privacy-pro", "/ja/help/back-up-all-your-trips/", "バックアップ 復元 書き出し エクスポート ダウンロード ファイル zip 機種変更 新しいiPhone 移行 データ 保存"],
+        ["Trovelo Pro でできること", "icloud-privacy-pro", "/ja/help/what-trovelo-pro-includes/", "Pro 価格 値段 アップグレード プレミアム サブスク サブスクリプション 買い切り 1回払い 無料プラン 無料 制限 無制限 購入を復元 コード 引き換え"]
+      ]
     }
   };
   // </index>
