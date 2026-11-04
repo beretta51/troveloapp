@@ -19,9 +19,9 @@ case $LANG_ in
   it)      L=(it-IT); LOC=it_IT; KB=(it_IT); H=24; CUR=EUR ;;
   pt-br)   L=(pt-BR); LOC=pt_BR; KB=(pt_BR); H=24; CUR=BRL ;;
   ja)      L=(ja-JP); LOC=ja_JP; KB=(ja_JP-Romaji ja_JP-Kana); H=24; CUR=EUR ;;
-  ko)      L=(ko-KR); LOC=ko_KR; KB=(ko_KR); H=12; CUR=KRW ;;
-  zh-hans) L=(zh-Hans-CN); LOC=zh_CN; KB=("zh_Hans-Pinyin@sw=Pinyin-Simplified"); H=24; CUR=CNY ;;
-  zh-hant) L=(zh-Hant-HK); LOC=zh_HK; KB=("zh_Hant-Pinyin@sw=Pinyin-Traditional;hw=Automatic" "zh_Hant-Zhuyin@sw=Zhuyin;hw=Automatic"); H=12; CUR=HKD ;;
+  ko)      L=(ko-KR); LOC=ko_KR; KB=(ko_KR "en_US@sw=QWERTY;hw=Automatic"); H=12; CUR=KRW ;;  # Korean iPhones come with English too
+  zh-hans) L=(zh-Hans-CN); LOC=zh_CN; KB=("zh_Hans-Pinyin@sw=Pinyin-Simplified" "en_US@sw=QWERTY;hw=Automatic"); H=24; CUR=CNY ;;
+  zh-hant) L=(zh-Hant-HK); LOC=zh_HK; KB=("zh_Hant-Pinyin@sw=Pinyin-Traditional;hw=Automatic" "zh_Hant-Zhuyin@sw=Zhuyin;hw=Automatic" "en_US@sw=QWERTY;hw=Automatic"); H=12; CUR=HKD ;;
   nl)      L=(nl-NL); LOC=nl_NL; KB=(nl_NL); H=24; CUR=EUR ;;
   sv)      L=(sv-SE); LOC=sv_SE; KB=(sv_SE); H=24; CUR=SEK ;;
   da)      L=(da-DK); LOC=da_DK; KB=(da_DK); H=24; CUR=DKK ;;

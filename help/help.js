@@ -387,6 +387,52 @@
         ["Faça backup de todas as suas viagens", "icloud-privacy-pro", "/pt-br/help/back-up-all-your-trips/", "backup cópia de segurança restaurar exportar baixar arquivo zip iphone novo transferir passar dados salvar"],
         ["O que o Trovelo Pro inclui", "icloud-privacy-pro", "/pt-br/help/what-trovelo-pro-includes/", "pro preço upgrade premium assinatura pagamento único compra única plano gratuito grátis limite ilimitado restaurar compras resgatar código"]
       ]
+    },
+    "ko": {
+      topics: {"getting-started": "시작하기", "board-cards": "보드와 카드", "map-routes": "지도와 동선", "flights-transport": "항공편과 교통", "expenses": "지출", "plan-together": "함께 계획하기", "weather-packing": "날씨와 짐", "guides-someday": "가이드와 ‘언젠가’", "my-spots": "내 장소와 메달", "widgets-watch-calendar": "위젯, Watch, 캘린더", "mac-ai-plan": "Mac과 AI로 계획하기", "icloud-privacy-pro": "iCloud, 개인정보, Pro"},
+      words: {"Nothing yet for “{q}”.": "‘{q}’에 대한 내용은 아직 없어요.", "Ask me on {link} and I’ll answer.": "{link}에 물어보시면 답해 드릴게요.", "Soon": "곧 추가"},
+      articles: [
+        ["첫 여행 만들기", "getting-started", "/ko/help/create-your-first-trip/", "여행 만들기 새 여행 시작 계획 첫 여행 일정 짜기 날짜 도시 여행지 목적지 데모 여행 예시 일정표"],
+        ["여러 도시를 도는 여행", "getting-started", "/ko/help/trips-with-more-than-one-city/", "여러 도시 다구간 멀티시티 두 도시 도시 추가 로드 트립 일정 경로 여행지 여러 곳 이동"],
+        ["날마다 장소 추가하기", "board-cards", "/ko/help/add-places-to-your-days/", "장소 추가 명소 관광지 식당 맛집 검색 Apple 지도 애플 지도 카드 하루 일정 추가하기 플러스 새로 만들기"],
+        ["카드를 다른 날로 옮기기", "board-cards", "/ko/help/move-a-card-to-another-day/", "카드 이동 옮기기 날짜 변경 일정 변경 다른 날 미정 끌기 드래그 날짜 선택 일정 바꾸기 미루기"],
+        ["하루가 얼마나 찼을까요?", "board-cards", "/ko/help/how-full-is-my-day/", "빡빡한 하루 여유로운 하루 다 담을 수 없음 남은 시간 일정 강도 시간 막대 소요 시간 얼마나 걸리는지 일정 꽉 참 무리한 일정"],
+        ["모든 카드 종류", "board-cards", "/ko/help/every-kind-of-card/", "카테고리 종류 유형 카드 숙소 호텔 음식 맛집 장소 항공편 기차 티켓 박물관 해변 카테고리 변경 바꾸기"],
+        ["메모, 파일, 사진", "board-cards", "/ko/help/notes-files-and-photos/", "메모 노트 파일 pdf 사진 티켓 첨부 문서 카메라 사진 보관함 하루 메모 예약 확인서 바우처"],
+        ["날짜 없는 아이디어", "board-cards", "/ko/help/unplanned-ideas-without-a-day/", "미정 아이디어 날짜 없음 나중에 보관함 후보 가고 싶은 곳 위시리스트 아직 안 정함 보류"],
+        ["예약 번호", "board-cards", "/ko/help/confirmation-numbers/", "예약 번호 확인 번호 예약 코드 PNR 예약 확인 복사 호텔 항공편 도어 코드 바우처 컨펌 번호"],
+        ["하루의 순서 바꾸기", "board-cards", "/ko/help/change-the-order-of-your-day/", "순서 순서 변경 정렬 하루 끌기 드래그 이동 위로 아래로 차례 처음 마지막 순서 바꾸기"],
+        ["하루 동선 최적화하기", "map-routes", "/ko/help/optimize-a-days-route/", "최적화 동선 경로 최단 순서 거리 시간 절약 자물쇠 잠금 고정 하루 지도 루트 효율"],
+        ["주변에 뭐가 있을까", "map-routes", "/ko/help/whats-nearby/", "주변 근처 지도 음식 맛집 커피 카페 식당 바 술집 명소 ATM 약국 마트 편의점 장소 찾기"],
+        ["지도에 핀 꽂기", "map-routes", "/ko/help/drop-a-pin-on-the-map/", "핀 꽂기 마커 지도 길게 누르기 주소 위치 지점 추가 사용자 지정 위치 좌표 표시"],
+        ["경유 항공편 추가하기", "flights-transport", "/ko/help/add-a-flight-with-layovers/", "항공편 비행기 추가 경유 환승 연결편 항공사 편명 터미널 게이트 공항 시차 시간대 레이오버"],
+        ["기차, 버스, 페리", "flights-transport", "/ko/help/trains-buses-and-ferries/", "기차 열차 버스 고속버스 페리 배 객차 좌석 승강장 플랫폼 역 환승 승차권 기차표 KTX 신칸센"],
+        ["이메일에서 예약 가져오기", "flights-transport", "/ko/help/import-a-booking-from-an-email/", "가져오기 예약 이메일 메일 확인서 pdf 스크린샷 캡처 스캔 항공편 호텔 렌터카 티켓 읽기 자동 입력"],
+        ["지출 기록하기", "expenses", "/ko/help/log-an-expense/", "지출 기록 경비 비용 돈 결제 가계부 예산 합계 카테고리 csv 스프레드시트 엑셀 내보내기 여행 경비"],
+        ["내 통화로 비용 보기", "expenses", "/ko/help/see-costs-in-your-own-money/", "통화 환율 환전 변환 계산기 기준 통화 현지 통화 원화 달러 유로 엔화 합계 얼마"],
+        ["그룹과 비용 나누기", "expenses", "/ko/help/split-costs-with-your-group/", "비용 나누기 더치페이 정산 엔빵 n빵 그룹 공동 경비 갚을 돈 받을 돈 친구 가족 누가 냈는지 잔액 splitwise 모임 통장"],
+        ["여행에 사람 초대하기", "plan-together", "/ko/help/invite-someone-to-your-trip/", "초대 공유 여행 공유 함께 친구 가족 연인 커플 공동 편집 같이 계획 공유 여행 icloud"],
+        ["보기 가능, 편집 가능?", "plan-together", "/ko/help/can-view-or-can-edit/", "권한 보기 편집 읽기 전용 사람 제거 내보내기 여행에서 나가기 공유 중단 공유 해제 소유자 주인"],
+        ["비공개로 남는 것", "plan-together", "/ko/help/what-stays-private/", "개인정보 비공개 프라이버시 공유 공유 안 됨 집 주소 짐 서류 문서 지출 데이터 icloud 서버 보안"],
+        ["짐 목록", "weather-packing", "/ko/help/your-packing-list/", "짐 목록 짐 싸기 준비물 체크리스트 여행 준비물 캐리어 가방 옷 서류 챙길 것 준비물 리스트"],
+        ["플러그와 전압", "weather-packing", "/ko/help/plugs-and-voltage/", "플러그 콘센트 어댑터 멀티 어댑터 돼지코 변환 플러그 전압 220v 110v 타입 a 타입 c 타입 g 충전기 여행용 어댑터"],
+        ["평소 날씨와 실시간 예보", "weather-packing", "/ko/help/typical-weather-and-live-forecast/", "날씨 일기 예보 일기예보 기온 비 강수 평소 날씨 기후 평균 apple weather 우산 여행 날짜"],
+        ["블로그 목록 붙여넣기", "guides-someday", "/ko/help/paste-a-list-from-a-blog/", "붙여넣기 목록 리스트 블로그 chatgpt gemini claude 메모 가져오기 여러 장소 한 번에 일괄 추가"],
+        ["가이드로 여행 시작하기", "guides-someday", "/ko/help/start-a-trip-from-a-guide/", "가이드 여행 코스 추천 일정 템플릿 여행 아이디어 로드 트립 복사 시작일 루트 추천 코스"],
+        ["언젠가 갈 곳 저장하기", "guides-someday", "/ko/help/save-places-for-someday/", "언젠가 나중에 저장 위시리스트 버킷리스트 가고 싶은 곳 즐겨찾기 북마크 저장한 장소 아이디어 찜"],
+        ["다녀온 곳 추가하기", "my-spots", "/ko/help/add-places-youve-been/", "내 장소 방문한 나라 다녀온 나라 도시 지도 여행 지도 핀 가 본 곳 세계 지도 스크래치 맵 여행 기록"],
+        ["사진에서 지난 여행 찾기", "my-spots", "/ko/help/find-past-trips-in-your-photos/", "사진 사진 보관함 스캔 분석 위치 gps 지난 여행 다녀온 나라 자동 연도 가져오기 여행 기록"],
+        ["메달, First Stepper부터", "my-spots", "/ko/help/medals-from-first-stepper-up/", "메달 랭크 등급 배지 레벨 first stepper apex traveler 나라 수 국가 수 업적 여행 기록 공유"],
+        ["잠금 화면에 보이는 여행", "widgets-watch-calendar", "/ko/help/your-flight-on-the-lock-screen/", "잠금 화면 실시간 현황 라이브 액티비티 다이내믹 아일랜드 dynamic island 탑승권 항공편 게이트 카운트다운 지금 다음 위젯"],
+        ["Apple Watch의 Trovelo", "widgets-watch-calendar", "/ko/help/trovelo-on-apple-watch/", "apple watch 애플워치 스마트 스택 손목 watchos 실시간 현황 digital crown 디지털 크라운 지금 다음"],
+        ["캘린더에서 여행 보기", "widgets-watch-calendar", "/ko/help/your-trip-in-calendar/", "캘린더 달력 apple 캘린더 ical 이벤트 일정 스케줄 동기화 항공편 호텔 종일"],
+        ["Mac의 Trovelo", "mac-ai-plan", "/ko/help/trovelo-on-mac/", "mac 맥 맥북 macbook 데스크톱 컴퓨터 앱 동기화 보드 열 키보드 단축키 사이드바"],
+        ["AI 어시스턴트로 계획하기", "mac-ai-plan", "/ko/help/plan-with-your-ai-assistant/", "ai 어시스턴트 인공지능 claude 클로드 chatgpt codex cursor mcp 말로 계획 연결 자동 일정"],
+        ["카드를 다른 날로 끌기", "mac-ai-plan", "/ko/help/drag-cards-between-days/", "mac 끌기 드래그 앤 드롭 놓기 카드 열 날짜 보드 키보드 컴팩트 카드 크기 날씨"],
+        ["iCloud 동기화 방식", "icloud-privacy-pro", "/ko/help/how-icloud-sync-works/", "icloud 동기화 싱크 기기 iphone ipad mac 동기화 안 됨 apple 계정 애플 아이디 저장 공간 가득 참 백업"],
+        ["모든 여행 백업하기", "icloud-privacy-pro", "/ko/help/back-up-all-your-trips/", "백업 복원 내보내기 다운로드 파일 zip 새 iphone 기기 변경 옮기기 데이터 이전 저장"],
+        ["Trovelo Pro에 포함된 것", "icloud-privacy-pro", "/ko/help/what-trovelo-pro-includes/", "pro 프로 가격 업그레이드 프리미엄 구독 일회성 결제 평생 이용 무료 플랜 제한 무제한 구입 항목 복원 코드 사용 리딤"]
+      ]
     }
   };
   // </index>
