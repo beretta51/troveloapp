@@ -479,6 +479,52 @@
         ["备份你的所有行程", "icloud-privacy-pro", "/zh-hans/help/back-up-all-your-trips/", "备份 恢复 还原 导出 下载 文件 zip 新 iphone 换手机 迁移 转移 数据 保存"],
         ["Trovelo Pro 包含什么", "icloud-privacy-pro", "/zh-hans/help/what-trovelo-pro-includes/", "pro 价格 多少钱 升级 高级版 会员 订阅 一次性付款 买断 一次性购买 免费版 免费 限制 无限 恢复购买 兑换码 兑换"]
       ]
+    },
+    "zh-Hant": {
+      topics: {"getting-started": "入門", "board-cards": "面板和卡片", "map-routes": "地圖和路線", "flights-transport": "航班和交通", "expenses": "支出", "plan-together": "一起規劃", "weather-packing": "天氣和打包", "guides-someday": "指南和「總有一天」", "my-spots": "我的地點和獎章", "widgets-watch-calendar": "小工具、Watch 和行事曆", "mac-ai-plan": "Mac 和 AI 規劃", "icloud-privacy-pro": "iCloud、隱私和 Pro"},
+      words: {"Nothing yet for “{q}”.": "還沒有關於「{q}」的內容。", "Ask me on {link} and I’ll answer.": "到 {link} 問我，我會回答你。", "Soon": "即將推出"},
+      articles: [
+        ["建立你的第一趟行程", "getting-started", "/zh-hant/help/create-your-first-trip/", "建立 新增 新行程 開始 規劃 第一趟 旅行 旅遊 日期 城市 目的地 範例行程 示範 行程表"],
+        ["多個城市的行程", "getting-started", "/zh-hant/help/trips-with-more-than-one-city/", "多城市 多個城市 兩個目的地 加入城市 新增城市 公路旅行 自駕 行程表 路線 不只一個城市"],
+        ["把地點加入你的每一天", "board-cards", "/zh-hant/help/add-places-to-your-days/", "加入 新增 地點 景點 餐廳 搜尋 Apple 地圖 卡片 一天 加號 新的"],
+        ["把卡片移到另一天", "board-cards", "/zh-hant/help/move-a-card-to-another-day/", "移動 卡片 換一天 改日期 更改日期 改期 另一天 未規劃 拖移 選擇日期 調整"],
+        ["我的一天排得多滿？", "board-cards", "/zh-hant/help/how-full-is-my-day/", "行程滿檔 輕鬆 太滿 放不下 剩餘時間 空閒時間 節奏 每日節奏 小時 長條 停留時間 要多久 排滿"],
+        ["所有卡片類別", "board-cards", "/zh-hant/help/every-kind-of-card/", "類別 種類 類型 卡片 住宿 飯店 美食 餐廳 地點 航班 火車 門票 博物館 海灘 更改類別"],
+        ["備註、檔案和照片", "board-cards", "/zh-hant/help/notes-files-and-photos/", "備註 筆記 檔案 PDF 照片 門票 票券 附件 文件 相機 照片圖庫 當日備註"],
+        ["沒有日期的點子", "board-cards", "/zh-hant/help/unplanned-ideas-without-a-day/", "未規劃 點子 靈感 沒有日期 以後 收納匣 也許 待定 願望清單 還沒決定"],
+        ["預訂編號", "board-cards", "/zh-hant/help/confirmation-numbers/", "預訂編號 訂位代號 確認編號 訂單編號 預約 PNR 訂房 拷貝 複製 飯店 航班 門禁密碼"],
+        ["調整一天的順序", "board-cards", "/zh-hant/help/change-the-order-of-your-day/", "順序 排序 重新排序 調整順序 一天 拖移 移動 往上 往下 先後 第一個 最後"],
+        ["最佳化一天的路線", "map-routes", "/zh-hant/help/optimize-a-days-route/", "最佳化 優化 路線 動線 最短 順序 距離 省時間 鎖頭 鎖定 固定 一天 地圖"],
+        ["附近有什麼", "map-routes", "/zh-hant/help/whats-nearby/", "附近 周邊 周圍 地圖 美食 咖啡 咖啡廳 餐廳 酒吧 景點 提款機 ATM 藥局 超市 尋找地點"],
+        ["在地圖上放置圖釘", "map-routes", "/zh-hant/help/drop-a-pin-on-the-map/", "圖釘 大頭針 標記 地圖 長按 按住 地址 地點 加入 位置 自訂 座標"],
+        ["加入有轉機的航班", "flights-transport", "/zh-hant/help/add-a-flight-with-layovers/", "航班 加入 飛機 轉機 中轉 航空公司 航班編號 班機 航廈 登機門 機場 時區"],
+        ["火車、巴士和渡輪", "flights-transport", "/zh-hant/help/trains-buses-and-ferries/", "火車 高鐵 新幹線 巴士 客運 公車 渡輪 船 車廂 座位 月台 車站 轉乘 車票"],
+        ["從電子郵件匯入預訂", "flights-transport", "/zh-hant/help/import-a-booking-from-an-email/", "匯入 預訂 訂單 電子郵件 email 確認信 PDF 截圖 螢幕截圖 掃描 航班 飯店 租車 機票 讀取"],
+        ["記錄一筆支出", "expenses", "/zh-hant/help/log-an-expense/", "支出 花費 記帳 記錄 費用 錢 付款 預算 總計 類別 CSV 試算表 Excel 輸出 匯出"],
+        ["用你自己的貨幣看花費", "expenses", "/zh-hant/help/see-costs-in-your-own-money/", "貨幣 幣別 匯率 換算 轉換 主要貨幣 當地貨幣 外幣 港幣 台幣 美元 歐元 日圓 總額"],
+        ["和同行的人分攤費用", "expenses", "/zh-hant/help/split-costs-with-your-group/", "分攤 分帳 拆帳 平分 均分 AA 群組 欠款 欠錢 結清 還錢 朋友 家人 誰付的 餘額 Splitwise"],
+        ["邀請別人加入你的行程", "plan-together", "/zh-hant/help/invite-someone-to-your-trip/", "邀請 共享 分享 行程 一起 朋友 家人 伴侶 另一半 協作 共同編輯 一起規劃 共享行程 iCloud"],
+        ["可檢視還是可編輯？", "plan-together", "/zh-hant/help/can-view-or-can-edit/", "權限 檢視 編輯 唯讀 只能看 移除 成員 離開行程 停止共享 擁有者"],
+        ["哪些內容不會共享", "plan-together", "/zh-hant/help/what-stays-private/", "隱私 私人 私密 共享 不共享 住家 地址 打包 文件 花費 支出 資料 iCloud 伺服器"],
+        ["你的打包清單", "weather-packing", "/zh-hant/help/your-packing-list/", "打包清單 行李清單 行李 打包 收行李 行李箱 清單 待辦 物品 衣服 證件 要帶什麼"],
+        ["插頭和電壓", "weather-packing", "/zh-hant/help/plugs-and-voltage/", "插頭 插座 轉接頭 萬國轉接頭 變壓器 電壓 電源 A 型 C 型 G 型 充電器 旅行轉接頭"],
+        ["常見天氣和即時預報", "weather-packing", "/zh-hant/help/typical-weather-and-live-forecast/", "天氣 氣候 預報 天氣預報 氣溫 溫度 下雨 降雨 平均 Apple 天氣 雨傘 旅行日子"],
+        ["貼上部落格的清單", "guides-someday", "/zh-hant/help/paste-a-list-from-a-blog/", "貼上 清單 部落格 ChatGPT Gemini Claude 筆記 備忘錄 匯入 一次加入 多個地點 大量 批次"],
+        ["從指南開始一趟行程", "guides-someday", "/zh-hant/help/start-a-trip-from-a-guide/", "指南 旅遊指南 行程表 現成 範本 模板 行程靈感 公路旅行 自駕 拷貝 開始日期 路線"],
+        ["把地點存到「總有一天」", "guides-someday", "/zh-hant/help/save-places-for-someday/", "總有一天 以後 稍後 收藏 儲存 願望清單 夢想清單 想去的地方 書籤 已儲存 口袋名單 靈感"],
+        ["加入你去過的地方", "my-spots", "/zh-hant/help/add-places-youve-been/", "我的地點 足跡 去過的國家 去過的城市 地圖 旅行地圖 圖釘 去過 世界地圖 刮刮地圖 打卡"],
+        ["從照片找出過去的旅行", "my-spots", "/zh-hant/help/find-past-trips-in-your-photos/", "照片 照片圖庫 相簿 掃描 分析 位置 定位 GPS 過去的旅行 去過的國家 自動 年份 匯入"],
+        ["獎章：從 First Stepper 開始", "my-spots", "/zh-hant/help/medals-from-first-stepper-up/", "獎章 勳章 徽章 等級 成就 First Stepper Apex Traveler 國家 數量 旅行足跡 分享"],
+        ["鎖定畫面上的行程", "widgets-watch-calendar", "/zh-hant/help/your-flight-on-the-lock-screen/", "鎖定畫面 即時動態 動態島 登機證 航班 登機門 倒數 現在 接下來 小工具"],
+        ["在 Apple Watch 上使用 Trovelo", "widgets-watch-calendar", "/zh-hant/help/trovelo-on-apple-watch/", "Apple Watch 手錶 智慧型堆疊 手腕 watchOS 即時動態 數位錶冠 現在 接下來"],
+        ["在行事曆中查看行程", "widgets-watch-calendar", "/zh-hant/help/your-trip-in-calendar/", "行事曆 日曆 Apple 行事曆 iCal 事件 行程表 時間表 同步 航班 飯店 全天"],
+        ["在 Mac 上使用 Trovelo", "mac-ai-plan", "/zh-hant/help/trovelo-on-mac/", "Mac MacBook 電腦 桌面 App 同步 面板 欄位 鍵盤快速鍵 側邊欄"],
+        ["用 AI 助理規劃行程", "mac-ai-plan", "/zh-hant/help/plan-with-your-ai-assistant/", "AI 助理 人工智慧 Claude ChatGPT Codex Cursor MCP 用說的規劃 連接 連線 聊天機器人"],
+        ["在日子之間拖移卡片", "mac-ai-plan", "/zh-hant/help/drag-cards-between-days/", "Mac 拖移 拖放 拖曳 卡片 欄位 一天 面板 鍵盤 精簡 卡片大小 天氣"],
+        ["iCloud 同步如何運作", "icloud-privacy-pro", "/zh-hant/help/how-icloud-sync-works/", "iCloud 同步 裝置 iPhone iPad Mac 沒有同步 不同步 Apple 帳號 Apple ID 儲存空間 已滿 備份"],
+        ["備份你所有的行程", "icloud-privacy-pro", "/zh-hant/help/back-up-all-your-trips/", "備份 回復 還原 恢復 輸出 匯出 下載 檔案 ZIP 新 iPhone 換手機 轉移 搬移資料 儲存"],
+        ["Trovelo Pro 包含什麼", "icloud-privacy-pro", "/zh-hant/help/what-trovelo-pro-includes/", "Pro 價格 升級 付費 高級版 訂閱 一次性購買 買斷 免費方案 免費 限制 無限 回復購買 兌換代碼"]
+      ]
     }
   };
   // </index>
