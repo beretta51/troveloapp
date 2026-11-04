@@ -525,6 +525,52 @@
         ["備份你所有的行程", "icloud-privacy-pro", "/zh-hant/help/back-up-all-your-trips/", "備份 回復 還原 恢復 輸出 匯出 下載 檔案 ZIP 新 iPhone 換手機 轉移 搬移資料 儲存"],
         ["Trovelo Pro 包含什麼", "icloud-privacy-pro", "/zh-hant/help/what-trovelo-pro-includes/", "Pro 價格 升級 付費 高級版 訂閱 一次性購買 買斷 免費方案 免費 限制 無限 回復購買 兌換代碼"]
       ]
+    },
+    "sv": {
+      topics: {"getting-started": "Kom igång", "board-cards": "Tavla och kort", "map-routes": "Karta och rutter", "flights-transport": "Flyg och transport", "expenses": "Utgifter", "plan-together": "Planera tillsammans", "weather-packing": "Väder och packning", "guides-someday": "Guider och Någon gång", "my-spots": "Mina platser och medaljer", "widgets-watch-calendar": "Widgetar, Watch och Kalender", "mac-ai-plan": "Mac och AI-planering", "icloud-privacy-pro": "iCloud, integritet och Pro"},
+      words: {"Nothing yet for “{q}”.": "Inget om ”{q}” än.", "Ask me on {link} and I’ll answer.": "Fråga mig på {link}, så svarar jag.", "Soon": "Snart"},
+      articles: [
+        ["Skapa din första resa", "getting-started", "/sv/help/create-your-first-trip/", "skapa ny resa börja planera planering första resan datum stad resmål demoresa exempelresa resplan"],
+        ["Resor med mer än en stad", "getting-started", "/sv/help/trips-with-more-than-one-city/", "flera städer flerstadsresa två resmål lägga till stad rutt roadtrip bilsemester rundresa resplan mer än en stad"],
+        ["Lägg till platser i dina dagar", "board-cards", "/sv/help/add-places-to-your-days/", "lägga till plats ställe sevärdhet restaurang söka apple maps kartor kort dag plus ny"],
+        ["Flytta ett kort till en annan dag", "board-cards", "/sv/help/move-a-card-to-another-day/", "flytta kort dag ändra datum byta dag boka om omplanera en annan dag oplanerat dra välj ett datum"],
+        ["Hur full är min dag?", "board-cards", "/sv/help/how-full-is-my-day/", "full dag lugn dag får inte plats tid kvar tempo dagstempo timmar stapel längd hur lång tid fullbokad för mycket"],
+        ["Alla sorters kort", "board-cards", "/sv/help/every-kind-of-card/", "kategori typ sort korttyp kort boende hotell mat plats flyg tåg biljett museum strand byta kategori"],
+        ["Anteckningar, filer och foton", "board-cards", "/sv/help/notes-files-and-photos/", "anteckning anteckningar fil pdf foto bild biljett bifoga dokument kamera bildbibliotek dagsanteckning"],
+        ["Idéer utan dag", "board-cards", "/sv/help/unplanned-ideas-without-a-day/", "oplanerat idéer utan dag senare fack kanske önskelista obestämt inte bestämt"],
+        ["Bokningsnummer", "board-cards", "/sv/help/confirmation-numbers/", "bokningsnummer bekräftelsenummer bokningsreferens bokningskod referens pnr bokning reservation kopiera hotell flyg portkod"],
+        ["Ändra ordningen på din dag", "board-cards", "/sv/help/change-the-order-of-your-day/", "ordning ordna om sortera dag dra flytta upp ned sekvens först sist ändra ordningen"],
+        ["Optimera en dags rutt", "map-routes", "/sv/help/optimize-a-days-route/", "optimera rutt kortaste ordning avstånd sträcka spara tid lås hänglås låsa fast dag karta"],
+        ["Vad finns i närheten", "map-routes", "/sv/help/whats-nearby/", "i närheten nära runt omkring karta mat kaffe kafé fik restaurang bar sevärdheter bankomat uttagsautomat apotek mataffär hitta en plats"],
+        ["Sätt ut en nål på kartan", "map-routes", "/sv/help/drop-a-pin-on-the-map/", "nål kartnål markör karta hålla ned långt tryck adress plats ställe lägga till position egen punkt"],
+        ["Lägg till ett flyg med mellanlandningar", "flights-transport", "/sv/help/add-a-flight-with-layovers/", "flyg flyget lägga till flygplan mellanlandning byte anslutning flygbolag flygnummer flightnummer terminal gate flygplats tidszon"],
+        ["Tåg, bussar och färjor", "flights-transport", "/sv/help/trains-buses-and-ferries/", "tåg buss färja båt vagn sittplats plats spår perrong station byte biljett tågresa tågbiljett shinkansen"],
+        ["Importera en bokning från ett mejl", "flights-transport", "/sv/help/import-a-booking-from-an-email/", "importera bokning mejl e-post mail bekräftelse bokningsbekräftelse pdf skärmavbild skärmdump skanna flyg hotell hyrbil biljett läsa"],
+        ["Registrera en utgift", "expenses", "/sv/help/log-an-expense/", "utgift utgifter registrera spendera kostnad pengar betalat budget total summa kategori csv kalkylblad excel exportera"],
+        ["Se kostnader i din egen valuta", "expenses", "/sv/help/see-costs-in-your-own-money/", "valuta växelkurs växla omvandla räkna om valutaomvandlare hemvaluta lokal valuta pengar kronor euro dollar yen total"],
+        ["Dela kostnaderna med din grupp", "expenses", "/sv/help/split-costs-with-your-group/", "dela kostnader utgifter grupp dela notan skuld skyldig betala betalat göra upp vänner familj vem betalade saldo splitwise tricount swish"],
+        ["Bjud in någon till din resa", "plan-together", "/sv/help/invite-someone-to-your-trip/", "bjuda in inbjudan dela resa tillsammans vänner familj partner sambo samarbeta planera tillsammans delad resa icloud"],
+        ["Kan se eller kan redigera?", "plan-together", "/sv/help/can-view-or-can-edit/", "behörighet behörigheter rättigheter se redigera bara läsa skrivskyddad ta bort person lämna resan sluta dela ägare"],
+        ["Det som förblir privat", "plan-together", "/sv/help/what-stays-private/", "integritet sekretess privat privatliv delad delas inte hem adress packning dokument utgifter data icloud servrar"],
+        ["Din packlista", "weather-packing", "/sv/help/your-packing-list/", "packlista packa packning resväska bagage väska checklista lista saker kläder dokument vad ska jag ta med"],
+        ["Kontakter och spänning", "weather-packing", "/sv/help/plugs-and-voltage/", "kontakt stickpropp eluttag uttag adapter reseadapter spänning volt ström typ a typ c typ f typ g laddare"],
+        ["Normalt väder och aktuell prognos", "weather-packing", "/sv/help/typical-weather-and-live-forecast/", "väder väderprognos prognos temperatur regn normalt väder klimat medeltemperatur apple weather paraply resdagar"],
+        ["Klistra in en lista från en blogg", "guides-someday", "/sv/help/paste-a-list-from-a-blog/", "klistra in lista blogg chatgpt gemini claude anteckningar importera många platser på en gång samtidigt flera"],
+        ["Starta en resa från en guide", "guides-someday", "/sv/help/start-a-trip-from-a-guide/", "guider guide resplan färdig mall resetips reseidé roadtrip rutt kopiera startdatum rundresa"],
+        ["Spara platser till någon gång", "guides-someday", "/sv/help/save-places-for-someday/", "någon gång spara till senare önskelista bucket list drömresa platser jag vill åka till favoriter bokmärke sparade idéer"],
+        ["Lägg till platser du har besökt", "my-spots", "/sv/help/add-places-youve-been/", "mina platser besökta länder städer karta reskarta nålar varit där världen skrapkarta resor jag gjort"],
+        ["Hitta tidigare resor i dina bilder", "my-spots", "/sv/help/find-past-trips-in-your-photos/", "bilder foton bildbibliotek skanna platsdata plats gps tidigare resor besökta länder automatiskt år importera"],
+        ["Medaljer, från First Stepper och uppåt", "my-spots", "/sv/help/medals-from-first-stepper-up/", "medaljer nivåer märken utmärkelser first stepper apex traveler länder räknare prestationer reseliv dela"],
+        ["Din resa på låsskärmen", "widgets-watch-calendar", "/sv/help/your-flight-on-the-lock-screen/", "låsskärm låsskärmen live-aktivitet live activity dynamic island boardingkort flyg gate nedräkning nu nästa widget"],
+        ["Trovelo på Apple Watch", "widgets-watch-calendar", "/sv/help/trovelo-on-apple-watch/", "apple watch klocka smartklocka smart trave smart stack handled watchos live-aktivitet digital crown nu nästa"],
+        ["Din resa i Kalender", "widgets-watch-calendar", "/sv/help/your-trip-in-calendar/", "kalender apple kalender ical händelser agenda schema synka flyg hotell heldag"],
+        ["Trovelo på Mac", "mac-ai-plan", "/sv/help/trovelo-on-mac/", "mac macbook dator skrivbord app synka tavla kolumner kortkommandon tangentbordsgenvägar sidofält"],
+        ["Planera med din AI-assistent", "mac-ai-plan", "/sv/help/plan-with-your-ai-assistant/", "ai-assistent ai artificiell intelligens claude chatgpt codex cursor mcp planera genom att fråga ansluta koppla"],
+        ["Dra kort mellan dagar", "mac-ai-plan", "/sv/help/drag-cards-between-days/", "mac dra släpp dra och släpp kort kolumn dag tavla tangentbord kortkommandon kompakt kortstorlek väder"],
+        ["Så fungerar synkningen med iCloud", "icloud-privacy-pro", "/sv/help/how-icloud-sync-works/", "icloud synka synkning synkronisering enheter iphone ipad mac synkar inte apple-konto apple-id lagring fullt säkerhetskopia"],
+        ["Säkerhetskopiera alla dina resor", "icloud-privacy-pro", "/sv/help/back-up-all-your-trips/", "säkerhetskopia säkerhetskopiera backup återställa återskapa exportera hämta ladda ner fil zip ny iphone flytta överföra data spara"],
+        ["Vad Trovelo Pro innehåller", "icloud-privacy-pro", "/sv/help/what-trovelo-pro-includes/", "pro pris uppgradera premium prenumeration engångsköp engångsbetalning gratisversion gratis gräns obegränsat återskapa köp lösa in kod"]
+      ]
     }
   };
   // </index>
