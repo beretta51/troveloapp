@@ -6,6 +6,14 @@
   font-display: swap;
   src: url(/fonts/gasoek-one-normal-400-latin.woff2) format('woff2');
 }
+/* The hero title in Korean, Japanese and Chinese: Gasoek One has Hangul but no
+   kana or hanzi, so those take Noto Sans Black. Each file holds only the
+   title's glyphs (도움말, ヘルプ, 帮助, 說明): if a title changes, fetch it
+   again from fonts.googleapis.com/css2 with text=<the new title>. */
+@font-face { font-family: 'Gasoek One KO'; font-weight: 400; font-display: swap; src: url(/fonts/gasoek-one-help-ko.woff2) format('woff2'); }
+@font-face { font-family: 'Help Title JP'; font-weight: 400; font-display: swap; src: url(/fonts/noto-sans-jp-black-help.woff2) format('woff2'); }
+@font-face { font-family: 'Help Title SC'; font-weight: 400; font-display: swap; src: url(/fonts/noto-sans-sc-black-help.woff2) format('woff2'); }
+@font-face { font-family: 'Help Title TC'; font-weight: 400; font-display: swap; src: url(/fonts/noto-sans-tc-black-help.woff2) format('woff2'); }
 
 :root {
   color-scheme: light;
@@ -62,6 +70,10 @@ body { padding-top: 84px; }
 .hero-text { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
 .eyebrow { font-size: 14px; font-weight: 800; letter-spacing: 0.14em; color: #5B3FB0; }
 .hero h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(92px, 13vw, 152px); line-height: 0.84; color: var(--blue); }
+:lang(ko) .hero h1 { font-family: 'Gasoek One', 'Gasoek One KO', var(--display); }
+:lang(ja) .hero h1 { font-family: 'Gasoek One', 'Help Title JP', var(--display); }
+:lang(zh-Hans) .hero h1 { font-family: 'Gasoek One', 'Help Title SC', var(--display); }
+:lang(zh-Hant) .hero h1 { font-family: 'Gasoek One', 'Help Title TC', var(--display); }
 .hero .lede { margin: 0; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; font-weight: 800; }
 .hero-mascot { flex: 0 0 280px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .bubble { align-self: flex-start; background: #FFFFFF; border-radius: 26px 26px 26px 8px; padding: 14px 20px; font-size: 19px; font-weight: 800; box-shadow: 0 10px 30px rgba(70,50,160,0.12); }
@@ -335,10 +347,10 @@ img.mascot { height: auto; }
 
 /* The page's languages, in the footer's bottom row */
 .tf-bot { flex-wrap: wrap; align-items: center; }
-.tf-lang { display: inline-flex; align-items: center; gap: 7px; }
+.tf-lang { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; }
 .tf-lang .sf { width: 14px; height: 14px; }
 .tf-lang i { font-style: normal; opacity: .5; }
-.tf-lang a { color: inherit; text-decoration: none; }
+.tf-lang a { color: inherit; text-decoration: none; white-space: nowrap; }
 .tf-lang a:hover { color: #1C1C1E; text-decoration: underline; }
 .tf-lang a[aria-current] { color: #1C1C1E; font-weight: 600; }
 @media (max-width: 759px) {
@@ -351,7 +363,7 @@ img.mascot { height: auto; }
 .tn-lang:hover, .tn-lang[aria-expanded="true"] { background: rgba(39, 116, 253, .1); color: #1F63DD; }
 .tn-lang .i-globe { width: 17px; height: 17px; }
 .tn-lang .i-chevdown { width: 10px; height: 10px; opacity: .55; }
-.tn-langs { position: absolute; z-index: 1; top: calc(100% + 12px); right: 0; min-width: 236px; padding: 8px; border-radius: 24px; background: #fff; box-shadow: 0 20px 50px rgba(40, 30, 90, .22); display: flex; flex-direction: column; gap: 2px; }
+.tn-langs { position: absolute; z-index: 1; top: calc(100% + 12px); right: 0; min-width: 236px; padding: 8px; border-radius: 24px; background: #fff; box-shadow: 0 20px 50px rgba(40, 30, 90, .22); display: flex; flex-direction: column; gap: 2px; max-height: calc(100dvh - 96px); overflow-y: auto; overscroll-behavior: contain; }
 .tn-langs[hidden] { display: none; }
 .tn-langs b { margin: 6px 14px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #8A8499; }
 .tn-langs a { display: flex; align-items: center; gap: 12px; height: 48px; padding: 0 14px; border-radius: 16px; font-size: 17px; }

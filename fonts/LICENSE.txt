@@ -5,7 +5,11 @@ The typefaces on this site are licensed under the SIL Open Font License 1.1
 (full text below) and are self-hosted from this domain.
 
 - Gasoek One — Copyright 2022 The Gasoek Project Authors
-  (https://github.com/JAMO-TYPEFACE/Gasoek) — Latin subset
+  (https://github.com/JAMO-TYPEFACE/Gasoek) — Latin subset, plus the
+  Korean letters of the help center's title
+- Noto Sans JP, SC and TC (Black) — Copyright 2014-2021 Adobe
+  (http://www.adobe.com/), with Reserved Font Name 'Source' — only the
+  letters of the help center's title in Japanese and Chinese
 - JetBrains Mono — Copyright 2020 The JetBrains Mono Project Authors
   (https://github.com/JetBrains/JetBrainsMono)
 
