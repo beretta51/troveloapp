@@ -433,6 +433,52 @@
         ["모든 여행 백업하기", "icloud-privacy-pro", "/ko/help/back-up-all-your-trips/", "백업 복원 내보내기 다운로드 파일 zip 새 iphone 기기 변경 옮기기 데이터 이전 저장"],
         ["Trovelo Pro에 포함된 것", "icloud-privacy-pro", "/ko/help/what-trovelo-pro-includes/", "pro 프로 가격 업그레이드 프리미엄 구독 일회성 결제 평생 이용 무료 플랜 제한 무제한 구입 항목 복원 코드 사용 리딤"]
       ]
+    },
+    "zh-Hans": {
+      topics: {"getting-started": "入门", "board-cards": "看板和卡片", "map-routes": "地图和路线", "flights-transport": "航班和交通", "expenses": "支出", "plan-together": "一起规划", "weather-packing": "天气和行李", "guides-someday": "攻略和“总有一天”", "my-spots": "我的地点和奖牌", "widgets-watch-calendar": "小组件、Watch 和日历", "mac-ai-plan": "Mac 和 AI 规划", "icloud-privacy-pro": "iCloud、隐私和 Pro"},
+      words: {"Nothing yet for “{q}”.": "还没有关于“{q}”的内容。", "Ask me on {link} and I’ll answer.": "在 {link} 问我，我会回答你。", "Soon": "即将推出"},
+      articles: [
+        ["创建你的第一个行程", "getting-started", "/zh-hans/help/create-your-first-trip/", "创建行程 新建行程 新行程 开始 规划 计划 做攻略 第一个行程 日期 城市 目的地 示例行程 演示 行程单 旅行计划"],
+        ["包含多个城市的行程", "getting-started", "/zh-hans/help/trips-with-more-than-one-city/", "多个城市 多城市 多目的地 两个目的地 添加城市 加城市 自驾 公路旅行 路线 行程单 不止一个城市 联游"],
+        ["把地点加到你的每一天", "board-cards", "/zh-hans/help/add-places-to-your-days/", "添加地点 加地点 添加景点 景点 餐厅 地点 搜索 苹果地图 apple 地图 卡片 某一天 加号 新建"],
+        ["把卡片移到另一天", "board-cards", "/zh-hans/help/move-a-card-to-another-day/", "移动卡片 换一天 换日子 改日期 更改日期 改期 调整日期 另一天 未安排 拖动 选取日期"],
+        ["我的一天排得有多满？", "board-cards", "/zh-hans/help/how-full-is-my-day/", "紧凑的一天 轻松的一天 放不下 太满 排太满 剩余时间 每日节奏 节奏 小时 横条 时长 要多久 多满 时间安排"],
+        ["所有卡片类型", "board-cards", "/zh-hans/help/every-kind-of-card/", "类别 类型 种类 卡片 住宿 酒店 美食 餐饮 地点 航班 火车 门票 博物馆 海滩 更改类别 改类型"],
+        ["备注、文件和照片", "board-cards", "/zh-hans/help/notes-files-and-photos/", "备注 笔记 文件 pdf 照片 图片 门票 车票 附件 添加附件 文档 相机 照片图库 当天备注"],
+        ["还没定日子的灵感", "board-cards", "/zh-hans/help/unplanned-ideas-without-a-day/", "未安排 灵感 想法 没定日子 不定日期 以后再说 收纳盒 也许 待定 心愿单 还没决定"],
+        ["预订号", "board-cards", "/zh-hans/help/confirmation-numbers/", "预订号 确认号 订单号 预订编号 预订代码 确认码 pnr 预订 拷贝 复制 酒店 航班 门禁密码"],
+        ["调整一天的顺序", "board-cards", "/zh-hans/help/change-the-order-of-your-day/", "顺序 排序 重新排序 调整顺序 换顺序 一天 拖动 移动 上移 下移 先后 第一个 最后一个"],
+        ["优化一天的路线", "map-routes", "/zh-hans/help/optimize-a-days-route/", "优化 路线 路线规划 最短 顺路 顺序 距离 节省时间 锁 锁定 固定 一天 地图"],
+        ["附近有什么", "map-routes", "/zh-hans/help/whats-nearby/", "附近 周边 周围 地图 美食 吃的 咖啡 咖啡馆 餐厅 酒吧 景点 atm 取款机 药店 超市 查找地点"],
+        ["在地图上放置图钉", "map-routes", "/zh-hans/help/drop-a-pin-on-the-map/", "图钉 大头针 放置图钉 标记 地图 长按 按住 地址 位置 添加 自定义地点 坐标"],
+        ["添加含中转的航班", "flights-transport", "/zh-hans/help/add-a-flight-with-layovers/", "航班 添加航班 飞机 机票 中转 转机 经停 联程 航空公司 航班号 航站楼 登机口 机场 时区"],
+        ["火车、巴士和渡轮", "flights-transport", "/zh-hans/help/trains-buses-and-ferries/", "火车 高铁 新干线 巴士 大巴 汽车 渡轮 轮渡 船 车厢 座位 站台 车站 换乘 车票 船票"],
+        ["从邮件导入预订", "flights-transport", "/zh-hans/help/import-a-booking-from-an-email/", "导入 导入预订 预订邮件 邮件 电子邮件 确认邮件 确认函 pdf 截图 扫描 识别 航班 酒店 租车 机票 读取"],
+        ["记一笔支出", "expenses", "/zh-hans/help/log-an-expense/", "支出 记账 记一笔 花费 花销 开销 费用 钱 付款 预算 总额 类别 csv 电子表格 excel 导出"],
+        ["用你自己的货币看花费", "expenses", "/zh-hans/help/see-costs-in-your-own-money/", "货币 汇率 换算 兑换 本国货币 本币 人民币 当地货币 外币 美元 欧元 日元 总额"],
+        ["和同行的人分摊费用", "expenses", "/zh-hans/help/split-costs-with-your-group/", "分摊 分账 aa aa制 平摊 均摊 群组 共享 账单 欠款 欠钱 还钱 付款 已付 结清 朋友 家人 谁付的 余额 splitwise"],
+        ["邀请别人加入你的行程", "plan-together", "/zh-hans/help/invite-someone-to-your-trip/", "邀请 共享 共享行程 分享行程 一起 一起规划 朋友 家人 伴侣 情侣 协作 合作 共同编辑 icloud"],
+        ["可查看还是可编辑？", "plan-together", "/zh-hans/help/can-view-or-can-edit/", "权限 查看 编辑 只读 可查看 可编辑 移除 移除成员 退出 退出行程 停止共享 取消共享 所有者"],
+        ["哪些内容保持私密", "plan-together", "/zh-hans/help/what-stays-private/", "隐私 私密 私人 共享 不共享 住址 家庭地址 行李 文档 支出 数据 数据安全 icloud 服务器"],
+        ["你的行李清单", "weather-packing", "/zh-hans/help/your-packing-list/", "行李清单 打包清单 收拾行李 打包 行李箱 箱子 行李 清单 物品 包 衣服 证件 带什么"],
+        ["插头和电压", "weather-packing", "/zh-hans/help/plugs-and-voltage/", "插头 插座 转换插头 转换器 转接头 电压 电源 a型 c型 g型 充电器 旅行转换器"],
+        ["往年天气和实时预报", "weather-packing", "/zh-hans/help/typical-weather-and-live-forecast/", "天气 天气预报 预报 气温 温度 下雨 降雨 往年天气 气候 平均 apple 天气 雨伞 行程日期"],
+        ["粘贴博客里的清单", "guides-someday", "/zh-hans/help/paste-a-list-from-a-blog/", "粘贴 粘贴清单 清单 列表 博客 攻略 小红书 chatgpt gemini claude 备忘录 导入 批量 一次添加多个 很多地点"],
+        ["从攻略开始一个行程", "guides-someday", "/zh-hans/help/start-a-trip-from-a-guide/", "攻略 旅行攻略 指南 行程单 现成 模板 行程灵感 自驾 公路旅行 复制 出发日期 开始日期 路线"],
+        ["把地点存到“总有一天”", "guides-someday", "/zh-hans/help/save-places-for-someday/", "总有一天 以后再去 收藏 稍后 心愿单 愿望清单 想去的地方 书签 已保存 灵感 种草"],
+        ["添加你去过的地方", "my-spots", "/zh-hans/help/add-places-youve-been/", "我的地点 去过的国家 去过的城市 足迹 足迹地图 旅行地图 打卡 图钉 去过 世界地图 刮刮地图"],
+        ["从照片里找回过去的旅行", "my-spots", "/zh-hans/help/find-past-trips-in-your-photos/", "照片 照片图库 相册 扫描 扫描照片 位置 定位 gps 过去的旅行 以前的旅行 去过的国家 自动 年份 导入"],
+        ["奖牌：从 First Stepper 开始", "my-spots", "/zh-hans/help/medals-from-first-stepper-up/", "奖牌 等级 徽章 级别 成就 first stepper apex traveler 国家 国家数量 去过几个国家 旅行足迹 分享"],
+        ["锁定屏幕上的行程", "widgets-watch-calendar", "/zh-hans/help/your-flight-on-the-lock-screen/", "锁定屏幕 锁屏 实时活动 灵动岛 登机牌 航班 登机口 倒计时 现在 接下来 小组件"],
+        ["Apple Watch 上的 Trovelo", "widgets-watch-calendar", "/zh-hans/help/trovelo-on-apple-watch/", "apple watch 手表 智能手表 智能叠放 手腕 watchos 实时活动 数码表冠 现在 接下来"],
+        ["在日历中查看行程", "widgets-watch-calendar", "/zh-hans/help/your-trip-in-calendar/", "日历 apple 日历 ical 事件 日程 日程表 时间表 同步 航班 酒店 全天"],
+        ["Mac 上的 Trovelo", "mac-ai-plan", "/zh-hans/help/trovelo-on-mac/", "mac macbook 电脑 桌面 桌面版 app 同步 看板 列 键盘快捷键 快捷键 边栏"],
+        ["用 AI 助手规划", "mac-ai-plan", "/zh-hans/help/plan-with-your-ai-assistant/", "ai 助手 ai助手 人工智能 claude chatgpt codex cursor mcp 对话 聊天 说一句就规划 连接 智能规划"],
+        ["在不同日子之间拖动卡片", "mac-ai-plan", "/zh-hans/help/drag-cards-between-days/", "mac 拖动 拖放 拖拽 卡片 列 一天 看板 键盘 快捷键 紧凑 卡片大小 天气"],
+        ["iCloud 同步是怎么工作的", "icloud-privacy-pro", "/zh-hans/help/how-icloud-sync-works/", "icloud 同步 设备 iphone ipad mac 不同步 同步失败 没有同步 apple 账户 apple id 存储空间 空间已满 空间不足 账户 备份"],
+        ["备份你的所有行程", "icloud-privacy-pro", "/zh-hans/help/back-up-all-your-trips/", "备份 恢复 还原 导出 下载 文件 zip 新 iphone 换手机 迁移 转移 数据 保存"],
+        ["Trovelo Pro 包含什么", "icloud-privacy-pro", "/zh-hans/help/what-trovelo-pro-includes/", "pro 价格 多少钱 升级 高级版 会员 订阅 一次性付款 买断 一次性购买 免费版 免费 限制 无限 恢复购买 兑换码 兑换"]
+      ]
     }
   };
   // </index>

@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from help_articles import ARTICLES, NEWS, START_HERE, TOPICS  # noqa: E402
 
-LANGS = ["en", "es", "de", "fr", "it", "nl", "ja", "pt-BR", "ko"]  # English first: every other language is made from it
+LANGS = ["en", "es", "de", "fr", "it", "nl", "ja", "pt-BR", "ko", "zh-Hans"]  # English first: every other language is made from it
 TEXT_ONLY = False  # --check: a translation's words alone, before its screens exist
 
 SITE = "https://troveloapp.com"
