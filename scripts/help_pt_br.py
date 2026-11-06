@@ -144,12 +144,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Despesas com Apple Pay",
+        text="Pague com Apple Pay na viagem, e aparece sozinho em Despesas."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importe reservas",
         text="Voos, hotéis e carros alugados, lidos de uma captura de tela ou de um PDF do e-mail."),
     "plugs-and-voltage": dict(source="b360215d", title="Tomadas e voltagem",
         text="Sua lista de bagagem mostra a tomada e a voltagem do lugar para onde você vai."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Ideias para um dia vazio",
-        text="Lugares escolhidos a dedo para a sua cidade, prontos para adicionar."),
 }
 
 ARTICLES = {}
@@ -1269,6 +1269,33 @@ article(
         "A <b>Siri AI</b> ainda não consegue trabalhar com suas viagens. Por enquanto, use estas frases.",
         "Despesas precisam de uma viagem em andamento: se você não estiver em uma, a Siri avisa. Não disse a moeda? Vale a da viagem.",
         "A Siri funciona com o Trovelo no iPhone e no iPad. No Mac, você pode <a href=\"/help/plan-with-your-ai-assistant/\">planejar com seu assistente de IA</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Registre pagamentos com Apple Pay automaticamente",
+    description="Como fazer os pagamentos com Apple Pay em uma viagem aparecerem sozinhos em Despesas no Trovelo, com um atalho pronto no iOS 27 ou uma automação da Carteira que você cria no app Atalhos.",
+    og="Pague com Apple Pay na viagem. O Trovelo registra para você.",
+    lead="Pague com Apple Pay em uma viagem, e o valor e a loja aparecem sozinhos em Despesas. Em casa, nada acontece.",
+    keywords="apple pay carteira automação atalho atalhos automático despesa registrar pagamento cartão",
+    ios=[
+        dict(title="Adicione o atalho",
+             text="No iOS 27, abra <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">o atalho do Trovelo</a> no seu iPhone e toque em <b>Adicionar Atalho</b>."),
+        dict(title="Confira se está ativado",
+             text="Mantenha o atalho pressionado e toque em <b>Editar</b>. Toque no <b>›</b> da primeira linha e confira se <b>Automação</b> está ativado. Funciona com qualquer cartão da Carteira e qualquer tipo de compra."),
+        dict(title="Pague como sempre",
+             text="Da próxima vez que você pagar em uma loja com Apple Pay durante uma viagem, o pagamento aparece em Despesas com o valor e o nome da loja. O plano do dia continua como estava.",
+             alt=["Despesas, com o total gasto e cada dia"]),
+        dict(title="No iOS 26, crie você mesmo",
+             text="No app Atalhos, abra <b>Automação</b>, toque em <b>+</b> e escolha <b>Carteira</b>. Escolha seus cartões e depois <b>Executar Imediatamente</b>. Depois toque em <b>Seguinte</b> e <b>Criar Novo Atalho</b>. Adicione a ação <b>Registrar pagamento da Carteira</b> do Trovelo e defina <b>Valor</b> e <b>Estabelecimento</b> com os de <b>Entrada do Atalho</b>."),
+    ],
+    tips=[
+        "Só conta o Apple Pay em uma loja, não um cartão físico nem uma compra on-line. E só durante uma viagem em andamento, então nada é registrado em casa.",
+        "Reembolsos não são registrados, nem nada em uma viagem que compartilharam com você só para ver.",
+        "Tocar em reproduzir no app Atalhos não envia nenhum pagamento, então nada é registrado. Teste com um pagamento de verdade. A Apple às vezes não executa, ou executa em um pagamento recusado, então dê uma olhada em Despesas de vez em quando.",
+        "O transporte também conta. Para deixá-lo de fora, abra essa mesma linha e tire-o de <b>Categorias</b>.",
     ],
 )
 

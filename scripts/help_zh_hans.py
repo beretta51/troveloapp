@@ -144,12 +144,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Apple Pay 支出",
+        text="旅行时用 Apple Pay 付款，会自动进入支出。"),
     "import-a-booking-from-an-email": dict(source="b126a657", title="导入预订",
         text="航班、酒店和租车，从邮件的截图或 PDF 里直接读取。"),
     "plugs-and-voltage": dict(source="b360215d", title="插头和电压",
         text="你的行李清单会显示目的地用什么插头、什么电压。"),
-    "add-places-to-your-days": dict(source="9d482ce7", title="空白日的灵感",
-        text="为你的城市精选的地点，随时可以添加。"),
 }
 
 ARTICLES = {}
@@ -1269,6 +1269,33 @@ article(
         "<b>Siri AI</b> 目前还不能处理你的行程。现在请使用这些短语。",
         "记录支出需要有正在进行的行程：如果没有，Siri 会告诉你。没说货币？就用行程的货币。",
         "Siri 可以在 iPhone 和 iPad 上配合 Trovelo 使用。在 Mac 上，你可以<a href=\"/help/plan-with-your-ai-assistant/\">用 AI 助手规划</a>。",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="自动记录 Apple Pay 付款",
+    description="如何让旅行中的 Apple Pay 付款自动出现在 Trovelo 的支出里：在 iOS 27 上用现成的快捷指令，或在“快捷指令”中自己创建钱包自动化。",
+    og="旅行时用 Apple Pay 付款，Trovelo 帮你记下来。",
+    lead="旅行时用 Apple Pay 付款，金额和店名会自动进入支出。在家时什么也不会发生。",
+    keywords="apple pay 钱包 自动化 快捷指令 自动 支出 记录 付款 银行卡 轻触",
+    ios=[
+        dict(title="添加快捷指令",
+             text="在 iOS 27 上，用 iPhone 打开 <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">Trovelo 快捷指令</a>，然后轻点<b>添加快捷指令</b>。"),
+        dict(title="确认已打开",
+             text="按住这个快捷指令，然后轻点<b>编辑</b>。轻点第一行的 <b>›</b>，确认<b>自动化</b>已打开。它适用于钱包里的任何卡片和任何类型的消费。"),
+        dict(title="照常付款",
+             text="下次旅行时在店里用 Apple Pay 付款，这笔付款会连同金额和店名进入支出。当天的计划不变。",
+             alt=["支出：总额和每一天"]),
+        dict(title="在 iOS 26 上自己创建",
+             text="在“快捷指令”中打开<b>自动化</b>，轻点 <b>+</b>，然后选择<b>钱包</b>。选择你的卡片，然后选择<b>立即运行</b>。接着轻点<b>下一步</b>和<b>创建新快捷指令</b>。添加 Trovelo 的<b>记录钱包付款</b>操作，把<b>金额</b>和<b>商户</b>设为<b>输入快捷指令的信息</b>中的对应项。"),
+    ],
+    tips=[
+        "只有在店里用 Apple Pay 才算，实体卡和网上购物不算。也只有在进行中的旅行里才算，所以在家时不会记录任何内容。",
+        "退款不会被记录，别人分享给你仅供查看的旅行也不会记录。",
+        "在“快捷指令”里点播放不会传入任何付款，所以不会记录。请用真实付款来试。Apple 有时不会运行它，或者在付款被拒时也运行，所以不妨偶尔看看你的支出。",
+        "交通消费也会记录。如果不想记录，打开同一行，把它从<b>类别</b>中去掉。",
     ],
 )
 

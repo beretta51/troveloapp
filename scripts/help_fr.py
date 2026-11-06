@@ -143,12 +143,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Dépenses avec Apple Pay",
+        text="Paie avec Apple Pay en voyage, et ça arrive tout seul dans les Dépenses."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importe tes réservations",
         text="Vols, hôtels et voitures de location, lus depuis une capture ou un PDF de l’e-mail."),
     "plugs-and-voltage": dict(source="b360215d", title="Prises et tension",
         text="Ta liste de valise te dit quelle prise et quelle tension t’attendent là où tu vas."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Des idées pour un jour vide",
-        text="Des lieux choisis pour ta ville, prêts à ajouter."),
 }
 
 ARTICLES = {}
@@ -1268,6 +1268,33 @@ article(
         "<b>Siri AI</b> ne peut pas encore travailler avec tes voyages. Pour l’instant, utilise ces phrases.",
         "Les dépenses demandent un voyage en cours : si tu n’en as pas, Siri te le dit. Pas de devise dans ta phrase ? C’est celle du voyage.",
         "Siri fonctionne avec Trovelo sur iPhone et iPad. Sur Mac, tu peux <a href=\"/help/plan-with-your-ai-assistant/\">planifier avec ton assistant IA</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Note automatiquement tes paiements Apple Pay",
+    description="Comment faire apparaître tout seuls tes paiements Apple Pay en voyage dans les Dépenses de Trovelo : avec un raccourci tout prêt sur iOS 27 ou une automatisation Cartes que tu crées dans Raccourcis.",
+    og="Paie avec Apple Pay en voyage. Trovelo le note pour toi.",
+    lead="Paie avec Apple Pay en voyage : le montant et le magasin arrivent tout seuls dans les Dépenses. Chez toi, il ne se passe rien.",
+    keywords="apple pay cartes automatisation raccourci raccourcis automatique dépense noter paiement carte",
+    ios=[
+        dict(title="Ajoute le raccourci",
+             text="Sur iOS 27, ouvre <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">le raccourci Trovelo</a> sur ton iPhone et touche <b>Ajouter ce raccourci</b>."),
+        dict(title="Vérifie qu’il est activé",
+             text="Maintiens le raccourci appuyé et touche <b>Modifier</b>. Touche le <b>›</b> de la première ligne et vérifie que <b>Automatisation</b> est activé. Ça marche avec toutes les cartes de Cartes et tous les types d’achat."),
+        dict(title="Paie comme d’habitude",
+             text="La prochaine fois que tu paies dans un magasin avec Apple Pay en voyage, le paiement arrive dans les Dépenses avec le montant et le nom du magasin. Le programme du jour reste tel quel.",
+             alt=["Dépenses, avec le total dépensé et chaque jour"]),
+        dict(title="Sur iOS 26, crée-le toi-même",
+             text="Dans Raccourcis, ouvre <b>Automatisation</b>, touche <b>+</b> et choisis <b>Cartes</b>. Sélectionne tes cartes et choisis <b>Exécuter immédiatement</b>. Touche ensuite <b>Suivant</b> et <b>Créer un raccourci</b>. Ajoute l’action <b>Noter un paiement via Cartes</b> de Trovelo, puis règle <b>Montant</b> et <b>Commerçant</b> sur ceux de <b>Entrée de raccourci</b>."),
+    ],
+    tips=[
+        "Seul Apple Pay en magasin compte, pas une carte physique ni un achat en ligne. Et seulement pendant un voyage en cours : chez toi, rien n’est noté.",
+        "Les remboursements ne sont pas notés, ni rien sur un voyage qu’on a partagé avec toi en lecture seule.",
+        "Appuyer sur lecture dans Raccourcis n’envoie aucun paiement, donc rien n’est noté. Essaie avec un vrai paiement. Apple ne l’exécute pas toujours, ou l’exécute pour un paiement refusé : jette un œil à tes Dépenses de temps en temps.",
+        "Les transports comptent aussi. Pour les exclure, ouvre cette même ligne et retire-les de <b>Catégories</b>.",
     ],
 )
 

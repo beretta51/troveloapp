@@ -144,12 +144,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Apple Pay 支出",
+        text="旅行時用 Apple Pay 付款，會自動進入支出。"),
     "import-a-booking-from-an-email": dict(source="b126a657", title="匯入預訂",
         text="航班、飯店和租車，從確認信的截圖或 PDF 直接讀取。"),
     "plugs-and-voltage": dict(source="b360215d", title="插頭和電壓",
         text="你的打包清單會告訴你目的地用什麼插頭、電壓是多少。"),
-    "add-places-to-your-days": dict(source="9d482ce7", title="空白日子的靈感",
-        text="為你的城市精選的地點，可以直接加入。"),
 }
 
 ARTICLES = {}
@@ -1269,6 +1269,33 @@ article(
         "<b>Siri AI</b> 目前還不能處理你的行程。現在請使用這些句子。",
         "記錄支出需要有正在進行的行程：如果沒有，Siri 會告訴你。沒說貨幣？就用行程的貨幣。",
         "Siri 可以在 iPhone 和 iPad 上搭配 Trovelo 使用。在 Mac 上，你可以<a href=\"/help/plan-with-your-ai-assistant/\">用 AI 助理規劃行程</a>。",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="自動記錄 Apple Pay 付款",
+    description="如何讓旅行中的 Apple Pay 付款自動出現在 Trovelo 的支出裡：在 iOS 27 使用現成的捷徑，或在「捷徑」中自己製作錢包自動化操作。",
+    og="旅行時用 Apple Pay 付款，Trovelo 幫你記下來。",
+    lead="旅行時用 Apple Pay 付款，金額和店名會自動進入支出。在家時什麼也不會發生。",
+    keywords="apple pay 錢包 自動化 捷徑 自動 支出 記錄 付款 卡片 感應",
+    ios=[
+        dict(title="加入捷徑",
+             text="在 iOS 27，用 iPhone 打開 <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">Trovelo 捷徑</a>，然後點一下<b>加入捷徑</b>。"),
+        dict(title="確認已開啟",
+             text="按住這個捷徑，然後點一下<b>編輯</b>。點一下第一行的 <b>›</b>，確認<b>自動化操作</b>已開啟。它適用於錢包裡的任何卡片和任何類型的消費。"),
+        dict(title="照常付款",
+             text="下次旅行時在店裡用 Apple Pay 付款，這筆付款會連同金額和店名進入支出。當天的計畫不變。",
+             alt=["支出：總額和每一天"]),
+        dict(title="在 iOS 26 自己製作",
+             text="在「捷徑」中打開<b>自動化</b>，點一下 <b>+</b>，然後選擇<b>錢包</b>。選擇你的卡片，然後選擇<b>立即執行</b>。接著點一下<b>下一步</b>和<b>新增捷徑</b>。加入 Trovelo 的<b>記錄錢包付款</b>動作，把<b>金額</b>和<b>商店</b>設為<b>捷徑輸入</b>中的對應項目。"),
+    ],
+    tips=[
+        "只有在店裡用 Apple Pay 才算，實體卡和網路購物不算。也只有在進行中的旅行才算，所以在家時不會記錄任何內容。",
+        "退款不會被記錄，別人分享給你僅供檢視的旅行也不會記錄。",
+        "在「捷徑」裡點播放不會傳入任何付款，所以不會記錄。請用真實付款來試。Apple 有時不會執行，或是在付款被拒時也執行，所以不妨偶爾看看你的支出。",
+        "交通消費也會記錄。如果不想記錄，打開同一行，把它從<b>類別</b>中移除。",
     ],
 )
 

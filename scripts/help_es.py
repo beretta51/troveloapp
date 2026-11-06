@@ -141,12 +141,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Gastos con Apple Pay",
+        text="Paga con Apple Pay en un viaje y aparece solo en Gastos."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importa reservas",
         text="Vuelos, hoteles y coches de alquiler, leídos de una captura o de un PDF del correo."),
     "plugs-and-voltage": dict(source="b360215d", title="Enchufes y voltaje",
         text="Tu lista de equipaje te dice qué enchufe y qué voltaje hay adonde vas."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Ideas para un día vacío",
-        text="Lugares escogidos para tu ciudad, listos para añadir."),
 }
 
 ARTICLES = {}
@@ -1266,6 +1266,33 @@ article(
         "<b>Siri AI</b> todavía no puede trabajar con tus viajes. De momento, usa estas frases.",
         "Los gastos necesitan un viaje en curso: si no estás en ninguno, Siri te lo dice. ¿No dices la moneda? Usa la del viaje.",
         "Siri funciona con Trovelo en el iPhone y el iPad. En un Mac, puedes <a href=\"/help/plan-with-your-ai-assistant/\">planificar con tu asistente de IA</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Apunta tus pagos con Apple Pay automáticamente",
+    description="Cómo hacer que los pagos con Apple Pay durante un viaje aparezcan solos en Gastos de Trovelo, con un atajo ya hecho en iOS 27 o con una automatización de Cartera que creas en Atajos.",
+    og="Paga con Apple Pay en un viaje. Trovelo lo apunta por ti.",
+    lead="Paga con Apple Pay en un viaje, y el importe y la tienda aparecen solos en Gastos. En casa, no pasa nada.",
+    keywords="apple pay cartera automatización atajo atajos automático gasto apuntar registrar pago acercar tarjeta",
+    ios=[
+        dict(title="Añade el atajo",
+             text="En iOS 27, abre <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">el atajo de Trovelo</a> en tu iPhone y toca <b>Añadir atajo</b> (en América, <b>Agregar</b>)."),
+        dict(title="Comprueba que está activado",
+             text="Mantén pulsado el atajo y toca <b>Editar</b>. Toca la <b>›</b> de la primera fila y comprueba que <b>Automatización</b> está activado. Funciona con cualquier tarjeta de Cartera y con cualquier tipo de compra."),
+        dict(title="Paga como siempre",
+             text="La próxima vez que pagues en una tienda con Apple Pay durante un viaje, el pago aparecerá en Gastos con el importe y el nombre de la tienda. El plan del día se queda como estaba.",
+             alt=["Gastos, con el total gastado y cada día"]),
+        dict(title="En iOS 26, créalo tú",
+             text="En Atajos, abre <b>Automatización</b>, toca <b>+</b> y elige <b>Cartera</b> (en América, <b>Wallet</b>). Marca tus tarjetas y elige <b>Ejecutar inmediatamente</b>. Luego toca <b>Siguiente</b> y <b>Crear nuevo atajo</b>. Añade la acción <b>Registrar pago con Cartera</b> de Trovelo y pon en <b>Importe</b> y <b>Comercio</b> los de <b>Entrada de atajo</b>."),
+    ],
+    tips=[
+        "Solo cuenta Apple Pay en una tienda, no una tarjeta física ni una compra por internet. Y solo con un viaje en curso, así que en casa no se apunta nada.",
+        "Los reembolsos no se apuntan, ni nada en un viaje que te han compartido solo para ver.",
+        "Pulsar play en Atajos no envía ningún pago, así que no apunta nada. Pruébalo con un pago de verdad. Apple a veces no lo ejecuta, o lo ejecuta con un pago rechazado, así que échale un vistazo a Gastos de vez en cuando.",
+        "El transporte también cuenta. Para dejarlo fuera, abre esa misma fila y quítalo de <b>Categorías</b>.",
     ],
 )
 

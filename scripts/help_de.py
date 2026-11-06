@@ -144,12 +144,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Ausgaben mit Apple Pay",
+        text="Zahl auf Reisen mit Apple Pay, und es landet von selbst in den Ausgaben."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Buchungen importieren",
         text="Flüge, Hotels und Mietwagen, gelesen aus einem Screenshot oder einem PDF der E-Mail."),
     "plugs-and-voltage": dict(source="b360215d", title="Stecker und Spannung",
         text="Deine Packliste zeigt dir Stecker und Spannung an deinem Reiseziel."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Ideen für einen leeren Tag",
-        text="Ausgewählte Orte für deine Stadt, bereit zum Hinzufügen."),
 }
 
 ARTICLES = {}
@@ -1269,6 +1269,33 @@ article(
         "<b>Siri AI</b> kann noch nicht mit deinen Reisen arbeiten. Nutze vorerst diese Sätze.",
         "Ausgaben brauchen eine laufende Reise: Bist du auf keiner, sagt Siri es dir. Keine Währung genannt? Dann gilt die der Reise.",
         "Siri funktioniert mit Trovelo auf iPhone und iPad. Auf dem Mac kannst du <a href=\"/help/plan-with-your-ai-assistant/\">mit deinem KI-Assistenten planen</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Apple-Pay-Zahlungen automatisch erfassen",
+    description="So landen Apple-Pay-Zahlungen auf einer Reise von selbst in den Ausgaben von Trovelo: mit einem fertigen Kurzbefehl unter iOS 27 oder einer Wallet-Automation, die du in Kurzbefehle erstellst.",
+    og="Zahl auf Reisen mit Apple Pay. Trovelo erfasst es für dich.",
+    lead="Zahl auf einer Reise mit Apple Pay, und Betrag und Geschäft landen von selbst in den Ausgaben. Zu Hause passiert nichts.",
+    keywords="apple pay wallet automation kurzbefehl kurzbefehle automatisch ausgabe erfassen zahlung karte",
+    ios=[
+        dict(title="Kurzbefehl hinzufügen",
+             text="Öffne unter iOS 27 <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">den Trovelo-Kurzbefehl</a> auf deinem iPhone und tippe auf <b>Kurzbefehl hinzufügen</b>."),
+        dict(title="Prüfen, ob er an ist",
+             text="Halte den Kurzbefehl gedrückt und tippe auf <b>Bearbeiten</b>. Tippe in der ersten Zeile auf <b>›</b> und prüfe, ob <b>Automation</b> eingeschaltet ist. Das funktioniert mit jeder Karte in deiner Wallet und bei jeder Art von Einkauf."),
+        dict(title="Zahl wie immer",
+             text="Wenn du das nächste Mal auf einer Reise in einem Geschäft mit Apple Pay zahlst, landet die Zahlung mit dem Betrag und dem Namen des Geschäfts in den Ausgaben. Dein Tagesplan bleibt, wie er war.",
+             alt=["Ausgaben mit der Gesamtsumme und jedem Tag"]),
+        dict(title="Unter iOS 26 selbst erstellen",
+             text="Öffne in Kurzbefehle <b>Automation</b>, tippe auf <b>+</b> und wähle <b>Wallet</b>. Wähle deine Karten aus und dann <b>Sofort ausführen</b>. Tippe dann auf <b>Weiter</b> und <b>Neuen Kurzbefehl erstellen</b>. Füge die Trovelo-Aktion <b>Wallet-Zahlung erfassen</b> hinzu und setze <b>Betrag</b> und <b>Händler</b> auf die Werte aus <b>Kurzbefehleingabe</b>."),
+    ],
+    tips=[
+        "Es zählt nur Apple Pay in einem Geschäft, keine physische Karte und kein Online-Kauf. Und nur während einer laufenden Reise, zu Hause wird also nichts erfasst.",
+        "Rückerstattungen werden nicht erfasst, ebenso wenig etwas auf einer Reise, die jemand nur zum Ansehen mit dir geteilt hat.",
+        "Wenn du in Kurzbefehle auf Play tippst, wird keine Zahlung übergeben, also wird nichts erfasst. Probier es mit einer echten Zahlung aus. Apple führt es manchmal nicht aus oder führt es bei einer abgelehnten Zahlung aus, schau also ab und zu in deine Ausgaben.",
+        "Auch Verkehrsmittel zählen. Wenn du sie nicht erfassen willst, öffne dieselbe Zeile und nimm sie unter <b>Kategorien</b> heraus.",
     ],
 )
 

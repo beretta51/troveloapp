@@ -144,12 +144,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Apple Pay 지출",
+        text="여행 중 Apple Pay로 결제하면 저절로 지출에 들어가요."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="예약 가져오기",
         text="항공편, 호텔, 렌터카를 이메일 스크린샷이나 PDF에서 읽어 와요."),
     "plugs-and-voltage": dict(source="b360215d", title="플러그와 전압",
         text="짐 목록에서 가는 곳의 플러그와 전압을 알려 줘요."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="빈 날을 위한 아이디어",
-        text="내 도시에 맞춰 고른 장소를 바로 추가할 수 있어요."),
 }
 
 ARTICLES = {}
@@ -1269,6 +1269,33 @@ article(
         "<b>Siri AI</b>는 아직 여행을 다룰 수 없어요. 지금은 이 문구를 사용하세요.",
         "지출을 기록하려면 진행 중인 여행이 있어야 해요. 여행 중이 아니면 Siri가 알려 줘요. 통화를 말하지 않으면 여행의 통화로 기록돼요.",
         "Siri는 iPhone과 iPad의 Trovelo에서 작동해요. Mac에서는 <a href=\"/help/plan-with-your-ai-assistant/\">AI 어시스턴트로 계획</a>할 수 있어요.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Apple Pay 결제를 자동으로 기록하기",
+    description="여행 중 Apple Pay 결제가 Trovelo의 지출에 저절로 기록되게 하는 방법이에요. iOS 27에서는 준비된 단축어를, 아니면 단축어 앱에서 직접 만든 지갑 자동화를 사용해요.",
+    og="여행 중 Apple Pay로 결제하세요. Trovelo가 기록해 드려요.",
+    lead="여행 중 Apple Pay로 결제하면 금액과 가게 이름이 저절로 지출에 들어가요. 집에서는 아무 일도 일어나지 않아요.",
+    keywords="apple pay 지갑 자동화 단축어 자동 지출 기록 결제 카드 탭",
+    ios=[
+        dict(title="단축어 추가하기",
+             text="iOS 27에서 iPhone으로 <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">Trovelo 단축어</a>를 열고 <b>단축어 추가</b>를 탭하세요."),
+        dict(title="켜져 있는지 확인하기",
+             text="단축어를 길게 누르고 <b>편집</b>을 탭하세요. 첫 번째 줄의 <b>›</b>를 탭하고 <b>자동화</b>가 켜져 있는지 확인하세요. 지갑의 어떤 카드로도, 어떤 종류의 구매에도 작동해요."),
+        dict(title="평소처럼 결제하기",
+             text="다음에 여행 중 가게에서 Apple Pay로 결제하면 금액과 가게 이름과 함께 지출에 들어가요. 그날의 일정은 그대로예요.",
+             alt=["총액과 날짜별 금액이 보이는 지출"]),
+        dict(title="iOS 26에서는 직접 만들기",
+             text="단축어 앱에서 <b>자동화</b>를 열고 <b>+</b>를 탭한 다음 <b>지갑</b>을 선택하세요. 카드를 고르고 <b>즉시 실행</b>을 선택하세요. 그런 다음 <b>다음</b>과 <b>새로운 단축어 생성</b>을 탭하세요. Trovelo의 <b>지갑 결제 기록</b> 동작을 추가하고 <b>금액</b>과 <b>가맹점</b>을 <b>단축어 입력</b>의 값으로 설정하세요."),
+    ],
+    tips=[
+        "가게에서 쓴 Apple Pay만 해당돼요. 실물 카드나 온라인 구매는 해당되지 않아요. 진행 중인 여행에서만 작동하니 집에서는 아무것도 기록되지 않아요.",
+        "환불은 기록되지 않아요. 보기 전용으로 공유받은 여행에도 기록되지 않아요.",
+        "단축어 앱에서 재생 버튼을 눌러도 결제 정보가 전달되지 않아서 아무것도 기록되지 않아요. 실제 결제로 시험해 보세요. Apple이 실행하지 않거나 거절된 결제에 실행하는 경우도 있으니 가끔 지출을 확인해 보세요.",
+        "교통비도 기록돼요. 빼고 싶다면 같은 줄을 열고 <b>카테고리</b>에서 빼세요.",
     ],
 )
 

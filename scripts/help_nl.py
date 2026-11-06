@@ -142,12 +142,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Uitgaven met Apple Pay",
+        text="Betaal op reis met Apple Pay, en het komt vanzelf in Uitgaven."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importeer boekingen",
         text="Vluchten, hotels en huurauto’s, gelezen uit een screenshot of een pdf van de mail."),
     "plugs-and-voltage": dict(source="b360215d", title="Stekkers en voltage",
         text="Je paklijst laat zien welke stekker en welk voltage je aantreft waar je heen gaat."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Ideeën voor een lege dag",
-        text="Uitgekozen plekken voor jouw stad, klaar om toe te voegen."),
 }
 
 ARTICLES = {}
@@ -1267,6 +1267,33 @@ article(
         "<b>Siri AI</b> kan nog niet met je reizen werken. Gebruik voorlopig deze zinnen.",
         "Uitgaven hebben een lopende reis nodig: ben je niet op reis, dan zegt Siri dat. Geen valuta genoemd? Dan geldt die van de reis.",
         "Siri werkt met Trovelo op iPhone en iPad. Op een Mac kun je <a href=\"/help/plan-with-your-ai-assistant/\">plannen met je AI-assistent</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Apple Pay-betalingen automatisch vastleggen",
+    description="Zo komen Apple Pay-betalingen op reis vanzelf in de Uitgaven van Trovelo: met een kant-en-klare opdracht op iOS 27 of een Wallet-automatisering die je zelf maakt in Opdrachten.",
+    og="Betaal op reis met Apple Pay. Trovelo legt het voor je vast.",
+    lead="Betaal op reis met Apple Pay, en het bedrag en de winkel komen vanzelf in Uitgaven. Thuis gebeurt er niets.",
+    keywords="apple pay wallet automatisering opdracht opdrachten automatisch uitgave vastleggen betaling kaart",
+    ios=[
+        dict(title="Voeg de opdracht toe",
+             text="Open op iOS 27 <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">de Trovelo-opdracht</a> op je iPhone en tik op <b>Voeg opdracht toe</b>."),
+        dict(title="Controleer of hij aanstaat",
+             text="Houd de opdracht ingedrukt en tik op <b>Wijzig</b>. Tik op de <b>›</b> in de eerste rij en controleer of <b>Automatisering</b> aanstaat. Het werkt met elke kaart in Wallet en elk soort aankoop."),
+        dict(title="Betaal zoals altijd",
+             text="Als je de volgende keer op reis in een winkel met Apple Pay betaalt, komt de betaling in Uitgaven met het bedrag en de naam van de winkel. Je dagplanning blijft zoals die was.",
+             alt=["Uitgaven, met het totaal en elke dag"]),
+        dict(title="Op iOS 26 maak je hem zelf",
+             text="Open in Opdrachten <b>Automatisering</b>, tik op <b>+</b> en kies <b>Wallet</b>. Kies je kaarten en daarna <b>Voer onmiddellijk uit</b>. Tik daarna op <b>Volgende</b> en <b>Maak nieuwe opdracht aan</b>. Voeg de Trovelo-actie <b>Leg Wallet-betaling vast</b> toe en stel <b>Bedrag</b> en <b>Handelaar</b> in op die uit <b>Invoer opdracht</b>."),
+    ],
+    tips=[
+        "Alleen Apple Pay in een winkel telt, geen fysieke kaart of online aankoop. En alleen tijdens een lopende reis, dus thuis wordt niets vastgelegd.",
+        "Terugbetalingen worden niet vastgelegd, en ook niets op een reis die iemand alleen ter inzage met je heeft gedeeld.",
+        "Op afspelen tikken in Opdrachten stuurt geen betaling mee, dus er wordt niets vastgelegd. Probeer het met een echte betaling. Apple voert het soms niet uit, of juist bij een geweigerde betaling, dus kijk af en toe even in je Uitgaven.",
+        "Ook vervoer telt mee. Wil je dat niet, open dan dezelfde rij en haal het uit <b>Categorieën</b>.",
     ],
 )
 

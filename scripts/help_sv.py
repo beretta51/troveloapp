@@ -143,12 +143,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Utgifter med Apple Pay",
+        text="Betala med Apple Pay på resan, så hamnar det av sig självt i Utgifter."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importera bokningar",
         text="Flyg, hotell och hyrbilar, inlästa från en skärmavbild eller en PDF av mejlet."),
     "plugs-and-voltage": dict(source="b360215d", title="Kontakter och spänning",
         text="Din packlista visar vilka kontakter och vilken spänning som gäller dit du ska."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Idéer för en tom dag",
-        text="Utvalda platser i din stad, redo att läggas till."),
 }
 
 ARTICLES = {}
@@ -1268,6 +1268,33 @@ article(
         "<b>Siri AI</b> kan inte arbeta med dina resor än. Använd de här fraserna så länge.",
         "Utgifter kräver en pågående resa: är du inte på någon säger Siri det. Ingen valuta nämnd? Då gäller resans.",
         "Siri fungerar med Trovelo på iPhone och iPad. På en Mac kan du <a href=\"/help/plan-with-your-ai-assistant/\">planera med din AI-assistent</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Registrera Apple Pay-betalningar automatiskt",
+    description="Så hamnar Apple Pay-betalningar på resan av sig själva i Utgifter i Trovelo, med en färdig genväg i iOS 27 eller en Plånbok-automatisering som du skapar i Genvägar.",
+    og="Betala med Apple Pay på resan. Trovelo registrerar det åt dig.",
+    lead="Betala med Apple Pay på en resa, så hamnar beloppet och butiken av sig själva i Utgifter. Hemma händer ingenting.",
+    keywords="apple pay plånbok automatisering genväg genvägar automatisk utgift registrera betalning kort",
+    ios=[
+        dict(title="Lägg till genvägen",
+             text="Öppna <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">Trovelo-genvägen</a> på din iPhone med iOS 27 och tryck på <b>Lägg till genväg</b>."),
+        dict(title="Kontrollera att den är på",
+             text="Håll ned genvägen och tryck på <b>Ändra</b>. Tryck på <b>›</b> på första raden och kontrollera att <b>Automatisering</b> är på. Det fungerar med alla kort i Plånbok och alla sorters köp."),
+        dict(title="Betala som vanligt",
+             text="Nästa gång du betalar i en butik med Apple Pay på en resa hamnar betalningen i Utgifter med beloppet och butikens namn. Dagens plan förblir som den var.",
+             alt=["Utgifter, med totalen och varje dag"]),
+        dict(title="I iOS 26 skapar du den själv",
+             text="Öppna <b>Automatisering</b> i Genvägar, tryck på <b>+</b> och välj <b>Plånbok</b>. Välj dina kort och sedan <b>Kör direkt</b>. Tryck sedan på <b>Nästa</b> och <b>Skapa ny genväg</b>. Lägg till Trovelos åtgärd <b>Registrera Wallet-betalning</b> och ställ in <b>Belopp</b> och <b>Handlare</b> på dem från <b>Genvägsinmatning</b>."),
+    ],
+    tips=[
+        "Bara Apple Pay i en butik räknas, inte ett fysiskt kort eller ett köp på nätet. Och bara under en pågående resa, så hemma registreras ingenting.",
+        "Återbetalningar registreras inte, och inte heller något på en resa som någon delat med dig bara för att titta.",
+        "Att trycka på spela i Genvägar skickar ingen betalning, så ingenting registreras. Prova med en riktig betalning. Apple kör den ibland inte, eller kör den vid en nekad betalning, så titta i Utgifter då och då.",
+        "Kollektivtrafik räknas också. Vill du inte ha med den öppnar du samma rad och tar bort den under <b>Kategorier</b>.",
     ],
 )
 

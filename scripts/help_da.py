@@ -143,12 +143,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Udgifter med Apple Pay",
+        text="Betal med Apple Pay på rejsen, så kommer det af sig selv i Udgifter."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importér bookinger",
         text="Fly, hoteller og lejebiler, læst fra et skærmbillede eller en PDF af e-mailen."),
     "plugs-and-voltage": dict(source="b360215d", title="Stik og spænding",
         text="Din pakkeliste viser, hvilke stik og hvilken spænding der er, der hvor du skal hen."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Idéer til en tom dag",
-        text="Håndplukkede steder i din by, klar til at blive tilføjet."),
 }
 
 ARTICLES = {}
@@ -1268,6 +1268,33 @@ article(
         "<b>Siri AI</b> kan ikke arbejde med dine rejser endnu. Brug disse sætninger indtil videre.",
         "Udgifter kræver en igangværende rejse: Er du ikke på en, siger Siri det. Ingen valuta nævnt? Så gælder rejsens.",
         "Siri virker med Trovelo på iPhone og iPad. På en Mac kan du <a href=\"/help/plan-with-your-ai-assistant/\">planlægge med din AI-assistent</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Registrér Apple Pay-betalinger automatisk",
+    description="Sådan kommer Apple Pay-betalinger på rejsen af sig selv i Udgifter i Trovelo, med en færdig genvej på iOS 27 eller en Wallet-automatisering, du selv laver i Genveje.",
+    og="Betal med Apple Pay på rejsen. Trovelo registrerer det for dig.",
+    lead="Betal med Apple Pay på en rejse, så kommer beløbet og butikken af sig selv i Udgifter. Derhjemme sker der ingenting.",
+    keywords="apple pay wallet automatisering genvej genveje automatisk udgift registrere betaling kort",
+    ios=[
+        dict(title="Tilføj genvejen",
+             text="Åbn <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">Trovelo-genvejen</a> på din iPhone med iOS 27, og tryk på <b>Tilføj genvej</b>."),
+        dict(title="Tjek, at den er slået til",
+             text="Hold fingeren på genvejen, og tryk på <b>Rediger</b>. Tryk på <b>›</b> på første række, og tjek, at <b>Automatisering</b> er slået til. Det virker med alle kort i Wallet og alle slags køb."),
+        dict(title="Betal som altid",
+             text="Næste gang du betaler i en butik med Apple Pay på en rejse, kommer betalingen i Udgifter med beløbet og butikkens navn. Dagens plan forbliver, som den var.",
+             alt=["Udgifter, med totalen og hver dag"]),
+        dict(title="På iOS 26 laver du den selv",
+             text="Åbn <b>Automatisering</b> i Genveje, tryk på <b>+</b>, og vælg <b>Wallet</b>. Vælg dine kort og derefter <b>Start med det samme</b>. Tryk derefter på <b>Næste</b> og <b>Opret ny genvej</b>. Tilføj Trovelos handling <b>Registrér Wallet-betaling</b>, og sæt <b>Beløb</b> og <b>Forretning</b> til dem fra <b>Input til genvej</b>."),
+    ],
+    tips=[
+        "Kun Apple Pay i en butik tæller, ikke et fysisk kort eller et køb på nettet. Og kun under en igangværende rejse, så derhjemme registreres der ingenting.",
+        "Refunderinger registreres ikke, og heller ikke noget på en rejse, som nogen har delt med dig, bare så du kan se den.",
+        "Et tryk på afspil i Genveje sender ingen betaling, så der registreres ingenting. Prøv med en rigtig betaling. Apple kører den nogle gange ikke, eller kører den ved en afvist betaling, så kig i Udgifter en gang imellem.",
+        "Transport tæller også. Vil du ikke have det med, så åbn den samme række, og fjern det under <b>Kategorier</b>.",
     ],
 )
 

@@ -146,12 +146,12 @@ START_HERE = {
 }
 
 NEWS = {
+    "log-apple-pay-payments": dict(source="1e70a489", title="Spese con Apple Pay",
+        text="Paga con Apple Pay in viaggio, e finisce da solo nelle Spese."),
     "import-a-booking-from-an-email": dict(source="b126a657", title="Importa le prenotazioni",
         text="Voli, hotel e auto a noleggio, letti da uno screenshot o dal PDF dell’email."),
     "plugs-and-voltage": dict(source="b360215d", title="Prese e voltaggio",
         text="La tua lista del bagaglio ti dice che prese e che voltaggio trovi dove vai."),
-    "add-places-to-your-days": dict(source="9d482ce7", title="Idee per un giorno vuoto",
-        text="Luoghi scelti per la tua città, pronti da aggiungere."),
 }
 
 ARTICLES = {}
@@ -1271,6 +1271,33 @@ article(
         "<b>Siri AI</b> non può ancora lavorare con i tuoi viaggi. Per ora, usa queste frasi.",
         "Le spese richiedono un viaggio in corso: se non ne hai uno, Siri te lo dice. Non dici la valuta? Usa quella del viaggio.",
         "Siri funziona con Trovelo su iPhone e iPad. Su Mac puoi <a href=\"/help/plan-with-your-ai-assistant/\">pianificare con il tuo assistente IA</a>.",
+    ],
+)
+
+article(
+    "log-apple-pay-payments",
+    source="24d36802",
+    title="Registra in automatico i pagamenti Apple Pay",
+    description="Come far comparire da soli i pagamenti Apple Pay in viaggio nelle Spese di Trovelo, con un comando rapido già pronto su iOS 27 o un’automazione Wallet che crei in Comandi Rapidi.",
+    og="Paga con Apple Pay in viaggio. Trovelo lo registra per te.",
+    lead="Paga con Apple Pay in viaggio, e l’importo e il negozio finiscono da soli nelle Spese. A casa non succede nulla.",
+    keywords="apple pay wallet automazione comando rapido comandi rapidi automatico spesa registrare pagamento carta",
+    ios=[
+        dict(title="Aggiungi il comando rapido",
+             text="Su iOS 27, apri <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">il comando rapido di Trovelo</a> sul tuo iPhone e tocca <b>Aggiungi comando rapido</b>."),
+        dict(title="Controlla che sia attivo",
+             text="Tieni premuto il comando rapido e tocca <b>Modifica</b>. Tocca la <b>›</b> nella prima riga e controlla che <b>Automazione</b> sia attivo. Funziona con qualsiasi carta di Wallet e con qualsiasi tipo di acquisto."),
+        dict(title="Paga come sempre",
+             text="La prossima volta che paghi in un negozio con Apple Pay in viaggio, il pagamento finisce nelle Spese con l’importo e il nome del negozio. Il programma del giorno resta com’era.",
+             alt=["Spese, con il totale speso e ogni giorno"]),
+        dict(title="Su iOS 26, crealo tu",
+             text="In Comandi Rapidi, apri <b>Automazioni</b>, tocca <b>+</b> e scegli <b>Wallet</b>. Seleziona le tue carte e scegli <b>Esegui immediatamente</b>. Poi tocca <b>Avanti</b> e <b>Crea un nuovo comando rapido</b>. Aggiungi l’azione di Trovelo <b>Registra pagamento Wallet</b> e imposta <b>Importo</b> ed <b>Esercente</b> su quelli di <b>Input comando rapido</b>."),
+    ],
+    tips=[
+        "Conta solo Apple Pay in un negozio, non una carta fisica né un acquisto online. E solo durante un viaggio in corso, quindi a casa non viene registrato nulla.",
+        "I rimborsi non vengono registrati, e nemmeno ciò che riguarda un viaggio condiviso con te in sola lettura.",
+        "Premere play in Comandi Rapidi non invia alcun pagamento, quindi non registra nulla. Provalo con un pagamento vero. A volte Apple non lo esegue, o lo esegue per un pagamento rifiutato, quindi dai un’occhiata alle tue Spese ogni tanto.",
+        "Contano anche i trasporti. Per escluderli, apri la stessa riga e toglili da <b>Categorie</b>.",
     ],
 )
 

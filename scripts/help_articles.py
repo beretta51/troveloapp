@@ -752,7 +752,39 @@ article(
         ("i-ticket", "Prices you put on cards count too: the train, the museum, the dinner you booked."),
         ("i-tray", "Ideas in Unplanned with a price aren’t counted until they have a day."),
     ],
-    related=["see-costs-in-your-own-money", "split-costs-with-your-group", "use-trovelo-with-siri"],
+    related=["log-apple-pay-payments", "see-costs-in-your-own-money", "use-trovelo-with-siri"],
+)
+
+article(
+    slug="log-apple-pay-payments",
+    title="Log Apple Pay payments automatically",
+    topic="expenses",
+    devices=["iphone"],
+    updated="2026-11-06",
+    minutes=1,
+    description="How to make Apple Pay payments on a trip appear in Trovelo’s Expenses on their own, with a ready-made shortcut on iOS 27 or a Wallet automation you build in Shortcuts.",
+    og="Pay with Apple Pay on a trip. Trovelo logs it for you.",
+    lead="Pay with Apple Pay on a trip, and the amount and the shop land in Expenses on their own. At home, nothing happens.",
+    keywords="apple pay wallet automation shortcut shortcuts automatic expense log payment tap transaction card",
+    thumb=("i-expenses.jpg", "50% 30%"),
+    ios=[
+        dict(title="Add the shortcut",
+             text="On iOS 27, open <a href=\"https://www.icloud.com/shortcuts/ab7863ab8d684eb4a7f3eced8ef36162\">the Trovelo shortcut</a> on your iPhone and tap <b>Add Shortcut</b>."),
+        dict(title="Check it’s on",
+             text="Touch and hold the shortcut and tap <b>Edit</b>. Tap the <b>›</b> in the first row and make sure <b>Automation</b> is on. It works with any card in Wallet and any kind of purchase."),
+        dict(title="Pay as usual",
+             text="Next time you pay in a shop with Apple Pay on a trip, the payment lands in Expenses with the amount and the shop’s name. Your day’s plan stays as it was.",
+             phones=[dict(img="i-expenses.jpg", alt="Expenses, with the total spent and each day", crop="top")]),
+        dict(title="On iOS 26, build it yourself",
+             text="In Shortcuts, open <b>Automation</b>, tap <b>+</b> and choose <b>Wallet</b>. Pick your cards and choose <b>Run Immediately</b>. Then tap <b>Next</b> and <b>Create New Shortcut</b>. Add Trovelo’s <b>Log Wallet Payment</b> action, and set <b>Amount</b> and <b>Merchant</b> to the ones from <b>Shortcut Input</b>."),
+    ],
+    tips=[
+        ("i-info", "Only Apple Pay in a shop counts, not a physical card or an online purchase. Only a trip under way counts too, so nothing is logged at home."),
+        ("i-x", "Refunds aren’t logged, and neither is anything on a trip someone shared with you to view."),
+        ("i-tap", "Pressing play in Shortcuts sends no payment, so it logs nothing. Try it with a real payment. Apple sometimes doesn’t run it, or runs it for a declined payment, so give your Expenses a look now and then."),
+        ("i-ticket", "Transport counts too. To leave it out, open that same row and take it out of <b>Categories</b>."),
+    ],
+    related=["log-an-expense", "see-costs-in-your-own-money", "use-trovelo-with-siri"],
 )
 
 article(
@@ -1673,10 +1705,10 @@ START_HERE = [
 ]
 
 NEWS = [
+    dict(slug="log-apple-pay-payments", img="i-expenses.jpg", pos="50% 30%", title="Apple Pay expenses",
+         text="Pay with Apple Pay on a trip, and it lands in Expenses on its own."),
     dict(slug="import-a-booking-from-an-email", img="s-add.jpg", pos="50% 12%", title="Import bookings",
          text="Flights, hotels and rental cars, read from a screenshot or a PDF of the email."),
     dict(slug="plugs-and-voltage", img="s-packing.jpg", pos="50% 30%", title="Plugs and voltage",
          text="Your packing list shows the plug and voltage where you’re going."),
-    dict(slug="add-places-to-your-days", img="s-onboard.jpg", pos="50% 70%", title="Ideas for an empty day",
-         text="Handpicked spots for your city, ready to add."),
 ]
