@@ -752,7 +752,7 @@ article(
         ("i-ticket", "Prices you put on cards count too: the train, the museum, the dinner you booked."),
         ("i-tray", "Ideas in Unplanned with a price aren’t counted until they have a day."),
     ],
-    related=["see-costs-in-your-own-money", "split-costs-with-your-group", "every-kind-of-card"],
+    related=["see-costs-in-your-own-money", "split-costs-with-your-group", "use-trovelo-with-siri"],
 )
 
 article(
@@ -1418,6 +1418,44 @@ article(
         ("i-lock", "Door codes never go into your calendar."),
     ],
     related=["your-flight-on-the-lock-screen", "add-a-flight-with-layovers", "how-icloud-sync-works"],
+)
+
+article(
+    slug="use-trovelo-with-siri",
+    title="Use Trovelo with Siri",
+    topic="widgets-watch-calendar",
+    updated="2026-11-06",
+    minutes=1,
+    description="What you can ask Siri to do in Trovelo on iPhone and iPad: add a card, log an expense, and open today or a trip, with the phrases to say and where Siri AI stands.",
+    og="Add a card, log a coffee or open today, just by asking.",
+    lead="Ask Siri to add a card, log what you paid or open today’s plan, in any of the languages Trovelo speaks.",
+    keywords="siri voice ask hey siri phrases commands speak dictate add card log expense today open trip siri ai apple intelligence",
+    thumb=("i-board-tue.jpg", "50% 35%"),
+    ios=[
+        dict(title="Add a card",
+             text="Say <b>“Add something to Trovelo.”</b> When Siri asks what to add, say it all at once, like <b>“dinner at Da Enzo tomorrow at 9 pm.”</b> Trovelo works out the category, the time and any price, then Siri tells you where the card went."),
+        dict(title="Which trip and which day",
+             text="It goes to the trip you’re on, or your next one. <b>Today</b>, <b>tomorrow</b> and <b>the day after tomorrow</b> work. With no day, or a day like “Friday”, the card goes on today if you’re on the trip, and in <b>Unplanned</b> if you’re not.",
+             phones=[dict(img="i-unplanned.jpg", alt="Unplanned, next to the days of the trip", crop="top")]),
+        dict(title="Log what you paid",
+             text="Say <b>“Log an expense in Trovelo.”</b> When Siri asks how much, say the amount and what it was for, like <b>“12 euros for coffee.”</b> It goes into Expenses, and your day’s plan stays as it was.",
+             phones=[dict(img="i-expenses.jpg", alt="Expenses, with the total spent and each day", crop="top")]),
+        dict(title="Open today or a trip",
+             text="<b>“What have I got today in Trovelo?”</b> opens today on the trip you’re on. <b>“Open Tokyo in Trovelo”</b> opens that trip. Siri opens the app for you, but it doesn’t read your plan out loud.",
+             phones=[dict(img="i-board-tue.jpg", alt="One day of a trip, with its cards", crop="top")]),
+        dict(title="Other ways to say it",
+             text="Siri listens for these phrases, so say them as they’re written:",
+             ranks_label="More phrases Siri understands",
+             ranks=[("What’s on today in Trovelo", ""), ("Open today in Trovelo", ""), ("Show me today in Trovelo", ""),
+                    ("Show me Tokyo in Trovelo", ""), ("Open my trip in Trovelo", ""), ("Add a card to Trovelo", ""),
+                    ("Add to my trip in Trovelo", ""), ("Add an expense to Trovelo", "")]),
+    ],
+    tips=[
+        ("i-sparkles", "<b>Siri AI</b> can’t work with your trips yet. For now, use these phrases."),
+        ("i-card", "Expenses need a trip under way: if you’re not on one, Siri tells you. No currency in what you say? It uses the trip’s."),
+        ("i-mac", "Siri works with Trovelo on iPhone and iPad. On a Mac, you can <a href=\"/help/plan-with-your-ai-assistant/\">plan with your AI assistant</a>."),
+    ],
+    related=["log-an-expense", "unplanned-ideas-without-a-day", "your-flight-on-the-lock-screen"],
 )
 
 # ── Mac & AI Plan ─────────────────────────────────────────────────────────

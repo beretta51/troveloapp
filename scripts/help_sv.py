@@ -1240,6 +1240,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="Använd Trovelo med Siri",
+    description="Det här kan du be Siri göra i Trovelo på iPhone och iPad: lägga till ett kort, registrera en utgift och öppna i dag eller en resa, med fraserna att säga och läget för Siri AI.",
+    og="Lägg till ett kort, registrera en kaffe eller öppna i dag, bara genom att fråga.",
+    lead="Be Siri lägga till ett kort, registrera det du har betalat eller öppna dagens plan, på alla språk som Trovelo finns på.",
+    keywords="siri röst fråga hej siri fraser kommandon tala diktera lägga till kort registrera utgift i dag öppna resa siri ai apple intelligence",
+    ios=[
+        dict(title="Lägg till ett kort",
+             text="Säg <b>”Lägg till något i Trovelo”</b>. När Siri frågar vad du vill lägga till säger du allt på en gång, till exempel <b>”middag på Da Enzo kl. 21:00”</b>. Trovelo räknar ut kategorin, tiden och priset om du säger det, och Siri berättar var kortet hamnade."),
+        dict(title="Vilken resa och vilken dag",
+             text="Det hamnar i resan du är på, eller i din nästa. Än så länge förstår Siri inte dagar på svenska, som ”i morgon” eller ”fredag”. Kortet hamnar på i dag om du är på resan och i <b>Oplanerat</b> om du inte är det.",
+             alt=["Oplanerat, bredvid resans dagar"]),
+        dict(title="Registrera det du har betalat",
+             text="Säg <b>”Registrera en utgift i Trovelo”</b>. När Siri frågar hur mycket det kostade säger du beloppet och vad det gällde, till exempel <b>”12 euro för kaffe”</b>. Det hamnar i Utgifter, och dagens plan förblir som den var.",
+             alt=["Utgifter, med totalen och varje dag"]),
+        dict(title="Öppna i dag eller en resa",
+             text="<b>”Vad har jag i dag i Trovelo”</b> öppnar i dag på resan du är på. <b>”Öppna Tokyo i Trovelo”</b> öppnar den resan. Siri öppnar appen åt dig, men läser inte upp planen.",
+             alt=["En dag på resan, med dess kort"]),
+        dict(title="Andra sätt att säga det",
+             text="Siri lyssnar efter de här fraserna, så säg dem som de står:",
+             ranks_label="Fler fraser som Siri förstår",
+             ranks=[("Vad händer i dag i Trovelo", ""), ("Öppna i dag i Trovelo", ""), ("Visa i dag i Trovelo", ""), ("Visa Tokyo i Trovelo", ""), ("Öppna min resa i Trovelo", ""), ("Lägg till ett kort i Trovelo", ""), ("Lägg till i min resa i Trovelo", ""), ("Lägg till en utgift i Trovelo", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b> kan inte arbeta med dina resor än. Använd de här fraserna så länge.",
+        "Utgifter kräver en pågående resa: är du inte på någon säger Siri det. Ingen valuta nämnd? Då gäller resans.",
+        "Siri fungerar med Trovelo på iPhone och iPad. På en Mac kan du <a href=\"/help/plan-with-your-ai-assistant/\">planera med din AI-assistent</a>.",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="Trovelo på Mac",

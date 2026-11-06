@@ -1242,6 +1242,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="SiriでTroveloを使う",
+    description="iPhoneとiPadのTroveloでSiriに頼めること：カードの追加、支出の記録、今日や旅行を開くこと。話すフレーズとSiri AIの現状も紹介します。",
+    og="カードの追加も、コーヒー代の記録も、今日を開くのも、頼むだけ。",
+    lead="カードの追加、支払いの記録、今日の予定を開くことをSiriに頼めます。Troveloが対応するすべての言語で使えます。",
+    keywords="siri 音声 声 ヘイシリ フレーズ コマンド 話す 音声入力 カード 追加 支出 記録 今日 旅行 開く siri ai apple intelligence",
+    ios=[
+        dict(title="カードを追加する",
+             text="<b>「Troveloに追加」</b>と言います。何を追加するか聞かれたら、<b>「明日の21時にDa Enzoでディナー」</b>のようにまとめて伝えます。カテゴリ、時間、言った場合は価格もTroveloが判断し、カードの追加先をSiriが教えてくれます。"),
+        dict(title="どの旅行の、どの日に",
+             text="今の旅行、なければ次の旅行に入ります。<b>今日</b>、<b>明日</b>、<b>明後日</b>が使えます。日を言わないときや「金曜日」のような言い方のときは、旅行中なら今日に、そうでなければ<b>未定</b>に入ります。",
+             alt=["旅行の日付の横にある未定"]),
+        dict(title="支払いを記録する",
+             text="<b>「Troveloに支出を記録」</b>と言います。いくらだったか聞かれたら、<b>「コーヒー 500円」</b>のように金額と内容を伝えます。支出に入り、その日の予定は変わりません。",
+             alt=["合計と日ごとの金額が見える支出"]),
+        dict(title="今日や旅行を開く",
+             text="<b>「Troveloで今日の予定」</b>で、今の旅行の今日が開きます。<b>「Troveloで東京を開く」</b>でその旅行が開きます。Siriはアプリを開きますが、予定を読み上げはしません。",
+             alt=["旅行の1日とそのカード"]),
+        dict(title="ほかの言い方",
+             text="Siriはこれらのフレーズを聞き取るので、書いてあるとおりに言ってください。",
+             ranks_label="Siriが理解するほかのフレーズ",
+             ranks=[("Troveloで今日の予定を見せて", ""), ("Troveloで今日を開く", ""), ("Troveloで今日を表示", ""), ("Troveloで東京を見せて", ""), ("Troveloで旅行を開く", ""), ("Troveloにカードを追加", ""), ("Troveloの旅行に追加", ""), ("Troveloに支出を追加", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b>はまだ旅行を扱えません。今はこれらのフレーズを使ってください。",
+        "支出の記録には進行中の旅行が必要です。旅行中でなければSiriがそう伝えます。通貨を言わなければ、旅行の通貨になります。",
+        "SiriはiPhoneとiPadのTroveloで使えます。Macでは<a href=\"/help/plan-with-your-ai-assistant/\">AIアシスタントと計画</a>できます。",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="Mac で Trovelo",

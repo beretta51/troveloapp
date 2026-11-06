@@ -1241,6 +1241,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="Siri로 Trovelo 사용하기",
+    description="iPhone과 iPad의 Trovelo에서 Siri에게 부탁할 수 있는 일: 카드 추가, 지출 기록, 오늘이나 여행 열기. 말할 문구와 Siri AI 현황도 알려 드려요.",
+    og="카드 추가도, 커피값 기록도, 오늘 열기도 말만 하세요.",
+    lead="카드를 추가하고, 결제한 금액을 기록하고, 오늘 일정을 여는 일을 Siri에게 부탁하세요. Trovelo의 모든 언어에서 쓸 수 있어요.",
+    keywords="siri 음성 말하기 시리야 문구 명령 받아쓰기 카드 추가 지출 기록 오늘 여행 열기 siri ai apple intelligence",
+    ios=[
+        dict(title="카드 추가하기",
+             text="<b>“Trovelo에 추가”</b>라고 말하세요. Siri가 무엇을 추가할지 물으면 <b>“내일 저녁 9시 Da Enzo에서 저녁 식사”</b>처럼 한 번에 말하세요. Trovelo가 카테고리, 시간, 말한 경우 가격까지 알아내고, Siri가 카드가 어디로 갔는지 알려 줘요."),
+        dict(title="어떤 여행의 어떤 날에",
+             text="지금 진행 중인 여행이나 다음 여행에 들어가요. <b>오늘</b>, <b>내일</b>, <b>모레</b>를 쓸 수 있어요. 날짜를 말하지 않거나 “금요일”처럼 말하면, 여행 중일 때는 오늘에, 아닐 때는 <b>미정</b>에 들어가요.",
+             alt=["여행 날짜 옆의 미정"]),
+        dict(title="결제한 금액 기록하기",
+             text="<b>“Trovelo에 지출 기록”</b>이라고 말하세요. Siri가 얼마였는지 물으면 <b>“커피 5000원”</b>처럼 금액과 내용을 말하세요. 지출에 들어가고, 그날의 일정은 그대로예요.",
+             alt=["총액과 날짜별 금액이 보이는 지출"]),
+        dict(title="오늘이나 여행 열기",
+             text="<b>“Trovelo에서 오늘 일정”</b>은 지금 여행의 오늘을 열어요. <b>“Trovelo에서 도쿄 열기”</b>는 그 여행을 열어요. Siri가 앱을 열어 주지만 일정을 읽어 주지는 않아요.",
+             alt=["여행의 하루와 그날의 카드"]),
+        dict(title="다른 표현",
+             text="Siri는 이 문구를 알아들어요. 적힌 그대로 말하세요:",
+             ranks_label="Siri가 알아듣는 다른 문구",
+             ranks=[("Trovelo 오늘 뭐 있어", ""), ("Trovelo에서 오늘 열기", ""), ("Trovelo에서 오늘 보여줘", ""), ("Trovelo에서 도쿄 보여줘", ""), ("Trovelo에서 여행 열기", ""), ("Trovelo에 카드 추가", ""), ("Trovelo 여행에 추가", ""), ("Trovelo에 지출 추가", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b>는 아직 여행을 다룰 수 없어요. 지금은 이 문구를 사용하세요.",
+        "지출을 기록하려면 진행 중인 여행이 있어야 해요. 여행 중이 아니면 Siri가 알려 줘요. 통화를 말하지 않으면 여행의 통화로 기록돼요.",
+        "Siri는 iPhone과 iPad의 Trovelo에서 작동해요. Mac에서는 <a href=\"/help/plan-with-your-ai-assistant/\">AI 어시스턴트로 계획</a>할 수 있어요.",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="Mac의 Trovelo",

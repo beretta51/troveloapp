@@ -1241,6 +1241,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="透過 Siri 使用 Trovelo",
+    description="在 iPhone 和 iPad 上可以請 Siri 在 Trovelo 做什麼：新增卡片、記錄支出、打開今天或某個行程，還有要說的句子和 Siri AI 的現況。",
+    og="新增卡片、記下咖啡錢、打開今天，說一聲就好。",
+    lead="請 Siri 新增卡片、記下你付的錢，或打開今天的安排。Trovelo 支援的所有語言都可以用。",
+    keywords="siri 語音 說話 嘿 siri 句子 指令 聽寫 新增 卡片 記錄 支出 今天 打開 行程 siri ai apple intelligence",
+    ios=[
+        dict(title="新增卡片",
+             text="說<b>「在 Trovelo 新增項目」</b>。Siri 問你想加入什麼時，一次說完，例如<b>「明天晚上9點在 Da Enzo 吃晚餐」</b>。Trovelo 會判斷類別、時間和你說出的價格，然後 Siri 會告訴你卡片去了哪裡。"),
+        dict(title="哪個行程、哪一天",
+             text="卡片會進入你正在進行的行程，或下一個行程。可以說<b>今天</b>和<b>明天</b>。沒說日期，或說「後天」、「星期五」這樣的日期時，如果你正在旅行就放在今天，否則放進<b>未規劃</b>。",
+             alt=["行程日期旁邊的未規劃"]),
+        dict(title="記下你付的錢",
+             text="說<b>「在 Trovelo 記錄一筆支出」</b>。Siri 問花了多少錢時，說出金額和用途，例如<b>「咖啡 30」</b>。它會進入支出，當天的安排不變。",
+             alt=["支出：總額和每一天"]),
+        dict(title="打開今天或某個行程",
+             text="<b>「我今天在 Trovelo 有什麼」</b>會打開你正在進行的行程的今天。<b>「在 Trovelo 打開 東京」</b>會打開那個行程。Siri 會幫你打開 App，但不會朗讀安排。",
+             alt=["行程中的一天和它的卡片"]),
+        dict(title="其他說法",
+             text="Siri 聽的是這些句子，所以請照著說：",
+             ranks_label="Siri 聽得懂的更多句子",
+             ranks=[("Trovelo 今天有什麼安排", ""), ("在 Trovelo 打開今天", ""), ("在 Trovelo 顯示今天", ""), ("在 Trovelo 顯示 東京", ""), ("在 Trovelo 打開我的行程", ""), ("在 Trovelo 新增卡片", ""), ("在 Trovelo 加入我的行程", ""), ("在 Trovelo 新增支出", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b> 目前還不能處理你的行程。現在請使用這些句子。",
+        "記錄支出需要有正在進行的行程：如果沒有，Siri 會告訴你。沒說貨幣？就用行程的貨幣。",
+        "Siri 可以在 iPhone 和 iPad 上搭配 Trovelo 使用。在 Mac 上，你可以<a href=\"/help/plan-with-your-ai-assistant/\">用 AI 助理規劃行程</a>。",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="在 Mac 上使用 Trovelo",

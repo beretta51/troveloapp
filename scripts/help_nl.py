@@ -1239,6 +1239,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="Trovelo gebruiken met Siri",
+    description="Wat je Siri in Trovelo kunt vragen op iPhone en iPad: een kaart toevoegen, een uitgave vastleggen en vandaag of een reis openen, met de zinnen die je moet zeggen en hoe het zit met Siri AI.",
+    og="Voeg een kaart toe, leg een koffie vast of open vandaag, gewoon door het te vragen.",
+    lead="Vraag Siri om een kaart toe te voegen, vast te leggen wat je hebt betaald of het plan van vandaag te openen, in alle talen van Trovelo.",
+    keywords="siri stem vragen hé siri zinnen opdrachten spreken dicteren kaart toevoegen uitgave vastleggen vandaag reis openen siri ai apple intelligence",
+    ios=[
+        dict(title="Voeg een kaart toe",
+             text="Zeg <b>“Voeg iets toe aan Trovelo”</b>. Als Siri vraagt wat je wilt toevoegen, zeg je alles in één keer, bijvoorbeeld <b>“diner bij Da Enzo morgen om 21:00”</b>. Trovelo bepaalt de categorie, de tijd en de prijs als je die noemt, en Siri vertelt waar de kaart terecht is gekomen."),
+        dict(title="Welke reis en welke dag",
+             text="Hij komt in de reis waar je nu op bent, of in je volgende. <b>Vandaag</b> en <b>morgen</b> werken. Zonder dag, of met een dag als “vrijdag” of “overmorgen”, komt de kaart op vandaag als je op reis bent, en anders in <b>Niet gepland</b>.",
+             alt=["Niet gepland, naast de dagen van de reis"]),
+        dict(title="Leg vast wat je hebt betaald",
+             text="Zeg <b>“Leg een uitgave vast in Trovelo”</b>. Als Siri vraagt hoeveel het was, noem je het bedrag en waarvoor, bijvoorbeeld <b>“12 euro voor koffie”</b>. Het komt in Uitgaven terecht en je dagplan blijft zoals het was.",
+             alt=["Uitgaven, met het totaal en elke dag"]),
+        dict(title="Open vandaag of een reis",
+             text="<b>“Wat heb ik vandaag in Trovelo”</b> opent vandaag in de reis waar je nu op bent. <b>“Open Tokio in Trovelo”</b> opent die reis. Siri opent de app voor je, maar leest je plan niet voor.",
+             alt=["Een dag van de reis, met de kaarten"]),
+        dict(title="Andere manieren om het te zeggen",
+             text="Siri luistert naar deze zinnen, dus zeg ze zoals ze hier staan:",
+             ranks_label="Meer zinnen die Siri begrijpt",
+             ranks=[("Wat staat er vandaag op de planning in Trovelo", ""), ("Open vandaag in Trovelo", ""), ("Laat vandaag zien in Trovelo", ""), ("Laat Tokio zien in Trovelo", ""), ("Open mijn reis in Trovelo", ""), ("Voeg een kaart toe aan Trovelo", ""), ("Voeg toe aan mijn reis in Trovelo", ""), ("Voeg een uitgave toe aan Trovelo", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b> kan nog niet met je reizen werken. Gebruik voorlopig deze zinnen.",
+        "Uitgaven hebben een lopende reis nodig: ben je niet op reis, dan zegt Siri dat. Geen valuta genoemd? Dan geldt die van de reis.",
+        "Siri werkt met Trovelo op iPhone en iPad. Op een Mac kun je <a href=\"/help/plan-with-your-ai-assistant/\">plannen met je AI-assistent</a>.",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="Trovelo op de Mac",

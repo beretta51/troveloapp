@@ -1243,6 +1243,38 @@ article(
 )
 
 article(
+    "use-trovelo-with-siri",
+    source="de69db95",
+    title="Usa Trovelo con Siri",
+    description="Cosa puoi chiedere a Siri in Trovelo su iPhone e iPad: aggiungere una scheda, registrare una spesa e aprire oggi o un viaggio, con le frasi da dire e a che punto è Siri AI.",
+    og="Aggiungi una scheda, registra un caffè o apri oggi, basta chiederlo.",
+    lead="Chiedi a Siri di aggiungere una scheda, registrare quello che hai pagato o aprire il programma di oggi, in tutte le lingue di Trovelo.",
+    keywords="siri voce chiedere ehi siri frasi comandi parlare dettare aggiungere scheda registrare spesa oggi aprire viaggio siri ai apple intelligence",
+    ios=[
+        dict(title="Aggiungi una scheda",
+             text="Di’ <b>«Aggiungi qualcosa a Trovelo»</b>. Quando Siri chiede cosa aggiungere, di’ tutto in una volta, per esempio <b>«cena da Da Enzo domani alle 21»</b>. Trovelo capisce la categoria, l’ora e il prezzo se lo dici, poi Siri ti dice dov’è finita la scheda."),
+        dict(title="Quale viaggio e quale giorno",
+             text="Va nel viaggio in corso, o nel prossimo. Funzionano <b>oggi</b>, <b>domani</b> e <b>dopodomani</b>. Senza giorno, o con un giorno come «venerdì», la scheda va su oggi se sei in viaggio, altrimenti in <b>Da pianificare</b>.",
+             alt=["Da pianificare, accanto ai giorni del viaggio"]),
+        dict(title="Registra quello che hai pagato",
+             text="Di’ <b>«Registra una spesa su Trovelo»</b>. Quando Siri chiede quanto hai speso, di’ l’importo e a cosa si riferisce, per esempio <b>«12 euro per un caffè»</b>. Va in Spese, e il programma della giornata resta com’era.",
+             alt=["Spese, con il totale speso e ogni giorno"]),
+        dict(title="Apri oggi o un viaggio",
+             text="<b>«Cosa ho oggi su Trovelo»</b> apre oggi nel viaggio in corso. <b>«Apri Tokyo su Trovelo»</b> apre quel viaggio. Siri ti apre l’app, ma non legge il programma ad alta voce.",
+             alt=["Un giorno del viaggio, con le sue schede"]),
+        dict(title="Altri modi per dirlo",
+             text="Siri riconosce queste frasi, quindi dille così come sono scritte:",
+             ranks_label="Altre frasi che Siri capisce",
+             ranks=[("Cosa c’è oggi su Trovelo", ""), ("Apri oggi su Trovelo", ""), ("Mostrami oggi su Trovelo", ""), ("Mostrami Tokyo su Trovelo", ""), ("Apri il mio viaggio su Trovelo", ""), ("Aggiungi una scheda a Trovelo", ""), ("Aggiungi al mio viaggio su Trovelo", ""), ("Aggiungi una spesa su Trovelo", "")]),
+    ],
+    tips=[
+        "<b>Siri AI</b> non può ancora lavorare con i tuoi viaggi. Per ora, usa queste frasi.",
+        "Le spese richiedono un viaggio in corso: se non ne hai uno, Siri te lo dice. Non dici la valuta? Usa quella del viaggio.",
+        "Siri funziona con Trovelo su iPhone e iPad. Su Mac puoi <a href=\"/help/plan-with-your-ai-assistant/\">pianificare con il tuo assistente IA</a>.",
+    ],
+)
+
+article(
     "trovelo-on-mac",
     source="35fda9a8",
     title="Trovelo su Mac",
